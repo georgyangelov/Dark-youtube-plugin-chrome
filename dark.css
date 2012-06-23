@@ -16,7 +16,8 @@
 .feed-item-owner a,
 .artist-module h1,
 .album-row span,
-.artist-module-header h1, .artist-album-module h1
+.artist-module-header h1, .artist-album-module h1,
+.feed-item-actions-line
 {
 	color: #CCC !important;
 }
@@ -71,6 +72,18 @@
 	color: #CCC !important;
 }
 
+#masthead-user-button
+{
+	border: none !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+#masthead-user-button:hover
+{
+	background-color: #525252 !important;
+	background-image: none !important;
+}
+
 .comment:hover .comment-text
 {
 	color: black !important;
@@ -80,6 +93,16 @@
 	background-color: white !important;
 }
 
+#playlist-bar-bar-container,
+#playlist-bar-bar-container:hover
+{
+	border: 1px solid #1f1f1f !important;
+	background: black;
+}
+#playlist-bar-info .playlist-bar-group
+{
+	border-right: 1px solid #1f1f1f !important;
+}
 
 /**
  * Styles for YouTube Earth Hour 2012, which takes place March 31 2012.
@@ -106,8 +129,11 @@ body,
 /* Button overrides */
 
 .yt-uix-button-default,
+.yt-uix-button,
 .yt-uix-button-default:focus,
-body .yt-uix-button-default[disabled] {
+.yt-uix-button:focus,
+body .yt-uix-button-default[disabled],
+body .yt-uix-button[disabled] {
   background-color: #454545 !important;
   border-color: #333 #333 #000 !important;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .45) !important;
@@ -125,7 +151,10 @@ body .yt-uix-button-default[disabled] {
 }
 
 .yt-uix-button-default,
-a.yt-uix-button-default .yt-uix-button-content {
+.yt-uix-button-default .yt-uix-button-content
+.yt-uix-button,
+.yt-uix-button .yt-uix-button-content,
+.yt-uix-button .yt-uix-button-content span {
   color: #fff !important;
 }
 
@@ -275,6 +304,10 @@ img.comments-rating-thumbs-down,
 
 .yt-uix-button .yt-uix-button-icon-watch-flag {
   background-position: -96px -119px !important;
+}
+
+.yt-uix-button .yt-uix-button-icon-subscribe {
+  background-position: -77px -120px !important;
 }
 
 .active .yt-uix-button-icon-watch-flag,

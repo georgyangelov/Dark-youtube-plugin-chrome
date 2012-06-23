@@ -63,5 +63,13 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
       sendResponse({});
 });
 
-updateIcon();
+if (localStorage.activated != "false")
+{
+	chrome.browserAction.setIcon({path:"images/black_youtube_19.png"});
+}
+else
+{
+	chrome.browserAction.setIcon({path:"images/white_youtube_19.png"});
+}
+
 chrome.browserAction.onClicked.addListener(updateIcon);
