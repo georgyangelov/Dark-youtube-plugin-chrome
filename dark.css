@@ -1,5 +1,12 @@
 .video-list-item-link:visited .title,
-.video-list-item-link .title, #video-sidebar .recommended-videos-link
+.video-list-item-link .title,
+.recommended-videos-link,
+.related-playlist .title,
+.related-video .title,
+h3 .guide-item .display-name,
+.guide-item .display-name,
+.guide-context-item .display-name,
+.guide-management a
 {
 	color: white !important;
 }
@@ -7,7 +14,16 @@
 .video-list-item-link:visited:hover .title,
 .video-list-item-link:hover .title,
 #video-sidebar .recommended-videos-link:hover,
-.feed-item-owner a:hover
+#video-sidebar .related-playlist:hover .title,
+#video-sidebar .related-video:hover .title
+.feed-item-owner a:hover,
+h3 .guide-item:hover .display-name,
+.guide-item:hover .display-name,
+.guide-item.guide-selected .display-name,
+.guide-context-item:hover .display-name,
+.guide-management a:hover,
+.guide-item .guide-count,
+.guide-header-item .guide-count
 {
 	color: black !important;
 }
@@ -19,7 +35,7 @@
 .artist-module-header h1, .artist-album-module h1,
 .feed-item-actions-line
 {
-	color: #CCC !important;
+	color: #707070 !important;
 }
 .video-list-item-link:hover .stat .viewcount,
 .album-row-odd a, .album-row-odd span,
@@ -51,6 +67,11 @@
 {
 	color: white !important;
 	background: #555 !important;
+}
+
+.yt-creator-sidebar
+{
+		background: white !important;
 }
 
 .yt-uix-form-input-text,
@@ -306,7 +327,7 @@ img.comments-rating-thumbs-down,
   background-position: -96px -119px !important;
 }
 
-.yt-uix-button .yt-uix-button-icon-subscribe {
+#watch-headline .yt-uix-button .yt-uix-button-icon-subscribe {
   background-position: -77px -120px !important;
 }
 
