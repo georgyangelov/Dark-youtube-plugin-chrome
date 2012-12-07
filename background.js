@@ -5,8 +5,8 @@ if (localStorage.activated == undefined)
 
 var portsByTabId = {};
 
-chrome.self.onConnect.addListener(function(port) {
-	portsByTabId[port.tab.id] = port;
+chrome.extension.onConnect.addListener(function(port) {
+	portsByTabId[port.sender.id] = port;
 });
 
 function sendMessage(message)
@@ -37,7 +37,7 @@ function updateIcon()
 		localStorage.activated = "true";
 		chrome.browserAction.setIcon({path:"images/black_youtube_19.png"});
 	}
-	
+
 	sendMessage(localStorage.activated);
 }
 
