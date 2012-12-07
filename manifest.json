@@ -27,6 +27,8 @@
     "128": "images/black_youtube.png"
   },
   "web_accessible_resources": [
-    "dark.css"
+    "dark.css",
+    "images/images.png",
+    "images/bg-branded-page-180.png"
   ]
 }
