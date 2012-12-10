@@ -591,7 +591,8 @@ body #masthead-expanded-container,
 
 #masthead-expanded .masthead-expanded-menu-header,
 #watch7-sidebar .video-list-item .title,
-#watch7-sidebar .video-list-item:hover .title
+#watch7-sidebar .video-list-item:hover .title,
+.yt-uix-expander-head
 {
 	color: white !important;
 }
