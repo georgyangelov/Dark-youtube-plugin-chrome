@@ -631,7 +631,9 @@ body #masthead-expanded-container,
 }
 
 .yt-uix-button-subscribe-branded .yt-uix-button-content span,
-body .branded-page-related-channels-item .subscribe-hh-label
+body .branded-page-related-channels-item .subscribe-hh-label,
+body .yt-uix-button-subscribed-branded .subscribed-hh-label,
+body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 {
 	color: #333 !important;
 }
@@ -639,6 +641,51 @@ body .branded-page-related-channels-item .subscribe-hh-label
 .share-group.secondary .overlay
 {
 	background: black !important;
+}
+
+/* Fixes for positions */
+#logo {
+  background-position: -35px -50px !important;
+}
+
+.hitchhiker-enabled .feed-author-bubble
+{
+  background-position: 0 -569px !important;
+}
+
+.hitchhiker-enabled .feed-author-bubble.rec
+{
+  background-position: -98px -175px !important;
+}
+
+.yt-uix-button:active .yt-uix-button-icon-watch-like, .yt-uix-button.yt-uix-button-toggled .yt-uix-button-icon-watch-like
+{
+  background-position: -120px -275px !important;
+}
+
+.yt-uix-button-icon-watch-like
+{
+  background-position: -88px -569px !important;
+}
+
+.yt-uix-button-icon-watch-dislike
+{
+  background-position: -108px -216px !important;
+}
+
+.yt-uix-button-icon-watch-comment-vote-up
+{
+  background-position: -0px -26px !important;
+}
+
+.voted-up .yt-uix-button-icon-watch-comment-vote-up
+{
+  background-position: -122px -66px !important;
+}
+
+.yt-uix-button-icon-watch-comment-vote-down
+{
+  background-position: -93px -441px !important;
 }
 
 /* Positions */
