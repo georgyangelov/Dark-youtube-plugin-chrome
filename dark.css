@@ -135,6 +135,8 @@ body,
 .yt-uix-button:focus,
 body .yt-uix-button-default[disabled],
 body .yt-uix-button[disabled]*/
+.yt-uix-button-default,
+.yt-uix-button,
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover {
   background-color: #454545 !important;
   border-color: #333 #333 #000 !important;
@@ -150,6 +152,17 @@ body .yt-uix-button[disabled]*/
   -moz-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
   -webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
   -ms-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+}
+
+.yt-uix-button-link
+{
+  padding: 0 !important;
+  border: none !important;
+  height: auto !important;
+  background: transparent !important;
+  font-weight: normal !important;
+  font-size: inherit !important;
+  text-decoration: none !important;
 }
 
 .yt-uix-button-hh-default, .yt-uix-button-subscription, .yt-uix-button-panel:hover .yt-uix-button-hh-text, body .yt-uix-button-hh-default[disabled]
@@ -532,7 +545,7 @@ a.context-link:hover {
 
 .guide-item, .guide-header-item
 {
-	color: white;
+	color: white !important;
 }
 
 /*.branded-page-v2-primary-col
@@ -643,6 +656,18 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	background: black !important;
 }
 
+#page.watch #guide-container.branded
+{
+  top: 15px !important;
+  background: #555 !important;
+  background: rgba(87, 87, 87, .95) !important;
+}
+
+.watch-branded #watch7-sidebar
+{
+  background-color: #000 !important;
+}
+
 /* Fixes for positions */
 #logo {
   background-position: -35px -50px !important;
@@ -698,3 +723,7 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 .lego:hover.append-lego .lego-action img,.lego:hover .lego-action:hover img{background-position:0 -18px}
 
 .share-service-icon-ameba{background-position:0 -1307px}.share-service-icon-bebo{background-position:0 -136px}.share-service-icon-blogger{background-position:0 -718px}.share-service-icon-cyworld{background-position:0 -820px}.share-service-icon-delicious{background-position:0 -272px}.share-service-icon-digg{background-position:0 -650px}.share-service-icon-facebook{background-position:0 -1076px}.share-service-icon-fotka{background-position:0 -68px}.share-service-icon-goo{background-position:0 -1144px}.share-service-icon-googleplus{background-position:0 -204px}.share-service-icon-grono{background-position:0 -170px}.share-service-icon-hi5{background-position:0 -428px}.share-service-icon-hyves{background-position:0 -1239px}.share-service-icon-linkedin{background-position:0 -324px}.share-service-icon-livejournal{background-position:0 -940px}.share-service-icon-meneame{background-position:0 -1110px}.share-service-icon-mixi{background-position:0 -974px}.share-service-icon-myspace{background-position:0 -1042px}.share-service-icon-nujij{background-position:0 -752px}.share-service-icon-odnoklassniki{background-position:0 -1273px}.share-service-icon-orkut{background-position:0 -854px}.share-service-icon-rakuten{background-position:0 -888px}.share-service-icon-reddit{background-position:0 -1008px}.share-service-icon-skyblog{background-position:0 0}.share-service-icon-sledzik{background-position:0 -358px}.share-service-icon-stumbleupon{background-position:0 -616px}.share-service-icon-tuenti{background-position:0 -34px}.share-service-icon-tumblr{background-position:0 -238px}.share-service-icon-twitter{background-position:0 -514px}.share-service-icon-vkontakte{background-position:0 -582px}.share-service-icon-webryblog{background-position:0 -548px}.share-service-icon-wykop{background-position:0 -1178px}.share-service-icon-yahoo{background-position:0 -102px}.share-service-icon-yigg{background-position:0 -684px}
+
+#masthead-search .search-btn-component .yt-uix-button-content {
+  background-position: -16px -242px !important;
+}
