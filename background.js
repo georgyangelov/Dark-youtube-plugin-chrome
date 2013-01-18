@@ -56,7 +56,7 @@ function setIcon(dark)
 	sendMessage(localStorage.activated);
 }
 
-chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.method == "isActivated")
       sendResponse({status: localStorage.activated});
     else

@@ -11,11 +11,11 @@ function activate()
     link.href = chrome.extension.getURL('dark.css');
     link.media = 'all';
     head.appendChild(link);
-    
+
     active = true;
 }
 
-chrome.extension.sendRequest({method: "isActivated"}, function(response) {
+chrome.extension.sendMessage({method: "isActivated"}, function(response) {
   if (response.status == "true")
   {
 	  	activate();
@@ -37,7 +37,7 @@ myPort.onMessage.addListener(function(data) {
     	if (active)
     	{
         	head.removeChild(link);
-        	
+
         	active = false;
     	}
    	}
