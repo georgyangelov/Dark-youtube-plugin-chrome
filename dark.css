@@ -557,9 +557,13 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	background: #4d4d4d !important;
 }*/
 
-.branded-page-v2-col-container
+.branded-page-v2-primary-col
 {
 	background: url('chrome-extension://__MSG_@@extension_id__/images/bg-branded-page-180.png') !important;
+	border-right: 1px solid #292929 !important;
+}
+.branded-page-v2-col-container
+{
 	border-left: 1px solid #292929 !important;
 }
 
