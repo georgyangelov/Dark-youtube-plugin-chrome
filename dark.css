@@ -317,7 +317,7 @@ img.comments-rating-thumbs-down,
 .yt-uix-button-icon-watch-dislike,
 #masthead-search .search-btn-component .yt-uix-button-content
 {
-	background-image:url('chrome-extension://__MSG_@@extension_id__/images/images.png') !important;
+	background-image:url('images/images.png') !important;
 }
 
 /* Related */
