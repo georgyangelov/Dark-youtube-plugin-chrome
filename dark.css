@@ -559,7 +559,7 @@ body .branded-page-related-channels-item .subscribe-hh-label
 
 .branded-page-v2-primary-col
 {
-	background: url('chrome-extension://__MSG_@@extension_id__/images/bg-branded-page-180.png') !important;
+	background: none !important;
 	border-right: 1px solid #292929 !important;
 	border-left: 1px solid #292929 !important;
 }
