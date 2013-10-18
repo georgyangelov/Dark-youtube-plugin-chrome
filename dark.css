@@ -626,6 +626,10 @@ body #masthead-expanded-container,
 	color: white !important;
 }
 
+#watch7-sidebar{
+	background: transparent !important;
+}
+
 .yt-lockup2:hover,
 .video-list-item:hover
 {
@@ -663,7 +667,7 @@ body #masthead-expanded-container,
 body .yt-uix-button-subscribed-branded .subscribed-hh-label,
 body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 {
-	color: #333 !important;
+	color: #fff !important;
 }
 
 .share-group.secondary .overlay
