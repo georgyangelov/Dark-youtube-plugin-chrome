@@ -568,6 +568,12 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	border-left: 1px solid #292929 !important;
 }
 
+.playlist-video-item.odd, .playlist-video-item.even
+{
+	background: none !important;
+	border-top: 1px solid #292929 !important;
+}
+
 #watch-discussion
 {
 	border-color: #292929 !important;
