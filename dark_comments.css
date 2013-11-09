@@ -4,7 +4,7 @@ body,
 	background: #1b1b1b !important;
 }
 
-.kv8eNc, .yJa, .Mza, .DJa, .uPa
+.kv8eNc, .yJa, .Mza, .DJa, .uPa, .tvb
 {
 	background-color: #1b1b1b !important;
 }
@@ -15,19 +15,36 @@ body,
 	color: #fff !important;
 }
 
-.ve.oba, .dn
+.ve.oba, .dn, .Aq
 {
 	color: #666 !important;
 }
 
-/* Commenter name */
-.Ub
+/* Commenter name + Show Recent Button */
+.Ub, .LEa
 {
 	color: #ccc !important;
 }
 
+.Kgb
+{
+	background-color: #383838 !important;
+}
+
+.ot-anchor
+{
+	color: #666;
+	-webkit-transition:color .218s;
+	transition:color .218s
+}
+
+.proflink, .ot-hashtag
+{
+	color: #888 !important;
+}
+
 /* Show More Button */
-.d-s 
+.r0 
 {
 	background-color: #454545 !important;
 	border-color: #333 #333 #000 !important;
@@ -43,6 +60,6 @@ body,
 	-moz-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
 	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
 	-ms-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
-	color: #fff !important;
+	color: #ccc !important;
 }
 
