@@ -1,0 +1,48 @@
+body,
+{
+	color: #fff !important;
+	background: #1b1b1b !important;
+}
+
+.kv8eNc, .yJa, .Mza, .DJa, .uPa
+{
+	background-color: #1b1b1b !important;
+}
+
+.DJa
+{
+	background: none !important;
+	color: #fff !important;
+}
+
+.ve.oba, .dn
+{
+	color: #666 !important;
+}
+
+/* Commenter name */
+.Ub
+{
+	color: #ccc !important;
+}
+
+/* Show More Button */
+.d-s 
+{
+	background-color: #454545 !important;
+	border-color: #333 #333 #000 !important;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .45) !important;
+	outline: 0 !important;
+	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
+	background-image: -moz-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	background-image: -o-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	background-image: -ms-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorStr="#FF474747", endColorStr="#FF2B2B2B") !important;
+	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45)) !important;
+	-moz-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	-ms-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	color: #fff !important;
+}
+

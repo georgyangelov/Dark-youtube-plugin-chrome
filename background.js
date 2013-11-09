@@ -6,21 +6,27 @@ if (localStorage.activated == undefined)
 var portsByTabId = {};
 
 chrome.extension.onConnect.addListener(function(port) {
-	portsByTabId[port.sender.id] = port;
+	if (!portsByTabId[port.sender.id])
+		portsByTabId[port.sender.id] = new Array();
+	portsByTabId[port.sender.id].push(port);	
 });
 
 function sendMessage(message)
 {
 	for (var tabid in portsByTabId)
 	{
-		var port = portsByTabId[tabid];
-		try
+		var ports = portsByTabId[tabid];
+		for (var i = 0; i < ports.length; i++) 
 		{
-			port.postMessage(message);
-		}
-		catch (e)
-		{
-			delete portsByTabId[tabid];
+			try
+			{
+				ports[i].postMessage(message);
+			}
+			catch (e)
+			{
+				/* Assume that if one port from a tab is missing, the rest are missing too. */
+				delete portsByTabId[tabid];
+			}
 		}
 	}
 }
