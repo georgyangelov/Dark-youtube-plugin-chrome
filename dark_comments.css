@@ -1,12 +1,14 @@
-body,
+body
 {
 	color: #fff !important;
-	background: #1b1b1b !important;
+	background: none !important;
 }
 
 .kv8eNc, .yJa, .Mza, .DJa, .uPa, .tvb
 {
-	background-color: #1b1b1b !important;
+	/* For debugging. */
+	/* background-color: #1b1b1b !important; */
+	background: none !important;
 }
 
 .DJa
@@ -20,27 +22,48 @@ body,
 	color: #666 !important;
 }
 
+/* Comment score */
+.bmd
+{
+	color: #999 !important;
+}
+
 /* Commenter name + Show Recent Button */
 .Ub, .LEa
 {
 	color: #ccc !important;
 }
 
-.Kgb
+/* Special commenters */
+.Kgb, .Y8b .TD
 {
 	background-color: #383838 !important;
 }
 
-.ot-anchor
+.proflink, .ot-hashtag
+{
+	color: #888 !important;
+}
+
+.ot-hashtag, .proflink, .proflinkPrefix
 {
 	color: #666;
 	-webkit-transition:color .218s;
 	transition:color .218s
 }
 
-.proflink, .ot-hashtag
-{
-	color: #888 !important;
+/* Like/Dislike comment buttons */
+.LJa {
+	background-position: 0 -235px;
+}
+.MJa {
+	background-position: 0 -88px;
+}
+.MJa:hover {
+    background-position: 0 -154px;
+}
+.LJa:hover {
+    background-position: 0 -136px;
 }
 
 /* Show More Button */
