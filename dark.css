@@ -1,34 +1,3 @@
-/*.video-list-item-link:visited .title,
-.video-list-item-link .title,
-.recommended-videos-link,
-.related-playlist .title,
-.related-video .title,
-h3 .guide-item .display-name,
-.guide-item .display-name,
-.guide-context-item .display-name,
-.guide-management a
-{
-	color: #292929 !important;
-}*/
-
-/*.video-list-item-link:visited:hover .title,
-.video-list-item-link:hover .title,
-#video-sidebar .recommended-videos-link:hover,
-#video-sidebar .related-playlist:hover .title,
-#video-sidebar .related-video:hover .title
-.feed-item-owner a:hover,
-h3 .guide-item:hover .display-name,
-.guide-item:hover .display-name,
-.guide-item.guide-selected .display-name,
-.guide-context-item:hover .display-name,
-.guide-management a:hover,
-.guide-item .guide-count,
-.guide-header-item .guide-count
-{
-	color: black !important;
-}*/
-
-
 /* Inverted and grayscale images */
 #logo,
 #masthead-search .search-btn-component .yt-uix-button-content,
