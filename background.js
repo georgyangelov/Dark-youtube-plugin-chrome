@@ -3,26 +3,26 @@ if (localStorage.activated == undefined)
 	setIcon(true);
 }
 
-var portsByTabId = {};
+var portsByScriptId = {};
 
-chrome.extension.onConnect.addListener(function(port) {
-	portsByTabId[port.sender.id] = port;
+chrome.runtime.onConnect.addListener(function(port) {
+    portsByScriptId[port.sender.id + port.name] = port;
 });
 
 function sendMessage(message)
 {
-	for (var tabid in portsByTabId)
-	{
-		var port = portsByTabId[tabid];
-		try
-		{
-			port.postMessage(message);
-		}
-		catch (e)
-		{
-			delete portsByTabId[tabid];
-		}
-	}
+        for (var contentScriptId in portsByScriptId)
+        {
+                var port = portsByScriptId[contentScriptId];
+                try
+                {
+                        port.postMessage(message);
+                }
+                catch (e)
+                {
+                        delete portsByScriptId[contentScriptId];
+                }
+        }
 }
 
 function updateIcon()
@@ -56,7 +56,7 @@ function setIcon(dark)
 	sendMessage(localStorage.activated);
 }
 
-chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.method == "isActivated")
       sendResponse({status: localStorage.activated});
     else

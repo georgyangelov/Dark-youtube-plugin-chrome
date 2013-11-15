@@ -552,20 +552,61 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	color: white !important;
 }
 
-/*.branded-page-v2-primary-col
-{
-	background: #4d4d4d !important;
-}*/
-
+.branded-page-v2-has-solid-bg .branded-page-v2-col-container {
+    border-right: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    border-left: 1px solid #292929;
+    background: none !important;
+}
 .branded-page-v2-primary-col
 {
-	background: none !important;
-	border-right: 1px solid #292929 !important;
-	border-left: 1px solid #292929 !important;
+	border-right: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    border-left: 1px solid #292929;
+    background: none !important;
 }
-.branded-page-v2-col-container
+.branded-page-v2-secondary-column-hidden .branded-page-v2-primary-col {
+	/* The original stylesheet has this set to 1px, but I think
+	 * that is a mistake. */
+    border-right: 0px solid #292929;
+}
+.branded-page-v2-has-solid-bg .branded-page-v2-secondary-col {
+    border-left: 1px solid #292929 !important;
+}
+
+.lohp-newspaper-shelf
+{
+	border-bottom: 1px solid #292929 !important;
+}
+.lohp-large-shelf-container
+{
+	border-right: 1px solid #292929 !important;
+}
+.lohp-medium-shelves-container
 {
 	border-left: 1px solid #292929 !important;
+}
+
+.lohp-shelf-cell-container 
+{
+    border: 1px solid #292929 !important;
+    border-top: none !important;
+    border-left: none !important;
+}
+.lohp-shelf-cell-container:hover 
+{
+    background-color: #1B1B1B;
+}
+
+.branded-page-module-title, .branded-page-module-title a:visited, .branded-page-module-title a
+{
+    color: #ccc;
+}
+
+.playlist-video-item.odd, .playlist-video-item.even
+{
+	background: none !important;
+	border-top: 1px solid #292929 !important;
 }
 
 #watch-discussion
