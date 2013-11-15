@@ -8,7 +8,7 @@ function activate()
     link.id   = "darkstyle_css";
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = chrome.extension.getURL('dark.css');
+    link.href = chrome.extension.getURL('dark_comments.css');
     link.media = 'all';
     head.appendChild(link);
 
@@ -22,7 +22,7 @@ chrome.runtime.sendMessage({method: "isActivated"}, function(response) {
   }
 });
 
-var myPort = chrome.runtime.connect({name: "main"});
+var myPort = chrome.runtime.connect({name: "comments"});
 
 myPort.onMessage.addListener(function(data) {
     if ( data == "true" )
