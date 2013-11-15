@@ -15,14 +15,14 @@ function activate()
     active = true;
 }
 
-chrome.extension.sendMessage({method: "isActivated"}, function(response) {
+chrome.runtime.sendMessage({method: "isActivated"}, function(response) {
   if (response.status == "true")
   {
 	  	activate();
   }
 });
 
-var myPort = chrome.extension.connect();
+var myPort = chrome.runtime.connect({name: "main"});
 
 myPort.onMessage.addListener(function(data) {
     if ( data == "true" )
