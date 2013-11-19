@@ -42,7 +42,8 @@
 #masthead-container,
 #appbar-guide-menu,
 .appbar-menu,
-#appbar-guide-menu, .guide-flyout
+#appbar-guide-menu, .guide-flyout,
+.cardified-page .yt-card
 {
 	background: none !important;
 }
@@ -118,7 +119,8 @@
 	background: transparent !important;
 }
 
-#masthead-appbar-container
+#masthead-appbar-container,
+.cardified-page .feed-item-container
 {
 	border-color: #1f1f1f !important;
 }
