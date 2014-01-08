@@ -17,9 +17,22 @@ body
 	color: #fff !important;
 }
 
-.ve.oba, .dn, .Aq
+/* Original shared post for which the above comment is in reply to. */
+.dga
+{
+	background-color: #262626 !important;
+	border:1px solid #333 !important;
+}
+
+.ve.oba, .dn, .Aq, .OF
 {
 	color: #666 !important;
+}
+
+/* "This"; in the context of '<username> originally shared this' */
+.qg
+{
+	color: #666;
 }
 
 /* Comment score */
@@ -35,35 +48,28 @@ body
 }
 
 /* Special commenters */
-.Kgb, .Y8b .TD
+.Kgb, .Y8b
 {
 	background-color: #383838 !important;
 }
 
 .proflink, .ot-hashtag
 {
-	color: #888 !important;
+	color: #888;
 }
-
-.ot-hashtag, .proflink, .proflinkPrefix
+.proflinkPrefix
 {
 	color: #666;
-	-webkit-transition:color .218s;
-	transition:color .218s
 }
 
 /* Like/Dislike comment buttons */
 .LJa {
-	background-position: 0 -235px;
 }
 .MJa {
-	background-position: 0 -88px;
 }
 .MJa:hover {
-    background-position: 0 -154px;
 }
 .LJa:hover {
-    background-position: 0 -136px;
 }
 
 /* Show More Button */
