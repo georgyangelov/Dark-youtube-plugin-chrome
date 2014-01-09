@@ -503,6 +503,11 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	text-shadow: 0 1px 1px #333 !important;
 }
 
+#footer-main
+{
+	border-bottom: 1px solid #292929 !important;
+}
+
 #footer-links-primary a,
 #footer-links-secondary a,
 #footer .pickers a,
@@ -526,7 +531,8 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	color: white !important;
 }
 
-.branded-page-v2-has-solid-bg .branded-page-v2-col-container {
+.branded-page-v2-has-solid-bg .branded-page-v2-col-container 
+{
     border-right: 1px solid #292929;
     border-bottom: 1px solid #292929;
     border-left: 1px solid #292929;
@@ -538,6 +544,14 @@ body .branded-page-related-channels-item .subscribe-hh-label
     border-bottom: 1px solid #292929;
     border-left: 1px solid #292929;
     background: none !important;
+}
+.branded-page-v2-masthead-ad-header .branded-page-v2-secondary-column-hidden .branded-page-v2-primary-col,.branded-page-v2-masthead-ad-header.masthead-ad-expanded .branded-page-v2-primary-col 
+{
+    border-top:1px solid #292929 !important;
+}
+.branded-page-v2-primary-col .branded-page-box 
+{
+	border-bottom: 1px solid #292929 !important;
 }
 .branded-page-v2-secondary-column-hidden .branded-page-v2-primary-col {
 	/* The original stylesheet has this set to 1px, but I think
@@ -588,9 +602,13 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	border-color: #292929 !important;
 }
 
+body #footer-container
+{
+	background-color: #222 !important;
+}
+
 .branded-page-v2-body .feed-item-container:hover,
 body #footer-hh-container,
-body #footer-container,
 body #masthead-expanded-container,
 .primary-col,
 #watch7-content,
