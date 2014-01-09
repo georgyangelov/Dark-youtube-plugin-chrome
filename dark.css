@@ -540,9 +540,9 @@ body .branded-page-related-channels-item .subscribe-hh-label
 }
 .branded-page-v2-primary-col
 {
-	border-right: 1px solid #292929;
-    border-bottom: 1px solid #292929;
-    border-left: 1px solid #292929;
+	border-right: 1px solid #292929 !important;
+    border-bottom: 1px solid #292929 !important;
+    border-left: 1px solid #292929 !important;
     background: none !important;
 }
 .branded-page-v2-masthead-ad-header .branded-page-v2-secondary-column-hidden .branded-page-v2-primary-col,.branded-page-v2-masthead-ad-header.masthead-ad-expanded .branded-page-v2-primary-col 
@@ -617,6 +617,15 @@ body #masthead-expanded-container,
 .metadata-inline
 {
 	background: none !important;
+}
+
+#c4-header-bg-container
+{
+	border-bottom: 1px solid #292929 !important;
+}
+#channel-subheader
+{
+	border-bottom: 1px solid #292929 !important;
 }
 
 .guide-section-separator,
