@@ -48,6 +48,11 @@
 	background: none !important;
 }
 
+.site-center-aligned .yt-card 
+{
+    background: none !important;
+}
+
 .watch-playlists-drawer ul
 {
 	border: 1px solid #808080 !important;
@@ -588,7 +593,7 @@ body .branded-page-related-channels-item .subscribe-hh-label
 
 .branded-page-module-title, .branded-page-module-title a:visited, .branded-page-module-title a
 {
-    color: #ccc;
+    color: #ccc !important;
 }
 
 .playlist-video-item.odd, .playlist-video-item.even
@@ -660,6 +665,10 @@ body #masthead-expanded-container,
 	color: #CCC !important;
 }
 
+.yt-lockup .yt-lockup-meta a,.yt-lockup .yt-lockup-description a {
+    color: #999 !important;
+}
+
 #masthead-expanded .masthead-expanded-menu-header,
 #watch7-sidebar .video-list-item .title,
 #watch7-sidebar .video-list-item:hover .title,
@@ -727,4 +736,31 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 .watch-branded #watch7-sidebar
 {
 	background-color: #000 !important;
+}
+
+/* Channel Page */
+
+.feed-item-snippet-subtitle
+{
+	color: #999 !important;
+}
+
+.channel-header .branded-page-header-title .branded-page-header-title-link
+{
+    color: #fff !important;
+}
+
+.welcome.c4-spotlight-module-component 
+{
+    border-bottom: 1px solid #292929 !important;
+}
+
+.c4-welcome-primary-col 
+{
+    border-right: 1px solid #292929 !important;;
+}
+
+.c4-welcome-secondary-col 
+{
+    border-left: 1px solid #292929 !important;
 }
