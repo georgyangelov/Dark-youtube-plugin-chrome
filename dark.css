@@ -738,6 +738,33 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	background-color: #000 !important;
 }
 
+/* Playlist */
+
+.pl-header .pl-header-title 
+{
+    color: #fff !important;
+}
+
+.pl-video 
+{
+    border-bottom: 1px solid #292929 !important;
+}
+
+.pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a 
+{
+    color: #2793e6 !important;
+}
+.pl-video-title-link 
+{
+    color: #999 !important;
+}
+
+.pl-video-handle {
+    border-left: 1px solid #292929 !important;
+    border-right: 1px solid #292929 !important;
+    background: #333 !important;
+}
+
 /* Channel Page */
 
 .feed-item-snippet-subtitle
