@@ -13,7 +13,7 @@
       "run_at": "document_start"
     },
     {
-      "matches": ["*://apis.google.com/u/*/wm/4/_/widget/render/comments*", "*://plus.googleapis.com/_/im/_/widget/render/comments*"],
+      "matches": ["*://apis.google.com/*/widget/render/comments*", "*://plus.googleapis.com/*/widget/render/comments*"],
       "js": ["youtube_comments.js"],
       "run_at": "document_start",
       "all_frames": true
