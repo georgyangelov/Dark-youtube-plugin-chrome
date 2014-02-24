@@ -4,73 +4,188 @@ body
 	background: none !important;
 }
 
-.kv8eNc, .yJa, .Mza, .DJa, .uPa, .tvb
+/* White background cancellation */
+.yJa, /* Top level container */
+.DJa, /* Container for the 'All Comments' text */
+.Mza, /* Container for the 'Share your thoughts' box + your profile picture */
+.BJa  /* Container for the 'Top Comments' button */ 
 {
 	/* For debugging. */
 	/* background-color: #1b1b1b !important; */
 	background: none !important;
 }
 
-.DJa
+/* ------------------ ALL COMMENTS ------------------ */
+/* Root: <div class="wPa">...</div>                   */
+/* -------------------------------------------------- */
+.DJa /* Container for the 'All Comments' text. */
 {
-	background: none !important;
+	color: #EEE !important;
+}
+
+
+/* ------------------- COMMENT BOX ------------------ */
+/* Root: <div class="CKa dOa">...</div>               */
+/* -------------------------------------------------- */
+
+.E5 /* The comment box */
+{
+	background-color: #494949 !important;
+	border: 1px solid #666 !important;
+    border-top: 1px solid #656565 !important;
+    color: #eee;
+    text-shadow: 0 1px 1px #666 !important;
+}
+.Jea /* The speech bubble from the comment box to your profile image */
+{
+	border: 6px solid #656565 !important;
+	border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+}
+.Mga /* The speech bubble from the comment box to your profile image */
+{
+	border: 7px solid #494949 !important;
+	border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+}
+
+/* --------------- TOP COMMENTS BUTTON -------------- */
+/* Root: <div class="uPa BJa">...</div>               */
+/* -------------------------------------------------- */
+
+.xN.d-y-r-c             /* Container for the comment sort button */
+{
+    background-color: #454545 !important;
+    background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+    box-shadow: inset 0 1px 2px #333 !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 1px 0 #333 !important;
+    opacity: .6 !important;
+}
+.d-y-r-c.d-y-r-c-u  /* Container for the comment sort button on mouse over */
+{
+	opacity: .7 !important;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #666 !important;
+	border: 1px solid #666 !important;
+}
+
+.xN .d-y-r-c-ha /* Container for the button text */
+{
 	color: #fff !important;
 }
-
-/* Original shared post for which the above comment is in reply to. */
-.dga
+.xN .d-y-r-c-Qa /* Container for the arrow next to the button text */
 {
-	background-color: #262626 !important;
-	border:1px solid #333 !important;
+	-webkit-filter: grayscale(1) invert(1);
+	opacity: 1.0 !important;
 }
 
-.ve.oba, .dn, .Aq, .OF
-{
-	color: #666 !important;
-}
+/* ------------------- COMMENTS --------------------  */
+/* Root: <div class="pga">...</div>                   */
+/* Comment structure (interesting parts):
+ *     <div class="Yp yt Xa"> Container for entire comment block
+ *         <div class="ju"> Another container
+ *             <div class="ki"> Another container
+ *                 <div class="ve oba HPa"> Container for the original comment
+ *                     ...
+ *                     <div class="f5 wy"> Container for the comment author, post time
+ *                     <div class="pf Al"> Container for the comment content
+ *                     <div class="pf Al"> Container for "___ originally shared this" (not always present)
+ *                         <div class="dga"> Another container
+ *                     <div class="REa Sea"> Container for the comment footer (Reply, Like, Dislike)
+ *                 <div class="Cx fr"> Container for the replies
+ *                     ...
+ *                         <div class="Ik Wv"> Container for each reply
+ *                             <div class="Wi lg via"> Another container
+ *                                 ...
+ *                                 <div class="Jx"> Container for the picture, header, and content
+ *                                 ...
+ *                                 <div class="REa Sea"> Container for the footer
+ */
+/* -------------------------------------------------- */
 
-/* "This"; in the context of '<username> originally shared this' */
-.qg
+/* These control the text color of a comment in one way or another */
+.ve.oba,  /* Default text color for all visible parts of a comment block */
+.dn,      /* Text color for the comment content (overrides .ve.oba) */
+.Aq       /* Text color for the comment content of a reply */
 {
-	color: #666;
+	color: #888 !important;
 }
+/*.OF*/
 
-/* Comment score */
-.bmd
-{
-	color: #999 !important;
-}
-
-/* Commenter name + Show Recent Button */
-.Ub, .LEa
+.Mpa a,  /* Link for the commentor name (This needs to be styled so the hover underline is the same color as the text.) */
+.Ub,     /* The commentor name */
+.fR > a, /* Link for the commentor name in a reply (This needs to be styled so the hover underline is the same color as the text.) */
+.via .TD /* The commentor name in a reply */
 {
 	color: #ccc !important;
 }
 
-/* Special commenters */
-.Kgb, .Y8b .TD
+.Kgb,    /* The video author has a special background behind his name (sometimes?) when he comments. */
+.Y8b .TD /* The video author has a special background behind his name (sometimes?) when he comments in a reply. */
 {
 	background-color: #383838 !important;
 }
 
-.proflink, .ot-hashtag
+.vDc /* Verified commentors have a checkbox next to their name (only if they are also the video author?) */
+{
+	-webkit-filter: grayscale(1) invert(1);
+}
+.b-p /* The container for the 'Verified Name' box that pops up when you hover over .vDc */
+{
+	-webkit-box-shadow: 1px 1px rgba(229,229,229,.1) !important;
+    box-shadow: 1px 1px rgba(229,229,229,.1) !important;
+	background-color: #262626 !important;
+    border: 1px solid #444 !important;
+    color: #aaa !important;
+}
+.b-p-Aa .b-p-Q, /* Part of the speech bubble arrow for .b-p */
+.b-p-Aa .b-p-T  /* Part of the speech bubble arrow for .b-p */
+{
+	border-color: #444 transparent !important;
+}
+
+.bmd  /* Comment score */
+{
+	color: #999 !important;
+}
+
+.proflink,   /* A link to a G+ profile, embedded inside a comment */
+.ot-hashtag  /* A link to a hashtag, embedded inside a comment */
+{
+	color: #aaa;
+}
+.proflinkPrefix /* The '+' that appear in front of profile links */
 {
 	color: #888;
 }
-.proflinkPrefix
+
+.dga /* Container for "___ originally shared this". */
 {
-	color: #666;
+	background-color: #262626 !important;
+	border:1px solid #333 !important;
+}
+/* "This"; in the context of '_____ originally shared this' */
+.qg
+{
+	color: #888;
 }
 
 /* Like/Dislike comment buttons */
-.LJa {
+.MJa, /* Like button */
+.LJa  /* Dislike button */
+{
+	-webkit-filter: grayscale(1) invert(1);
 }
-.MJa {
+
+.Bl /* Down arrow, next to 'View all XX replies' */
+{
+	-webkit-filter: grayscale(1) invert(1);
+	opacity: .5 !important;
 }
-.MJa:hover {
-}
-.LJa:hover {
-}
+
+
+/* --------------------- BUTTONS -------------------- */
+/* -------------------------------------------------- */
 
 /* Show More Button */
 .r0 
