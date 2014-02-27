@@ -117,6 +117,12 @@
 	border-right: 1px solid #1f1f1f !important;
 }
 
+#masthead-appbar
+{
+	background: transparent !important;
+	border-bottom: 1px solid #2f2f2f !important;
+}
+
 /* Fix the video controls button gradient */
 #masthead-appbar .yt-uix-button,
 .html5-video-controls .yt-uix-button
@@ -600,6 +606,11 @@ body .branded-page-related-channels-item .subscribe-hh-label
 {
 	background: none !important;
 	border-top: 1px solid #292929 !important;
+}
+
+.feed-header
+{
+	border-bottom: 1px solid #2f2f2f !important;
 }
 
 #watch-discussion

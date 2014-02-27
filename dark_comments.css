@@ -73,7 +73,7 @@ body
 {
 	color: #fff !important;
 }
-.xN .d-y-r-c-Qa /* Container for the arrow next to the button text */
+.xN .d-y-r-c-Qa, .ena /* Container for the arrow next to the button text */
 {
 	-webkit-filter: grayscale(1) invert(1);
 	opacity: 1.0 !important;
