@@ -2,7 +2,6 @@
 #logo,
 #masthead-search .search-btn-component .yt-uix-button-content,
 #yt-masthead-user .yt-uix-button-icon-bell,
-
 .yt-uix-button-icon-watch-dislike,
 .yt-uix-button-icon-watch-like,
 .yt-uix-button-icon-action-panel-stats,
@@ -39,10 +38,14 @@
 	background: #ccc !important;
 }
 
-#masthead-container,
+#yt-masthead-container,
 #appbar-guide-menu,
-.appbar-menu,
-#appbar-guide-menu, .guide-flyout,
+.appbar-menu
+{
+	background-color: #222 !important;
+}
+
+.guide-flyout,
 .cardified-page .yt-card
 {
 	background: none !important;
@@ -123,6 +126,11 @@
 	border-bottom: 1px solid #2f2f2f !important;
 }
 
+#yt-masthead-user-displayname
+{
+	color: #888 !important;
+}
+
 /* Fix the video controls button gradient */
 #masthead-appbar .yt-uix-button,
 .html5-video-controls .yt-uix-button
@@ -142,7 +150,6 @@
 
 body,
 #masthead-appbar-container,
-#yt-masthead-container,
 .watch-branded #watch-main-container,
 .watch-branded #watch-sidebar {
 	color: #fff !important;
@@ -328,6 +335,7 @@ body .yt-uix-button-text[disabled] {
 }
 
 .yt-tile-default.video-list-item a .title,
+.watch-sidebar-head,
 #watch-sidebar .video-list-item .title {
 	color: white !important;
 }
@@ -335,6 +343,21 @@ body .yt-uix-button-text[disabled] {
 #watch-sidebar .video-list-item:hover .title {
 	color: black !important;
 }
+
+#watch7-sidebar .watch-sidebar-foot a,
+{
+	color: #888 !important;
+}
+
+/* Watch Description Extra
+ * (aka, Buy on...) */
+
+ .metadata-info-title
+ {
+ 	color: #ccc !important;
+ }
+
+.metadata-info-title
 
 /* Watch MFU */
 
@@ -353,6 +376,12 @@ body .yt-uix-button-text[disabled] {
 .yt-uix-pager .yt-uix-pager-link,
 .yt-uix-pager .yt-uix-pager-selected {
 	color: #fff !important;
+}
+
+.yt-badge
+{
+	color: #888 !important;
+	border: 1px solid #444 !important;
 }
 
 /* Masthead Section */
