@@ -712,6 +712,7 @@ body #masthead-expanded-container,
 #masthead-expanded .masthead-expanded-menu-header,
 #watch7-sidebar .video-list-item .title,
 #watch7-sidebar .video-list-item:hover .title,
+#watch-headline-title,
 .yt-uix-expander-head
 {
 	color: white !important;
@@ -752,6 +753,15 @@ body #masthead-expanded-container,
 {
 	border-bottom-color: #930 !important;
 	opacity: 1 !important;
+}
+
+.ypc-transact-info
+{
+	color: #999 !important;
+}
+.ypc-offer-detail-title a
+{
+	color: #ccc !important;
 }
 
 .yt-uix-button-subscribe-branded .yt-uix-button-content span,
