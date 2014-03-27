@@ -53,7 +53,7 @@ body
 /* Root: <div class="uPa BJa">...</div>               */
 /* -------------------------------------------------- */
 
-.xN.d-y-r-c             /* Container for the comment sort button */
+.xN.d-y-r-c /* Container for the comment sort button */
 {
     background-color: #454545 !important;
     background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
@@ -79,6 +79,15 @@ body
 	opacity: 1.0 !important;
 }
 
+/* ---------------- SHOW RECENT POSTS --------------- */
+/* Root: <div class="sPa 00b">...</div>               */
+/* -------------------------------------------------- */
+
+.yDa /* Container for the 'X more recent posts' text */
+{
+	background: none !important;
+}
+
 /* ------------------- COMMENTS --------------------  */
 /* Root: <div class="pga">...</div>                   */
 /* Comment structure (interesting parts):
@@ -89,7 +98,7 @@ body
  *                     ...
  *                     <div class="f5 wy"> Container for the comment author, post time
  *                     <div class="pf Al"> Container for the comment content
- *                     <div class="pf Al"> Container for "___ originally shared this" (not always present)
+ *                     <div class="dga"> Container for "___ originally shared this" (not always present)
  *                         <div class="dga"> Another container
  *                     <div class="REa Sea"> Container for the comment footer (Reply, Like, Dislike)
  *                 <div class="Cx fr"> Container for the replies
@@ -106,11 +115,11 @@ body
 /* These control the text color of a comment in one way or another */
 .ve.oba,  /* Default text color for all visible parts of a comment block */
 .dn,      /* Text color for the comment content (overrides .ve.oba) */
-.Aq       /* Text color for the comment content of a reply */
+.Aq,      /* Text color for the comment content of a reply */
+.OF       /* Text color for the OP comment of a shared G+ link to the video */
 {
 	color: #888 !important;
 }
-/*.OF*/
 
 .Mpa a,  /* Link for the commentor name (This needs to be styled so the hover underline is the same color as the text.) */
 .Ub,     /* The commentor name */
