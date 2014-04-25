@@ -45,10 +45,15 @@
 	background-color: #222 !important;
 }
 
+.guide-flyout
+{
+	border: 1px solid #808080 !important;
+}
+
 .guide-flyout,
 .cardified-page .yt-card
 {
-	background: none !important;
+	background: #222 !important;
 }
 
 .site-center-aligned .yt-card 
@@ -313,6 +318,11 @@ body .yt-uix-button-text[disabled] {
 	color: #333 !important;
 }*/
 
+.exp-css-ellipsis .yt-ui-ellipsis
+{
+    background: none !important;
+}
+
 .yt-alert-naked .yt-alert-content {
 	color: #fff !important;
 }
@@ -563,7 +573,7 @@ body .branded-page-related-channels-item .subscribe-hh-label
 /* Youtube Redesign */
 #yt-masthead-container
 {
-	border-bottom: 1px solid #292929;
+	border-bottom: 1px solid #292929 !important;
 }
 
 .guide-item, .guide-header-item
