@@ -6,7 +6,6 @@
 .yt-uix-button-icon-watch-like,
 .yt-uix-button-icon-action-panel-stats,
 .yt-uix-button-icon-action-panel-report,
-.feed-author-bubble,
 .compact-shelf .yt-uix-shelfslider-prev:hover .yt-uix-shelfslider-prev-arrow,
 .compact-shelf .yt-uix-shelfslider-next:hover .yt-uix-shelfslider-next-arrow,
 #footer-logo img,
@@ -833,6 +832,18 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
     border-left: 1px solid #292929 !important;
     border-right: 1px solid #292929 !important;
     background: #333 !important;
+}
+
+/* Subscription Page */
+
+.feed-author-bubble
+{
+	-webkit-filter: invert(1);
+}
+
+.feed-item-author
+{
+	-webkit-filter: invert(1);
 }
 
 /* Channel Page */
