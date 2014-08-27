@@ -376,6 +376,15 @@ body .yt-uix-button-text[disabled] {
  	color: #ccc !important;
  }
 
+ /* Watch action buttons */
+
+.yt-uix-button-icon-action-panel-details,
+.yt-uix-button-icon-action-panel-share, 
+.yt-uix-button-icon-action-panel-addto
+{
+	-webkit-filter: invert(1);
+}
+
 .metadata-info-title
 
 /* Watch MFU */
@@ -543,6 +552,10 @@ body .branded-page-related-channels-item .subscribe-hh-label
 
 #watch-description-text {
 	color: #666 !important;
+}
+
+.yt-card .yt-uix-tabs {
+	border-bottom-color: #333 !important;
 }
 
 /* Comments */
