@@ -522,6 +522,23 @@ a.context-link:hover {
 	background-color: #666 !important;
 }
 
+.watch8 #action-panel-details a {
+	color: #999 !important;
+}
+
+.watch8 .watch-extras-section .content {
+	color: #999 !important;
+}
+
+#watch8-action-buttons {
+	border-top: 1px solid #333 !important;
+}
+
+.watch8 .yt-uix-button-icon-action-panel-overflow,
+.watch8 .yt-uix-button-icon-action-panel-dismiss {
+	-webkit-filter: invert(1);
+}
+
 #flag-video-panel h3,
 #flag-video-panel label,
 #flag-video-panel-buttons,
