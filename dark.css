@@ -380,7 +380,8 @@ body .yt-uix-button-text[disabled] {
 
 .yt-uix-button-icon-action-panel-details,
 .yt-uix-button-icon-action-panel-share, 
-.yt-uix-button-icon-action-panel-addto
+.yt-uix-button-icon-action-panel-addto,
+.yt-uix-button-icon-action-panel-none-addto
 {
 	-webkit-filter: invert(1);
 }
