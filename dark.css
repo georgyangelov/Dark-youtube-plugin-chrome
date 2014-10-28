@@ -337,6 +337,9 @@ body .yt-uix-button-text[disabled] {
 }
 
 /* Related */
+#watch7-sidebar .video-list .video-list-item .stat {
+	color: #888 !important;
+}
 #watch-sidebar .video-list-item a:hover {
 	background-color: white !important;
 	border-bottom-color: #999 !important;
