@@ -9,8 +9,9 @@
 .compact-shelf .yt-uix-shelfslider-prev:hover .yt-uix-shelfslider-prev-arrow,
 .compact-shelf .yt-uix-shelfslider-next:hover .yt-uix-shelfslider-next-arrow,
 #footer-logo img,
-#footer .yt-uix-button-icon-footer-language
-
+#footer .yt-uix-button-icon-footer-language,
+#footer .yt-uix-button-icon-footer-history,
+#footer .yt-uix-button-icon-questionmark
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -538,9 +539,13 @@ a.context-link:hover {
 	border-top: 1px solid #333 !important;
 }
 
-.watch8 .yt-uix-button-icon-action-panel-overflow,
+.watch-secondary-actions .yt-uix-button-icon-action-panel-overflow,
 .watch8 .yt-uix-button-icon-action-panel-dismiss {
 	-webkit-filter: invert(1);
+}
+
+#action-panel-details a {
+	color: #999 !important;
 }
 
 #flag-video-panel h3,
