@@ -758,6 +758,7 @@ body #masthead-expanded-container,
 .yt-lockup2 a:visited,
 .yt-lockup2 a,
 #watch7-user-header .yt-user-name,
+#watch7-user-header .yt-user-info a,
 .watch-view-count
 {
 	color: #CCC !important;
@@ -848,9 +849,19 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 
 /* Playlist */
 
-.pl-header .pl-header-title 
+#pl-header .pl-header-title 
 {
     color: #fff !important;
+}
+
+#pl-header .pl-header-details
+{
+	color: #aaa !important;
+}
+
+#pl-header .pl-header-description 
+{
+    color: #999 !important;
 }
 
 .pl-video 
