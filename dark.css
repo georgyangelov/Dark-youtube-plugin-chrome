@@ -438,8 +438,9 @@ body .yt-uix-button-text[disabled] {
 /* Watch Headline Section */
 
 #watch-headline h1,
-#eow-title-input {
-	color: #fff !important;
+#eow-title-input,
+#eow-title {
+	color: white !important;
 }
 
 #masthead-user-expander .yt-uix-expander-head,
