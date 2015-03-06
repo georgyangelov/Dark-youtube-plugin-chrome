@@ -92,7 +92,6 @@
 #eow-description,
 #watch-description-extra-info .watch-likes-dislikes,
 #watch-description-extra-info .watch-likes-dislikes .dislikes,
-.comment-text,
 .masthead-user-username,
 .masthead-expanded-menu-item a,
 .epic-nav-item-heading
@@ -585,17 +584,6 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	border-bottom-color: #333 !important;
 }
 
-/* Comments */
-
-.comments-section h4 {
-	border-bottom-color: #333 !important;
-}
-
-.comments-post-alert {
-	background-color: #333 !important;
-}
-
-
 /* Footer */
 
 #footer ul {
@@ -701,11 +689,6 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	border-bottom: 1px solid #2f2f2f !important;
 }
 
-#watch-discussion
-{
-	border-color: #292929 !important;
-}
-
 body #footer-container
 {
 	background-color: #222 !important;
@@ -744,8 +727,7 @@ body #masthead-expanded-container,
 #watch7-headline, #watch7-notification-area, #watch7-user-header,
 #watch7-action-buttons,
 #watch7-action-panels,
-#watch7-discussion,
-#comments-view hr
+#watch7-discussion
 {
 	border-color: #292929 !important;
 }
@@ -923,3 +905,138 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 {
     border-left: 1px solid #292929 !important;
 }
+
+/*----------------------------------------------------------------------------*/
+/************************** VIDEO DISCUSSION (Comments) ***********************/
+/* Root: <div id="watch-discussion">...</div>                                 */
+/*----------------------------------------------------------------------------*/
+
+/* ------------------ ALL COMMENTS ------------------ */
+/* Root: <div class="all-comments">...</div>          */
+/* -------------------------------------------------- */
+
+#watch-discussion .all-comments,   /* Container for the 'All Comments' text. */
+#watch-discussion .all-comments a  /* 'All Comments' text */
+{
+	background: none !important;
+	color: #EEE !important;
+}
+
+
+/* ------------------- COMMENT BOX ------------------ */
+/* Root: <div id="yt-comments-sb-container">...</div> */
+/* -------------------------------------------------- */
+
+#watch-discussion #yt-comments-sb-container .box /* The comment box */
+{
+	background-color: #494949 !important;
+	border: 1px solid #666 !important;
+    border-top: 1px solid #656565 !important;
+    color: #eee;
+    text-shadow: 0 1px 1px #666 !important;
+}
+#watch-discussion #yt-comments-sb-container .callout-outer /* The speech bubble from the comment box to your profile image */
+{
+	border: 6px solid #656565 !important;
+	border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+}
+#watch-discussion #yt-comments-sb-container .callout-inner /* The speech bubble from the comment box to your profile image */
+{
+	border: 7px solid #494949 !important;
+	border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+}
+
+
+/* ------------------- COMMENTS --------------------  */
+/* Root: <div class="comments embedded">...</div>     */
+/* Comment structure (interesting parts):
+ *     <div class="comments-list"> Container for entire comment block
+ *         <div class="comment-entry"> Another container
+ *             <div class="comment-item yt-commentbox-top"> Container for the original comment
+ *                 <a href="..." class="g-hovercard"> The mouse-over view of the commentor's profile
+ *                 <div class="content"> The content
+ *                     <div class="comment-header"> Container for commentor name & time
+ *                     <div class="comment-text"> Container for comment
+ *                     <div class="comment-footer"> Container for actions
+ *                 <div class="actions"> That little button on the right
+ *             <div class="comment-replies-header"> Container for the "View reply" button.  Not always present.
+ *             <div id="{random string}"> Container for the replies
+ *                 ...
+ *                 <div class="comment-item yt-commentbox-top reply (channel-owner)"> Container for each reply
+ *                     Same as above
+ */
+/* -------------------------------------------------- */
+
+/* These control the text color of a comment in one way or another */
+#watch-discussion .comments .comment-entry  /* Default text color for all visible parts of a comment block */
+{
+	color: #888 !important;
+}
+
+#watch-discussion .comments .comment-entry .channel-owner .user-name
+	/* Default CSS puts the .yt-card? background color behind the channel owner's name when he comments. */
+{
+	background: none !important;
+}
+
+/* Disabled for now - because it looks bad
+#watch-discussion .comments .comment-entry .comment-text-toggle a /* "Read More" and "Show less" button /
+{
+	color: #777;
+} */
+
+#watch-discussion .comments .like-count  /* Comment score */
+{
+	color: #777 !important;
+}
+
+/* NOTE - Due to a bug in YT's HTML, we can't target G+ links specifically, so this rule is picked up by all links in a comment. */
+#watch-discussion .comments .comment-entry .comment-text-content a   /* A link to a G+ profile, embedded inside a comment */
+/* .ot-hashtag   A link to a hashtag, embedded inside a comment */
+{
+	color: #aaa;
+}
+
+/* Like/Dislike comment buttons */
+#watch-discussion .comments .mod-button .mod-button-content
+{
+	-webkit-filter: grayscale(1) invert(1);
+}
+
+/* Reply button */
+#watch-discussion .comments .yt-commentbox-show-reply
+{
+	color: #666 !important;
+}
+
+#watch-discussion .comments .comment-replies-header .sprite_caret /* Down arrow, next to 'View all XX replies' */
+{
+	-webkit-filter: grayscale(1) invert(1);
+	opacity: .5 !important;
+}
+
+/* --------------------- BUTTONS -------------------- */
+/* -------------------------------------------------- */
+
+/* Show More Button */
+#watch-discussion .comments form .load-comments
+{
+	background-color: #454545 !important;
+	border-color: #333 #333 #000 !important;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .45) !important;
+	outline: 0 !important;
+	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
+	background-image: -moz-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	background-image: -o-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	background-image: -ms-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorStr="#FF474747", endColorStr="#FF2B2B2B") !important;
+	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45)) !important;
+	-moz-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	-ms-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	color: #ccc !important;
+}
+
