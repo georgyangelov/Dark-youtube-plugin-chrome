@@ -975,10 +975,20 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	color: #888 !important;
 }
 
-#watch-discussion .comments .comment-entry .channel-owner .user-name
-	/* Default CSS puts the .yt-card? background color behind the channel owner's name when he comments. */
+#watch-discussion .comments .comment-entry .user-name /* Link for the commentor name */
+{
+	background: none !important; /* YT's default CSS puts the .yt-card background color behind the channel-owner's name when he comments. */
+	color: #ccc !important;
+}
+
+/* "Shared to ____" */
+#watch-discussion .comments .comment-entry .visibility-link a /* The container is picking up our button style, need to override */
 {
 	background: none !important;
+}
+#watch-discussion .comments .comment-entry .visibility-link span /* The actual text. */
+{
+	color: #777 !important;
 }
 
 /* Disabled for now - because it looks bad
