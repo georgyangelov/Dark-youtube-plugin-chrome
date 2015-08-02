@@ -317,6 +317,11 @@ body .yt-uix-button-text[disabled] {
 	color: #333 !important;
 }*/
 
+.yt-uix-button-icon-material-upload
+{
+	-webkit-filter: invert(1);
+}
+
 .yt-uix-expander-ellipsis
 {
 	background: none !important;
