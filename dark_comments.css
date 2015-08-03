@@ -215,9 +215,3 @@ body
 	-ms-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
 	color: #ccc !important;
 }
-
-/* Hotfix AlienTube extension */
-section#alientube
-{
-  background-color: #1b1b1b;
-}

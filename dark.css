@@ -1055,3 +1055,56 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	color: #ccc !important;
 }
 
+/* AlienTube Extension */
+section#alientube
+{
+  background-color: #1b1b1b;
+}
+
+#alientube .at_tab.active
+{
+	box-shadow: none; /* remove white line above current tab */
+}
+
+#alientube #at_tabcontainer, /* All Tabs */
+#alientube .at_tab /* Individual Tabs */ 
+{
+	margin-left: 0; /* fix spacing */
+}
+
+#alientube .at_commentfield .at_writingauthor
+{
+	color: #fff; /* make "Commenting as: username" the same color as the rest of the text */
+}
+
+#alientube .at_commentfield .at_textarea, /* AlienTube Comment Box */
+#alientube .at_commentfield .at_comment_preview /* AlienTube Preview Box */ 
+{
+    background-color: #494949;
+    border: 1px solid #666;
+    border-top: 1px solid #656565;
+    color: #eee;
+    text-shadow: 0 1px 1px #666;
+}
+
+#alientube .at_commentfield .at_comment_preview .at_preview_contents
+{
+	background: repeating-linear-gradient(-45deg, transparent, transparent 40px, 
+	rgba(166, 166, 166, 0.0666667) 40px, rgba(166, 166, 166, 0.0666667) 80px) transparent; /* Slight Color Change from Default */
+}
+
+#alientube .button
+{
+    background-color: #454545;
+    border-color: #333;
+    background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%);
+    background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
+    box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45);
+	color:#fff;
+}
+
+#alientube .button:hover {
+	border-color: #fff;
+    background-color: #454545;
+}
