@@ -28,7 +28,8 @@ body
 /* Root: <div class="CKa dOa">...</div>               */
 /* -------------------------------------------------- */
 
-.E5 /* The comment box */
+.E5, /* The comment box */
+.e4 /* ytshare comment box */
 {
 	background-color: #494949 !important;
 	border: 1px solid #666 !important;
