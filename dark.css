@@ -6,6 +6,13 @@
 .yt-uix-button-icon-watch-like,
 .yt-uix-button-icon-action-panel-stats,
 .yt-uix-button-icon-action-panel-report,
+.yt-uix-menu-content, /* YT Live Report Menu */
+.yt-uix-menu.actions-menu .yt-uix-button, /* YT Live Report Button */
+.live-comments-emoji-picker-open, /* YT Live Emoji Button */
+.live-comments-emoji-type-button, /* YT Live Emoji Category Selectors */
+.addto-button:before, /* Add to + button icon */
+.action-panel-trigger-share:before, /* Share button icon */
+#action-panel-overflow-button:before, .action-panel-trigger-overflow:before, /* More button icon */
 .compact-shelf .yt-uix-shelfslider-prev:hover .yt-uix-shelfslider-prev-arrow,
 .compact-shelf .yt-uix-shelfslider-next:hover .yt-uix-shelfslider-next-arrow,
 #footer-logo img,
@@ -155,7 +162,8 @@
 body,
 #masthead-appbar-container,
 .watch-branded #watch-main-container,
-.watch-branded #watch-sidebar {
+.watch-branded #watch-sidebar
+{
 	color: #fff !important;
 	background: #1b1b1b !important;
 }
@@ -168,8 +176,8 @@ body,
 .yt-uix-button:focus,
 body .yt-uix-button-default[disabled],
 body .yt-uix-button[disabled]*/
-.yt-uix-button-default,
-.yt-uix-button,
+.yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
+.yt-uix-button:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover {
 	background-color: #454545 !important;
 	border-color: #333 #333 #000 !important;
@@ -371,7 +379,7 @@ body .yt-uix-button-text[disabled] {
 	color: black !important;
 }
 
-#watch7-sidebar .watch-sidebar-foot a,
+#watch7-sidebar .watch-sidebar-foot a
 {
 	color: #888 !important;
 }
@@ -589,6 +597,12 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	border-bottom-color: #333 !important;
 }
 
+
+.yt-card .yt-uix-tabs .yt-uix-button
+{
+	padding: 0 10px !important;/* Set Share, Embed, and Email buttons padding to .yt-uix-button's padding */
+	margin-right: 20px !important; /* Set the space between the Share, Embed, and Email buttons to be smaller */
+}
 /* Footer */
 
 #footer ul {
@@ -639,7 +653,7 @@ body .branded-page-related-channels-item .subscribe-hh-label
 }
 .branded-page-v2-masthead-ad-header .branded-page-v2-secondary-column-hidden .branded-page-v2-primary-col,.branded-page-v2-masthead-ad-header.masthead-ad-expanded .branded-page-v2-primary-col 
 {
-    border-top:1px solid #292929 !important;
+    border-top: 1px solid #292929 !important;
 }
 .branded-page-v2-primary-col .branded-page-box 
 {
@@ -706,7 +720,9 @@ body #masthead-expanded-container,
 #watch7-content,
 #watch7-headline, #watch7-notification-area, #watch7-user-header,
 #watch7-action-panels #watch7-action-panel-footer,
-.metadata-inline
+.metadata-inline,
+.live-comments-emoji-picker-tab-row, /* YT Live Emoji Category Selector */
+.live-comments-emoji-picker /* YT Live Emoji Menu */
 {
 	background-color: #1b1b1b !important;
 }
@@ -1055,7 +1071,8 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	color: #ccc !important;
 }
 
-/* AlienTube Extension */
+/* --------------- AlienTube Extension -------------- */
+/* -------------------------------------------------- */
 section#alientube
 {
   background-color: #1b1b1b;
@@ -1107,4 +1124,58 @@ section#alientube
 #alientube .button:hover {
 	border-color: #fff;
     background-color: #454545;
+}
+
+/* --------------- Livestream Comments -------------- */
+/* -------------------------------------------------- */
+ 
+ /* Slightly color every other row */
+.live-chat-widget .comment:nth-of-type(2n)
+{
+	background-color: rgba(69,69,60,0.3) !important;
+}
+
+/* Make text readable */
+.live-chat-widget .comment-text
+{
+	color: #888 !important;
+}
+
+/* Make author and commentbox readable */
+.live-chat-widget .comment .author a,
+.live-chat-widget .comments-textarea
+ {
+	color: #ccc !important;
+}
+
+/* 
+ * Subscription 
+ */
+ 
+ /* Checkboxes */
+.yt-uix-form-input-radio-container input:focus+.yt-uix-form-input-radio-element,
+.yt-uix-form-input-checkbox-container input:focus+.yt-uix-form-input-checkbox-element,
+.yt-uix-form-input-checkbox-container input:checked+.yt-uix-form-input-checkbox-element,
+.yt-uix-form-input-checkbox-container:hover .yt-uix-form-input-checkbox-element, 
+.yt-uix-form-input-radio-container:hover .yt-uix-form-input-radio-element,
+.yt-uix-form-input-radio-element, 
+.yt-uix-form-input-checkbox-element
+{
+	background-color: #fff !important;
+}
+
+/* General Popup Colors */
+.yt-uix-overlay-actions,
+.yt-dialog-fg-content, .yt-uix-overlay-fg-content,
+.yt-dialog-fg, .yt-uix-overlay-fg,
+.overlay-confirmation-preferences-dialog .overlay-confirmation-delivery-method
+{
+	color: #fff !important;
+	background: #1b1b1b !important;
+}
+
+/* Ungrayscale the emoji menu */
+.live-comments-emoji-picker 
+{
+	-webkit-filter: grayscale(0) invert(0);
 }
