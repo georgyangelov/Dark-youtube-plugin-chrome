@@ -18,9 +18,24 @@
 #footer-logo img,
 #footer .yt-uix-button-icon-footer-language,
 #footer .yt-uix-button-icon-footer-history,
-#footer .yt-uix-button-icon-questionmark
+#footer .yt-uix-button-icon-questionmark,
+.yt-uix-button-icon-report-user, /* About Page Flag */
+#yt-masthead #logo-container .logo, /* YT Logo */
+#channel-search .show-search .search-icon, /* Channel Search Button */
+.like-button-renderer-dislike-button:before, /* Dislike Button */
+.like-button-renderer-like-button:before, /* Like Button */
+.yt-dialog-close, /* Close X Button */
+#action-panel-dismiss:before, .action-panel-trigger-dismiss:before, /* Close X Button */
+.yt-uix-button-arrow:not(.yt-uix-button-default), /* Menu Arrow */
+.yt-uix-subscription-preferences-button:before /* Sub Button Menu */
 {
 	-webkit-filter: grayscale(1) invert(1);
+}
+
+/* Disable filter when activated */
+.like-button-renderer-like-button.yt-uix-button:active:before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before
+{
+	-webkit-filter: grayscale(0) invert(0);
 }
 
 .video-list-item-link .stat .viewcount,
@@ -28,7 +43,8 @@
 .artist-module h1,
 .album-row span,
 .artist-module-header h1, .artist-album-module h1,
-.feed-item-actions-line
+.feed-item-actions-line,
+.yt-dialog-fg-content .yt-dialog-title, .yt-uix-overlay-fg-content .yt-dialog-title /* Cannel Sub Popup */
 {
 	color: #CCC !important;
 }
@@ -93,6 +109,18 @@
 	box-shadow: 0 1px 0 #000,inset 0 1px 1px rgba(0,0,0,0.2) !important;
 }
 
+.yt-uix-button-menu
+{
+    background-color: #2d2d2d !important;
+    color: #fff !important;
+    border-color: #666 !important;
+}
+
+ .yt-uix-button-menu .yt-uix-button-menu-item
+ {
+	 color: #fff !important;
+ }
+
 #watch-description-extras h4,
 #watch-description,
 #watch-description-text,
@@ -101,7 +129,9 @@
 #watch-description-extra-info .watch-likes-dislikes .dislikes,
 .masthead-user-username,
 .masthead-expanded-menu-item a,
-.epic-nav-item-heading
+.epic-nav-item-heading,
+.about-stats .about-stat, /* About Page */
+.about-metadata-container
 {
 	color: #CCC !important;
 }
@@ -176,23 +206,38 @@ body,
 .yt-uix-button:focus,
 body .yt-uix-button-default[disabled],
 body .yt-uix-button[disabled]*/
-.yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
-.yt-uix-button:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
-.yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover {
-	background-color: #454545 !important;
-	border-color: #333 #333 #000 !important;
+.yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ):not(.yt-dialog-close):not(.sb-notif-off), /* first not fixes YT live emoji category selector, second fixes YT live report button, third cleans up close button, fourth is notification icon for g+ */
+/*.yt-uix-button:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
+.yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover,
+.yt-uix-button-subscribed-branded, .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus /* Sub Button */
+{
+	background-color: #0e0e0e !important;
+	border-color: #666 !important;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .45) !important;
 	outline: 0 !important;
-	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
-	background-image: -moz-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -o-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -ms-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorStr="#FF474747", endColorStr="#FF2B2B2B") !important;
-	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45)) !important;
-	-moz-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	/*background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
+	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;*/
 	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
-	-ms-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45) !important;
+}
+
+.yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal
+{
+	color: #fff !important;
+	background-color: #1b1b1b !important;
+	border-color: #666 !important;
+}
+.yt-thumb
+{
+	background-color: #2d2d2d !important;
+}
+.yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ):not(.yt-dialog-close):hover, /* first not fixes YT live emoji category selector, second fixes YT live report button, third cleans up close button */
+/*.yt-uix-button:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
+.yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover,
+.yt-uix-button-subscribed-branded:hover, .yt-uix-button-subscribe-unbranded:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus /* Sub Button */
+.yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover 
+{
+	background-color: #3d3d3d !important;
 }
 
 .yt-uix-button-link
@@ -221,8 +266,10 @@ body .yt-uix-button[disabled]*/
 	background-image: none !important;
 }
 
+
+
 .yt-uix-button-default,
-.yt-uix-button-default .yt-uix-button-content
+.yt-uix-button-default .yt-uix-button-content,
 .yt-uix-button,
 .yt-uix-button .yt-uix-button-content,
 .yt-uix-button .yt-uix-button-content span {
@@ -231,27 +278,19 @@ body .yt-uix-button[disabled]*/
 
 .yt-uix-button-default:hover,
 .yt-uix-button-text:hover {
-	background-color: #333 !important;
+	background-color: #0e0e0e !important;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #666 !important;
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #666 !important;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #666 !important;
-	-ms-box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #666 !important;
 }
 
 .yt-uix-button-default:active,
 .yt-uix-button-default.yt-uix-button-active,
 .yt-uix-button-default.yt-uix-button-toggled {
-	background-color: #454545 !important;
-	background-image: linear-gradient(to bottom, #474747 0, #2B2B2B 100%) !important;
-	background-image: -moz-linear-gradient(bottom,#474747 0,#2B2B2B 100%) !important;
-	background-image: -webkit-linear-gradient(bottom,#474747 0,#2B2B2B 100%) !important;
-	background-image: -o-linear-gradient(bottom,#474747 0,#2B2B2B 100%) !important;
-	background-image: -ms-linear-gradient(bottom,#474747 0,#2B2B2B 100%) !important;
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorStr="#FF474747", endColorStr="#FF2B2B2B") !important;
+	background-color: #0e0e0e !important;
+	/*background-image: linear-gradient(to bottom, #474747 0, #2B2B2B 100%) !important;
+	background-image: -webkit-linear-gradient(bottom,#474747 0,#2B2B2B 100%) !important;*/
 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.75), 0 1px 0 #333 !important;
-	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.75), 0 1px 0 #333 !important;
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.75), 0 1px 0 #333 !important;
-	-ms-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.75), 0 1px 0 #333 !important;
 }
 
 .yt-uix-button-default:active,
@@ -266,6 +305,7 @@ body .yt-uix-button[disabled]*/
 .yt-uix-button-group:hover .yt-uix-button,
 .yt-uix-button-group-active .yt-uix-button {
 	border-color: #666 !important;
+	background-color:#0e0e0e !important;
 }
 
 .yt-uix-button-default .yt-uix-button-arrow,
@@ -290,16 +330,11 @@ a.yt-uix-button-text .yt-uix-button-content {
 
 .yt-uix-button-text:active,
 .yt-uix-button-text.yt-uix-button-toggled {
-	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
-	background-image: -moz-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -o-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -ms-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorStr="#FF474747", endColorStr="#FF2B2B2B") !important;
+	/*background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
+	background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;*/
 	box-shadow: inset 0 1px 2px #333 !important;
-	-moz-box-shadow: inset 0 1px 2px #333 !important;
+	background-color: #0e0e0e !important;
 	-webkit-box-shadow: inset 0 1px 2px #333 !important;
-	-ms-box-shadow: inset 0 1px 2px #333 !important;
 }
 
 .yt-uix-button-text,
@@ -307,9 +342,7 @@ body .yt-uix-button-text[disabled] {
 	text-shadow: none !important;
 	border-color: #333 !important;
 	box-shadow: 0 1px 0 #333 !important;
-	-moz-box-shadow: 0 1px 0 #333 !important;
 	-webkit-box-shadow: 0 1px 0 #333 !important;
-	-ms-box-shadow: 0 1px 0 #333 !important;
 }
 
 /*.yt-tile-default,
@@ -447,6 +480,11 @@ body .yt-uix-button-text[disabled] {
 	-ms-box-shadow: 0 5px 5px #222 !important;
 }
 
+.appbar-guide-toggle
+{
+	border: 0px none transparent !important;
+}
+
 /* Watch Headline Section */
 
 #watch-headline h1,
@@ -462,12 +500,15 @@ body .yt-uix-button-text[disabled] {
 }
 
 #masthead-search-terms {
-	background-color: #898989 !important;
+	background-color: #transparent !important;
+	border: 1px solid #666 !important;
 }
 
-#masthead-search-terms input {
+#masthead-search-terms input, input, .r3 .b-P {
 	color: #fff !important;
 	text-shadow: 0 1px 1px #333 !important;
+	background-color: #898989 !important;
+	border-color: #666 !important;
 }
 
 .masthead-search-terms-border {
@@ -476,6 +517,17 @@ body .yt-uix-button-text[disabled] {
 	-moz-box-shadow: inset 0 1px 2px #333 !important;
 	-webkit-box-shadow: inset 0 1px 2px #333 !important;
 	-ms-box-shadow: inset 0 1px 2px #333 !important;
+}
+
+.gssb_m /* Dropdown Search Box */
+{
+	background-color: #2d2d2d !important;
+	color: #fff !important;
+}
+
+.gssb_i, .gssb_i td /* Dropdown Search Box */
+{
+	background-color: #0e0e0e !important;
 }
 
 /* Watch Context */
@@ -637,20 +689,13 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	color: white !important;
 }
 
-.branded-page-v2-has-solid-bg .branded-page-v2-col-container 
+.branded-page-v2-has-solid-bg .branded-page-v2-col-container, .branded-page-v2-primary-col
 {
-    border-right: 1px solid #292929;
-    border-bottom: 1px solid #292929;
-    border-left: 1px solid #292929;
-    background: none !important;
-}
-.branded-page-v2-primary-col
-{
-	border-right: 1px solid #292929 !important;
-    border-bottom: 1px solid #292929 !important;
+    border: 1px solid #292929 !important;
     border-left: 1px solid #292929 !important;
     background: none !important;
 }
+
 .branded-page-v2-masthead-ad-header .branded-page-v2-secondary-column-hidden .branded-page-v2-primary-col,.branded-page-v2-masthead-ad-header.masthead-ad-expanded .branded-page-v2-primary-col 
 {
     border-top: 1px solid #292929 !important;
@@ -1058,16 +1103,10 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	border-color: #333 #333 #000 !important;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .45) !important;
 	outline: 0 !important;
-	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
-	background-image: -moz-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
 	background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -o-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: -ms-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorStr="#FF474747", endColorStr="#FF2B2B2B") !important;
-	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45)) !important;
-	-moz-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
 	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
-	-ms-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
+	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45) !important;
 	color: #ccc !important;
 }
 
@@ -1126,13 +1165,19 @@ section#alientube
     background-color: #454545;
 }
 
-/* --------------- Livestream Comments -------------- */
+/* --------------- Livestream / YouTube Gaming Comments -------------- */
 /* -------------------------------------------------- */
  
  /* Slightly color every other row */
-.live-chat-widget .comment:nth-of-type(2n)
+.live-chat-widget .comment
 {
-	background-color: rgba(69,69,60,0.3) !important;
+	background-color: #1b1b1b !important;
+}
+
+
+ .live-chat-widget .comment:nth-of-type(2n)
+{
+	background-color: rgba(69,69,60,0.1) !important;
 }
 
 /* Make text readable */
@@ -1168,10 +1213,16 @@ section#alientube
 .yt-uix-overlay-actions,
 .yt-dialog-fg-content, .yt-uix-overlay-fg-content,
 .yt-dialog-fg, .yt-uix-overlay-fg,
-.overlay-confirmation-preferences-dialog .overlay-confirmation-delivery-method
+.overlay-confirmation-preferences-dialog .overlay-confirmation-delivery-method,
+.nbc, .nbc.xta /* Subscription Hover Popup */
 {
 	color: #fff !important;
-	background: #1b1b1b !important;
+	background: #2b2b2b !important;
+}
+
+.GQb a /* Subscription Hover Popup Name */
+{
+	color: #fff;
 }
 
 /* Ungrayscale the emoji menu */

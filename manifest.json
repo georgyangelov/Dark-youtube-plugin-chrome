@@ -8,9 +8,10 @@
   ],
   "content_scripts": [
     {
-      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
+      "matches": ["*://www.youtube.com/*", "*://apis.google.com/*/hovercard/internalcard*"],
       "js": ["youtube.js"],
-      "run_at": "document_start"
+      "run_at": "document_start",
+	  "all_frames" : true
     },
     {
       "matches": ["*://apis.google.com/*/widget/render/comments*", "*://plus.googleapis.com/*/widget/render/comments*", "*://apis.google.com/*/widget/render/ytshare*"],
