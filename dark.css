@@ -199,15 +199,7 @@ body,
 }
 
 /* Button overrides */
-
-/*.yt-uix-button-default,
-.yt-uix-button,
-.yt-uix-button-default:focus,
-.yt-uix-button:focus,
-body .yt-uix-button-default[disabled],
-body .yt-uix-button[disabled]*/
 .yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ):not(.yt-dialog-close):not(.sb-notif-off), /* first not fixes YT live emoji category selector, second fixes YT live report button, third cleans up close button, fourth is notification icon for g+ */
-/*.yt-uix-button:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover,
 .yt-uix-button-subscribed-branded, .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus /* Sub Button */
 {
@@ -215,8 +207,6 @@ body .yt-uix-button[disabled]*/
 	border-color: #666 !important;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .45) !important;
 	outline: 0 !important;
-	/*background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;
-	background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;*/
 	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
 	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45) !important;
 }
@@ -232,7 +222,6 @@ body .yt-uix-button[disabled]*/
 	background-color: #2d2d2d !important;
 }
 .yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ):not(.yt-dialog-close):hover, /* first not fixes YT live emoji category selector, second fixes YT live report button, third cleans up close button */
-/*.yt-uix-button:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ), /* first not fixes YT live emoji category selector, second fixes YT live report button */
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover,
 .yt-uix-button-subscribed-branded:hover, .yt-uix-button-subscribe-unbranded:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus /* Sub Button */
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover 
@@ -256,13 +245,6 @@ body .yt-uix-button[disabled]*/
 	text-shadow: none !important;
 	border-color: #292929 !important;
 	background-color: #1f1f1f !important;
-	/*filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fffcfcfc,EndColorStr=#fff8f8f8);
-	background-image: -moz-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
-	background-image: -ms-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
-	background-image: -o-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FCFCFC),color-stop(100%,#F8F8F8));
-	background-image: -webkit-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
-	background-image: linear-gradient(to bottom,#FCFCFC 0,#F8F8F8 100%);*/
 	background-image: none !important;
 }
 
@@ -287,8 +269,6 @@ body .yt-uix-button[disabled]*/
 .yt-uix-button-default.yt-uix-button-active,
 .yt-uix-button-default.yt-uix-button-toggled {
 	background-color: #0e0e0e !important;
-	/*background-image: linear-gradient(to bottom, #474747 0, #2B2B2B 100%) !important;
-	background-image: -webkit-linear-gradient(bottom,#474747 0,#2B2B2B 100%) !important;*/
 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.75), 0 1px 0 #333 !important;
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.75), 0 1px 0 #333 !important;
 }
@@ -330,8 +310,6 @@ a.yt-uix-button-text .yt-uix-button-content {
 
 .yt-uix-button-text:active,
 .yt-uix-button-text.yt-uix-button-toggled {
-	/*background-image: linear-gradient(to bottom,#474747 0,#2B2B2B 100%) !important;
-	background-image: -webkit-linear-gradient(top,#474747 0,#2B2B2B 100%) !important;*/
 	box-shadow: inset 0 1px 2px #333 !important;
 	background-color: #0e0e0e !important;
 	-webkit-box-shadow: inset 0 1px 2px #333 !important;
@@ -344,19 +322,6 @@ body .yt-uix-button-text[disabled] {
 	box-shadow: 0 1px 0 #333 !important;
 	-webkit-box-shadow: 0 1px 0 #333 !important;
 }
-
-/*.yt-tile-default,
-.yt-tile-default a,
-.yt-tile-visible,
-.yt-tile-visible a {
-	color: #666 !important;
-}
-
-.yt-tile-static,
-.yt-tile-visible,
-.yt-tile-default:hover {
-	color: #333 !important;
-}*/
 
 .yt-uix-button-icon-material-upload
 {
@@ -500,7 +465,7 @@ body .yt-uix-button-text[disabled] {
 }
 
 #masthead-search-terms {
-	background-color: #transparent !important;
+	background-color: transparent !important;
 	border: 1px solid #666 !important;
 }
 
@@ -513,10 +478,8 @@ body .yt-uix-button-text[disabled] {
 
 .masthead-search-terms-border {
 	border-color: #333 !important;
-	box-shadow: inset 0 1px 2px #333 !important;
-	-moz-box-shadow: inset 0 1px 2px #333 !important;
 	-webkit-box-shadow: inset 0 1px 2px #333 !important;
-	-ms-box-shadow: inset 0 1px 2px #333 !important;
+	box-shadow: inset 0 1px 2px #333 !important;
 }
 
 .gssb_m /* Dropdown Search Box */
@@ -543,23 +506,16 @@ body .yt-uix-button-text[disabled] {
 .context-link {
 	color: #ccc !important;
 	text-shadow: 0 0 0 rgba(255, 255, 255, 0),0 1px 0 #000 !important;
-	background-image: linear-gradient(to bottom,#333 0,#202020 100%) !important;
-	background-image: -moz-linear-gradient(top,#333 0,#202020 100%) !important;
 	background-image: -webkit-linear-gradient(top,#333 0,#202020 100%) !important;
-	background-image: -o-linear-gradient(top,#333 0,#202020 100%) !important;
-	background-image: -ms-linear-gradient(top,#333 0,#202020 100%) !important;
-	box-shadow: 0 1px 2px rgba(255,255,255,0.25),inset 0 0 3px #333 !important;
-	-moz-box-shadow: 0 1px 2px rgba(255,255,255,0.25),inset 0 0 3px #333 !important;
+	background-image: linear-gradient(top,#333 0,#202020 100%) !important;
 	-webkit-box-shadow: 0 1px 2px rgba(255,255,255,0.25),inset 0 0 3px #333 !important;
-	-ms-box-shadow: 0 1px 2px rgba(255,255,255,0.25),inset 0 0 3px #333 !important;
+	box-shadow: 0 1px 2px rgba(255,255,255,0.25),inset 0 0 3px #333 !important;
 }
 
 a.context-link:hover {
-	background-image: linear-gradient(to bottom,#333 0,#202020 100%) !important;
-	background-image: -moz-linear-gradient(top,#333 0,#202020 100%) !important;
+
 	background-image: -webkit-linear-gradient(top,#333 0,#202020 100%) !important;
-	background-image: -o-linear-gradient(top,#333 0,#202020 100%) !important;
-	background-image: -ms-linear-gradient(top,#333 0,#202020 100%) !important;
+	background-image: linear-gradient(top bottom,#333 0,#202020 100%) !important;
 }
 
 .context-body {
@@ -570,10 +526,8 @@ a.context-link:hover {
 
 #watch-actions-area {
 	background: #333 !important;
-	box-shadow: 0 1px 1px #666 !important;
-	-moz-box-shadow: 0 1px 1px #666 !important;
 	-webkit-box-shadow: 0 1px 1px #666 !important;
-	-ms-box-shadow: 0 1px 1px #666 !important;
+	box-shadow: 0 1px 1px #666 !important;
 }
 
 #watch-description-toggle {
@@ -626,10 +580,8 @@ body .branded-page-related-channels-item .subscribe-hh-label
 .share-panel .share-options-secondary {
 	border-color: #666 !important;
 	background-color: #333 !important;
-	box-shadow: 0 1px 0 #333,inset 0 1px 1px rgba(0,0,0,0.2) !important;
-	-moz-box-shadow: 0 1px 0 #333,inset 0 1px 1px rgba(0,0,0,0.2) !important;
 	-webkit-box-shadow: 0 1px 0 #333,inset 0 1px 1px rgba(0,0,0,0.2) !important;
-	-ms-box-shadow: 0 1px 0 #333,inset 0 1px 1px rgba(0,0,0,0.2) !important;
+	box-shadow: 0 1px 0 #333,inset 0 1px 1px rgba(0,0,0,0.2) !important;
 }
 
 .share-panel-show-more,
@@ -1056,12 +1008,6 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 {
 	color: #777 !important;
 }
-
-/* Disabled for now - because it looks bad
-#watch-discussion .comments .comment-entry .comment-text-toggle a /* "Read More" and "Show less" button /
-{
-	color: #777;
-} */
 
 #watch-discussion .comments .like-count  /* Comment score */
 {
