@@ -479,10 +479,19 @@ body .yt-uix-button-text[disabled] {
 	border: 1px solid #666 !important;
 }
 
-#masthead-search-terms input, input, .r3 .b-P {
+input, .r3 .b-P {
 	color: #fff !important;
+    background-color: #898989 !important;
 	text-shadow: 0 1px 1px #333 !important;
 	border-color: #666 !important;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff !important;
+}
+
+#masthead-search-terms input {
+    background: none !important;
 }
 
 .masthead-search-terms-border {
