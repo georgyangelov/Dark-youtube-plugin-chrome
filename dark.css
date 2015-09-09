@@ -328,6 +328,11 @@ body .yt-uix-button-text[disabled] {
 	-webkit-filter: invert(1);
 }
 
+.yt-uix-button-expander
+{
+	border-top: none !important;
+}
+
 .yt-uix-expander-ellipsis
 {
 	background: none !important;
@@ -354,6 +359,11 @@ body .yt-uix-button-text[disabled] {
 #watch-sidebar .video-list-item a:hover {
 	background-color: white !important;
 	border-bottom-color: #999 !important;
+}
+
+.watch-sidebar-separation-line
+{
+	border-bottom: 1px solid #333 !important;
 }
 
 /* Horizontal Rules */
