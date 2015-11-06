@@ -1178,7 +1178,7 @@ section#alientube
 .yt-dialog-fg-content, .yt-uix-overlay-fg-content,
 .yt-dialog-fg, .yt-uix-overlay-fg,
 .overlay-confirmation-preferences-dialog .overlay-confirmation-delivery-method,
-.nbc, .nbc.xta /* Subscription Hover Popup */
+.delete-confirmation-content p, .nbc, .nbc.xta /* Subscription Hover Popup */
 {
 	color: #fff !important;
 	background: #2b2b2b !important;
