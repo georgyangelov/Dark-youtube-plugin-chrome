@@ -27,13 +27,17 @@
 .yt-dialog-close, /* Close X Button */
 #action-panel-dismiss:before, .action-panel-trigger-dismiss:before, /* Close X Button */
 .yt-uix-button-arrow:not(.yt-uix-button-default), /* Menu Arrow */
-.yt-uix-subscription-preferences-button:before /* Sub Button Menu */
+.yt-uix-subscription-preferences-button:before, /* Sub Button Menu */
+.autoplay-bar .autoplay-info-icon, /* Autoplay i button */
+.yt-help-icon, /* i button on video stats */
+.options-renderer-question-mark /* i button in video report menu */
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
 
 /* Disable filter when activated */
-.like-button-renderer-like-button.yt-uix-button:active:before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before
+.like-button-renderer-like-button.yt-uix-button:active:before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before,
+.comments-order-menu .yt-uix-button-arrow /* Disable filter on comment dropdown */
 {
 	-webkit-filter: grayscale(0) invert(0);
 }
@@ -217,6 +221,11 @@ body,
 	background-color: #1b1b1b !important;
 	border-color: #666 !important;
 }
+
+.yt-uix-subscription-preferences-button:before, .yt-help-icon
+{
+	opacity: 1 !important;
+}
 .yt-thumb
 {
 	background-color: #2d2d2d !important;
@@ -282,7 +291,8 @@ body,
 	border-top-color: #333 !important;
 }
 
-.yt-uix-button-group:hover .yt-uix-button,
+.yt-uix-button-group .yt-uix-button:hover,
+.yt-uix-button-group .yt-uix-button:hover,
 .yt-uix-button-group-active .yt-uix-button {
 	border-color: #666 !important;
 	background-color:#0e0e0e !important;
@@ -379,7 +389,9 @@ body .yt-uix-button-text[disabled] {
 
 .yt-tile-default.video-list-item a .title,
 .watch-sidebar-head,
-#watch-sidebar .video-list-item .title {
+#watch-sidebar .video-list-item .title,
+.autoplay-bar .checkbox-on-off, /* Autoplay Label */
+.stats-sub-header /* Video Stats */ {
 	color: white !important;
 }
 .yt-tile-default.video-list-item a:hover .title,
@@ -431,14 +443,66 @@ body .yt-uix-button-text[disabled] {
 	color: #fff !important;
 }
 
-.yt-badge
+.yt-badge:not(.comments .comment-header .comment-renderer-verified-badge)
 {
 	color: #888 !important;
 	border: 1px solid #444 !important;
 }
+/* Video Stats */
+#watch-actions-stats .stats-bragbar
+{
+	background-color: transparent !important;
+	border: none !important;
+}
+#watch-actions-stats .stats-bragbar.yt-uix-button-toggled, #watch-actions-stats .stats-bragbar:hover
+{
+	background-color: #0e0e0e !important;
+	border-top-color: #666 !important;
+}
+
+#watch-actions-stats .stats-bragbar .bragbar-metric,
+#watch-actions-stats .stats-bragbar .bragbar-metric-large, #watch-actions-stats .metric-label
+{
+	color: white !important;
+}
+
+/* Report Menu */
+.action-panel-content .yt-uix-form-input-radio-container input /* Shouldn't be needed, but checkboxes look like: http://i.imgur.com/3dz2w1s.png without it */
+{
+	-webkit-appearance: radio;
+}
+
+.options-renderer-message-review
+{
+	color: #CCC !important;
+}
+
+/* Share */
+.share-email-preview-container
+{
+	background-color: #212121;
+}
+
+.share-email label, .share-panel, .share-panel-embed-legal
+{
+	color: #CCC;
+}
+.share-email-preview-container a
+{
+	color: #999 !important;
+}
+
+.share-email-note::-webkit-input-placeholder
+{
+	color: #fff;
+}
+
+.share-email-recipients::-webkit-input-placeholder
+{
+	color: #fff;
+}
 
 /* Masthead Section */
-
 #masthead-nav a,
 #masthead-user a,
 #masthead-nav a:hover,
@@ -479,11 +543,16 @@ body .yt-uix-button-text[disabled] {
 	border: 1px solid #666 !important;
 }
 
-input, .r3 .b-P {
+input, .r3 .b-P, textarea {
 	color: #fff !important;
     background-color: #898989 !important;
 	text-shadow: 0 1px 1px #333 !important;
 	border-color: #666 !important;
+}
+
+textarea
+{
+	text-shadow: none;
 }
 
 input::-webkit-input-placeholder {
