@@ -584,6 +584,11 @@ input::-webkit-input-placeholder {
 	background-color: #0e0e0e !important;
 }
 
+.gsq_a /* Visited results are colored, for only some people (see issue/#16) */
+{
+	color: white !important;
+}
+
 /* Watch Context */
 
 #watch-context {
