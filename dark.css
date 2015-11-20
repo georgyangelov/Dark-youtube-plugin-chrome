@@ -33,7 +33,8 @@
 .options-renderer-question-mark, /* i button in video report menu */
 .c4-editor-plus:before, .playlist-actions .yt-uix-button-has-icon:before, /* Playlist Icons */
 #pl-header .yt-uix-button-icon-gear, .pl-header-title-icon, /* More Playlist Icons */
-.pl-video-edit-remove:before, .pl-video-edit-remove-liked-video:before, .create-playlist-widget-button .add-new-pl-btn:before /* More Playlist Icons */
+.pl-video-edit-remove:before, .pl-video-edit-remove-liked-video:before, .create-playlist-widget-button .add-new-pl-btn:before, /* More Playlist Icons */
+.yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module /* New Subscription page style change buttons */
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
