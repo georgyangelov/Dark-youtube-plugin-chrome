@@ -30,14 +30,19 @@
 .yt-uix-subscription-preferences-button:before, /* Sub Button Menu */
 .autoplay-bar .autoplay-info-icon, /* Autoplay i button */
 .yt-help-icon, /* i button on video stats */
-.options-renderer-question-mark /* i button in video report menu */
+.options-renderer-question-mark, /* i button in video report menu */
+.c4-editor-plus:before, .playlist-actions .yt-uix-button-has-icon:before, /* Playlist Icons */
+#pl-header .yt-uix-button-icon-gear, .pl-header-title-icon, /* More Playlist Icons */
+.pl-video-edit-remove:before, .pl-video-edit-remove-liked-video:before, .create-playlist-widget-button .add-new-pl-btn:before, /* More Playlist Icons */
+.yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module /* New Subscription page style change buttons */
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
 
 /* Disable filter when activated */
 .like-button-renderer-like-button.yt-uix-button:active:before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before,
-.comments-order-menu .yt-uix-button-arrow /* Disable filter on comment dropdown */
+.comments-order-menu .yt-uix-button-arrow, /* Disable filter on comment dropdown */
+.yt-uix-button-arrow.yt-sprite /* Disable filter on more dropdown, fixes several areas, but could possible break others.  If it does, this specifically fixes playlist icons */
 {
 	-webkit-filter: grayscale(0) invert(0);
 }
@@ -580,6 +585,11 @@ input::-webkit-input-placeholder {
 	background-color: #0e0e0e !important;
 }
 
+.gsq_a /* Visited results are colored, for only some people (see issue/#16) */
+{
+	color: white !important;
+}
+
 /* Watch Context */
 
 #watch-context {
@@ -936,7 +946,6 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 }
 
 /* Playlist */
-
 #pl-header .pl-header-title
 {
     color: #fff !important;
@@ -957,19 +966,29 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
     border-bottom: 1px solid #292929 !important;
 }
 
-.pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a
+.pl-video-title, .pl-video-owner a, .pl-video-added-by, .pl-video-added-by a
+{
+	color: #888 !important;
+}
+
+.pl-video:hover .pl-video-title-link, .pl-video:hover .pl-video-owner a
 {
     color: #2793e6 !important;
 }
 .pl-video-title-link
 {
-    color: #999 !important;
+    color: #BBB !important;
 }
 
 .pl-video-handle {
     border-left: 1px solid #292929 !important;
     border-right: 1px solid #292929 !important;
     background: #333 !important;
+}
+
+.pl-header-inlineedit .c4-module-is-editable:hover
+{
+	background-color: #2b2b2b !important;
 }
 
 /* Subscription Page */
@@ -1009,6 +1028,16 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 .c4-welcome-secondary-col
 {
     border-left: 1px solid #292929 !important;
+}
+
+.channel-header .secondary-header-contents
+{
+	background-color: #222 !important;
+}
+
+.secondary-header-contents .nav-text
+{
+	color: #fff !important;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -1226,6 +1255,12 @@ section#alientube
 	color: #ccc !important;
 }
 
+/* Ungrayscale the emoji menu */
+.live-comments-emoji-picker
+{
+	-webkit-filter: grayscale(0) invert(0);
+}
+
 /*
  * Subscription
  */
@@ -1247,7 +1282,8 @@ section#alientube
 .yt-dialog-fg-content, .yt-uix-overlay-fg-content,
 .yt-dialog-fg, .yt-uix-overlay-fg,
 .overlay-confirmation-preferences-dialog .overlay-confirmation-delivery-method,
-.delete-confirmation-content p, .nbc, .nbc.xta /* Subscription Hover Popup */
+.delete-confirmation-content p, .nbc, .nbc.xta, /* Subscription Hover Popup */
+#playlist-settings-editor .yt-dialog-footer /* Playlist Settings */
 {
 	color: #fff !important;
 	background: #2b2b2b !important;
@@ -1258,8 +1294,40 @@ section#alientube
 	color: #fff;
 }
 
-/* Ungrayscale the emoji menu */
-.live-comments-emoji-picker
+.settings-form .yt-uix-form-input-checkbox-container input
 {
-	-webkit-filter: grayscale(0) invert(0);
+	-webkit-appearance: checkbox !important; /* Looks bad, but makes checkboxes show up */
+	background: none;
+	border: none;
+	-webkit-filter: invert(1) grayscale(1);
+}
+
+/* Popup info box */
+.yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border
+{
+	background: #1b1b1b !important; /* Same as body background */
+	border-color: #666 !important;	
+}
+
+.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal
+{
+	border-right-color: #1b1b1b !important;
+}
+
+/* Playlist Settings Popups */
+a.yt-uix-button-epic-nav-item.selected, a.yt-uix-button-epic-nav-item.yt-uix-button-toggled, button.yt-uix-button-epic-nav-item.selected, button.yt-uix-button-epic-nav-item.yt-uix-button-toggled, .epic-nav-item.selected, .epic-nav-item.yt-uix-button-toggled, .epic-nav-item-heading
+{
+	color: white !important;
+}
+
+a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item, .epic-nav-item, /* Buttons */
+.yt-uix-form-legend, .yt-uix-form-label, /* Page Text */
+.yt-default p, p.yt, #collaboration-settings .none-defined-text /* Collaborate tab + General p colors */
+{
+	color: #ccc !important;
+}
+
+#collaboration-settings .collaboration-settings-invite-link.disabled:before
+{
+	background: transparent !important;
 }
