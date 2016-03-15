@@ -1045,23 +1045,27 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 /* Root: <div id="watch-discussion">...</div>                                 */
 /*----------------------------------------------------------------------------*/
 
-/* ------------------ ALL COMMENTS ------------------ */
-/* Root: <div class="all-comments">...</div>          */
-/* -------------------------------------------------- */
+/* ------------------------ COMMENTS (XXX) -------------------- */
+/* Root: <div class="comment-section-header-renderer">...</div> */
+/* ------------------------------------------------------------ */
 
-#watch-discussion .all-comments,   /* Container for the 'All Comments' text. */
-#watch-discussion .all-comments a  /* 'All Comments' text */
+#watch-discussion .comment-section-header-renderer   /* Container for the 'Comments (XXX)' text. */
 {
 	background: none !important;
 	color: #EEE !important;
 }
 
 
-/* ------------------- COMMENT BOX ------------------ */
-/* Root: <div id="yt-comments-sb-container">...</div> */
-/* -------------------------------------------------- */
+/* ------------------- COMMENT BOX ----------------------- */
+/* Root: <div class="comment-simplebox-renderer">...</div> */
+/* ------------------------------------------------------- */
 
-#watch-discussion #yt-comments-sb-container .box /* The comment box */
+#watch-discussion .comment-simplebox-renderer
+{
+	border-bottom-color: #333 !important;
+}
+
+#watch-discussion .comment-simplebox-renderer .comment-simplebox-renderer-collapsed-content /* The comment box */
 {
 	background-color: #494949 !important;
 	border: 1px solid #666 !important;
@@ -1069,13 +1073,13 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
     color: #eee;
     text-shadow: 0 1px 1px #666 !important;
 }
-#watch-discussion #yt-comments-sb-container .callout-outer /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-simplebox-renderer .arrow-outer /* The speech bubble from the comment box to your profile image */
 {
 	border: 6px solid #656565 !important;
 	border-bottom-color: transparent !important;
     border-left-color: transparent !important;
 }
-#watch-discussion #yt-comments-sb-container .callout-inner /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-simplebox-renderer .arrow-inner /* The speech bubble from the comment box to your profile image */
 {
 	border: 7px solid #494949 !important;
 	border-bottom-color: transparent !important;
@@ -1083,73 +1087,67 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 }
 
 
-/* ------------------- COMMENTS --------------------  */
-/* Root: <div class="comments embedded">...</div>     */
-/* Comment structure (interesting parts):
- *     <div class="comments-list"> Container for entire comment block
- *         <div class="comment-entry"> Another container
- *             <div class="comment-item yt-commentbox-top"> Container for the original comment
- *                 <a href="..." class="g-hovercard"> The mouse-over view of the commentor's profile
- *                 <div class="content"> The content
- *                     <div class="comment-header"> Container for commentor name & time
- *                     <div class="comment-text"> Container for comment
- *                     <div class="comment-footer"> Container for actions
- *                 <div class="actions"> That little button on the right
- *             <div class="comment-replies-header"> Container for the "View reply" button.  Not always present.
- *             <div id="{random string}"> Container for the replies
- *                 ...
- *                 <div class="comment-item yt-commentbox-top reply (channel-owner)"> Container for each reply
- *                     Same as above
- */
-/* -------------------------------------------------- */
+/* ------------------------- COMMENTS --------------------------- */
+/* Root: <div class="comment-section-renderer-items">...</div>    */
+/* -------------------------------------------------------------- */
 
 /* These control the text color of a comment in one way or another */
-#watch-discussion .comments .comment-entry  /* Default text color for all visible parts of a comment block */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer  /* Default text color for all visible parts of a comment block */
 {
 	color: #888 !important;
 }
 
-#watch-discussion .comments .comment-entry .user-name /* Link for the commentor name */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-author-text /* Link for the commentor name */
 {
 	background: none !important; /* YT's default CSS puts the .yt-card background color behind the channel-owner's name when he comments. */
 	color: #ccc !important;
 }
 
-/* "Shared to ____" */
-#watch-discussion .comments .comment-entry .visibility-link a /* The container is picking up our button style, need to override */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-renderer-text-content /* The actual text. */
 {
-	background: none !important;
+	color: #888 !important;
 }
-#watch-discussion .comments .comment-entry .visibility-link span /* The actual text. */
-{
-	color: #777 !important;
-}
-
-#watch-discussion .comments .like-count  /* Comment score */
-{
-	color: #777 !important;
-}
-
-/* NOTE - Due to a bug in YT's HTML, we can't target G+ links specifically, so this rule is picked up by all links in a comment. */
-#watch-discussion .comments .comment-entry .comment-text-content a   /* A link to a G+ profile, embedded inside a comment */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-renderer-text-content a /* A link, embedded inside a comment */
 /* .ot-hashtag   A link to a hashtag, embedded inside a comment */
 {
-	color: #aaa;
+	color: #bbb;
 }
-
-/* Like/Dislike comment buttons */
-#watch-discussion .comments .mod-button .mod-button-content
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-renderer-content .read-more .yt-uix-button-content /* Read more button */
 {
-	-webkit-filter: grayscale(1) invert(1);
+	color: #bbb !important;
 }
 
-/* Reply button */
-#watch-discussion .comments .yt-commentbox-show-reply
+/* Comment footer */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-renderer-reply /* Reply button */
 {
 	color: #666 !important;
 }
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-renderer-like-count  /* Comment score */
+{
+	color: #777 !important;
+}
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-like, /* Like/Dislike comment buttons */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-dislike
+{
+	background-color: transparent !important;
+	box-shadow: none !important;
+	-webkit-filter: grayscale(1) invert(1);
+}
 
-#watch-discussion .comments .comment-replies-header .sprite_caret /* Down arrow, next to 'View all XX replies' */
+/* View/Hide all XX replies */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-down, /* root/button */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-up
+{
+	background: none !important;
+	color: #bbb !important; /* Needed for the Hide div */
+}
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-down .yt-uix-button-content span, /* text */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-up .yt-uix-button-content span
+{
+	color: #bbb !important;
+}
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-down:after, /* Down arrow */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-up:after
 {
 	-webkit-filter: grayscale(1) invert(1);
 	opacity: .5 !important;
@@ -1159,7 +1157,7 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 /* -------------------------------------------------- */
 
 /* Show More Button */
-#watch-discussion .comments form .load-comments
+#watch-discussion .load-more-button
 {
 	background-color: #454545 !important;
 	border-color: #333 #333 #000 !important;
