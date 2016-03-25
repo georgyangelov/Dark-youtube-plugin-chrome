@@ -1228,6 +1228,10 @@ section#alientube
 /* --------------- Livestream / YouTube Gaming Comments -------------- */
 /* -------------------------------------------------- */
 
+.live-chat-page {
+	background-color: #1b1b1b !important;
+}
+
  /* Slightly color every other row */
 .live-chat-widget .comment
 {
