@@ -448,6 +448,11 @@ body .yt-uix-button-text[disabled] {
 	color: #fff !important;
 }
 
+.yt-badge {
+  color: #fff !important;
+  background-color: #cc181e !important;
+}
+
 .yt-badge:not(.comments .comment-header .comment-renderer-verified-badge)
 {
 	color: #888 !important;
