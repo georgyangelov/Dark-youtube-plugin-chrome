@@ -450,7 +450,7 @@ body .yt-uix-button-text[disabled] {
 
 .yt-badge {
   color: #fff !important;
-  background-color: #cc181e !important;
+  background-color: #1b1b1b !important;
 }
 
 .comment-renderer-verified-badge {
@@ -1347,4 +1347,22 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 #collaboration-settings .collaboration-settings-invite-link.disabled:before
 {
 	background: transparent !important;
+}
+
+/* Bottom selectors */
+
+#yt-picker-country-footer, #yt-picker-language-footer, #yt-picker-safetymode-footer {
+	background: #1b1b1b !important;
+}
+
+.yt-picker-content strong {
+	color: #888 !important;
+}
+
+h3.yt {
+	color: #fff !important;
+}
+
+a {
+	color: #fff !important;
 }
