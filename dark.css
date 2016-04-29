@@ -448,11 +448,26 @@ body .yt-uix-button-text[disabled] {
 	color: #fff !important;
 }
 
-.yt-badge:not(.comments .comment-header .comment-renderer-verified-badge)
+.yt-badge {
+  color: #fff !important;
+  background-color: #cc181e !important;
+}
+
+.comment-renderer-verified-badge {
+	background-color: #1b1b1b !important;
+}
+
+.yt-badge:not(.comments .comment-header)
 {
 	color: #888 !important;
 	border: 1px solid #444 !important;
 }
+
+.video-list-item .yt-badge
+{
+  color: #ddd;
+}
+
 /* Video Stats */
 #watch-actions-stats .stats-bragbar
 {
