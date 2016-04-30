@@ -35,7 +35,8 @@
 .c4-editor-plus:before, .playlist-actions .yt-uix-button-has-icon:before, /* Playlist Icons */
 #pl-header .yt-uix-button-icon-gear, .pl-header-title-icon, /* More Playlist Icons */
 .pl-video-edit-remove:before, .pl-video-edit-remove-liked-video:before, .create-playlist-widget-button .add-new-pl-btn:before, /* More Playlist Icons */
-.yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module /* New Subscription page style change buttons */
+.yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module, /* New Subscription page style change buttons */
+.yt-uix-button-icon-channel-back /* Channel back button */
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -1366,5 +1367,12 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 /* Footer headers */
 .yt-picker-header h3.yt {
 	color: #fff !important;
+}
+
+/* Upload screen */
+
+/* Font fix */
+.upload-other-options-list .upload-option-text {
+	color: #666 !important;
 }
 
