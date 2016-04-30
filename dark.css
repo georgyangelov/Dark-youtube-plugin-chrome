@@ -734,7 +734,8 @@ body .branded-page-related-channels-item .subscribe-hh-label
 #footer-links-primary a,
 #footer-links-secondary a,
 #footer .pickers a,
-#picker-loading {
+#picker-loading,
+.yt-picker-region-name {
 	color: #fff !important;
 }
 
@@ -1350,20 +1351,20 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	background: transparent !important;
 }
 
-/* Bottom selectors */
+/* Bottom footers */
 
-#yt-picker-country-footer, #yt-picker-language-footer, #yt-picker-safetymode-footer {
-	background: #1b1b1b !important;
+/* background color of of these footers */
+#yt-picker-country-footer, #yt-picker-language-footer, #yt-picker-safetymode-footer { /* Country, language, safety mode select*/
+	background: #1b1b1b !important; /* Same as body background */
 }
 
+/* Country links color */
 .yt-picker-content strong {
 	color: #888 !important;
 }
 
-h3.yt {
+/* Footer headers */
+.yt-picker-header h3.yt {
 	color: #fff !important;
 }
 
-a {
-	color: #fff !important;
-}
