@@ -21,6 +21,7 @@
 #footer .yt-uix-button-icon-questionmark,
 .yt-uix-button-icon-report-user, /* About Page Flag */
 #yt-masthead #logo-container, /* YT Logo */
+#footer-logo .footer-logo-icon, /* YT Logo bottom */
 #channel-search .show-search .search-icon, /* Channel Search Button */
 .like-button-renderer-dislike-button:before, /* Dislike Button */
 .like-button-renderer-like-button:before, /* Like Button */
@@ -448,11 +449,26 @@ body .yt-uix-button-text[disabled] {
 	color: #fff !important;
 }
 
-.yt-badge:not(.comments .comment-header .comment-renderer-verified-badge)
+.yt-badge {
+  color: #fff !important;
+  background-color: #1b1b1b !important;
+}
+
+.comment-renderer-verified-badge {
+	background-color: #1b1b1b !important;
+}
+
+.yt-badge:not(.comments .comment-header)
 {
 	color: #888 !important;
 	border: 1px solid #444 !important;
 }
+
+.video-list-item .yt-badge
+{
+  color: #ddd;
+}
+
 /* Video Stats */
 #watch-actions-stats .stats-bragbar
 {
@@ -718,7 +734,8 @@ body .branded-page-related-channels-item .subscribe-hh-label
 #footer-links-primary a,
 #footer-links-secondary a,
 #footer .pickers a,
-#picker-loading {
+#picker-loading,
+.yt-picker-region-name {
 	color: #fff !important;
 }
 
@@ -1333,3 +1350,21 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 {
 	background: transparent !important;
 }
+
+/* Bottom footers */
+
+/* background color of of these footers */
+#yt-picker-country-footer, #yt-picker-language-footer, #yt-picker-safetymode-footer { /* Country, language, safety mode select*/
+	background: #1b1b1b !important; /* Same as body background */
+}
+
+/* Country links color */
+.yt-picker-content strong {
+	color: #888 !important;
+}
+
+/* Footer headers */
+.yt-picker-header h3.yt {
+	color: #fff !important;
+}
+
