@@ -49,6 +49,22 @@
 	-webkit-filter: grayscale(0) invert(0);
 }
 
+/* Privacy policy at first start (appears at first launch) */
+.yt-consent.yt-consent-banner.clearfix
+{
+	background: #1b1b1b !important;
+}
+.yt-consent-content 
+{
+	color: #fff !important;
+}
+
+/* Youtube language alert panel (appears at first launch) */
+.yt-alert-panel 
+{
+	background: #1b1b1b !important;
+}
+
 .video-list-item-link .stat .viewcount,
 .feed-item-owner a,
 .artist-module h1,
@@ -1097,19 +1113,33 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
     color: #eee;
     text-shadow: 0 1px 1px #666 !important;
 }
-#watch-discussion .comment-simplebox-renderer .arrow-outer /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-simplebox-renderer .arrow-outer, /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-renderer-replybox .arrow-outer /* Includes to the reply box */
 {
 	border: 6px solid #656565 !important;
 	border-bottom-color: transparent !important;
     border-left-color: transparent !important;
 }
-#watch-discussion .comment-simplebox-renderer .arrow-inner /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-simplebox-renderer .arrow-inner, /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-renderer-replybox .arrow-inner /* Includes to the reply box */
 {
 	border: 7px solid #494949 !important;
 	border-bottom-color: transparent !important;
     border-left-color: transparent !important;
 }
 
+/* ----------------- WRITING A COMMENT BOX --------------------- */
+
+#comment-simplebox.comment-simplebox
+{
+	background-color: #1b1b1b !important;
+}
+.comment-simplebox-text 
+{
+	background-color: #494949 !important;
+	border: 1px solid #666 !important;
+	color: #eee !important;
+}
 
 /* ------------------------- COMMENTS --------------------------- */
 /* Root: <div class="comment-section-renderer-items">...</div>    */
