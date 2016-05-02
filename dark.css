@@ -222,6 +222,12 @@ body,
 	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45) !important;
 }
 
+/* "Subscribed" button */
+.yt-uix-button-subscribed-unbranded
+{
+	background-color: #222 !important; /* Making it different from "subscribe" buttons */
+}
+
 .yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal
 {
 	color: #fff !important;
