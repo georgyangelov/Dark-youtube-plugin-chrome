@@ -35,7 +35,8 @@
 .c4-editor-plus:before, .playlist-actions .yt-uix-button-has-icon:before, /* Playlist Icons */
 #pl-header .yt-uix-button-icon-gear, .pl-header-title-icon, /* More Playlist Icons */
 .pl-video-edit-remove:before, .pl-video-edit-remove-liked-video:before, .create-playlist-widget-button .add-new-pl-btn:before, /* More Playlist Icons */
-.yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module /* New Subscription page style change buttons */
+.yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module, /* New Subscription page style change buttons */
+.yt-uix-button-icon-channel-back /* Channel back button */
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -46,6 +47,22 @@
 .yt-uix-button-arrow.yt-sprite /* Disable filter on more dropdown, fixes several areas, but could possible break others.  If it does, this specifically fixes playlist icons */
 {
 	-webkit-filter: grayscale(0) invert(0);
+}
+
+/* Privacy policy at first start (appears at first launch) */
+.yt-consent.yt-consent-banner.clearfix
+{
+	background: #1b1b1b !important;
+}
+.yt-consent-content 
+{
+	color: #fff !important;
+}
+
+/* Youtube language alert panel (appears at first launch) */
+.yt-alert-panel 
+{
+	background: #1b1b1b !important;
 }
 
 .video-list-item-link .stat .viewcount,
@@ -219,6 +236,12 @@ body,
 	outline: 0 !important;
 	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45) !important;
 	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45) !important;
+}
+
+/* "Subscribed" button */
+.yt-uix-button-subscribed-unbranded
+{
+	background-color: #222 !important; /* Making it different from "subscribe" buttons */
 }
 
 .yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal
@@ -1090,19 +1113,33 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
     color: #eee;
     text-shadow: 0 1px 1px #666 !important;
 }
-#watch-discussion .comment-simplebox-renderer .arrow-outer /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-simplebox-renderer .arrow-outer, /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-renderer-replybox .arrow-outer /* Includes to the reply box */
 {
 	border: 6px solid #656565 !important;
 	border-bottom-color: transparent !important;
     border-left-color: transparent !important;
 }
-#watch-discussion .comment-simplebox-renderer .arrow-inner /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-simplebox-renderer .arrow-inner, /* The speech bubble from the comment box to your profile image */
+#watch-discussion .comment-renderer-replybox .arrow-inner /* Includes to the reply box */
 {
 	border: 7px solid #494949 !important;
 	border-bottom-color: transparent !important;
     border-left-color: transparent !important;
 }
 
+/* ----------------- WRITING A COMMENT BOX --------------------- */
+
+#comment-simplebox.comment-simplebox
+{
+	background-color: #1b1b1b !important;
+}
+.comment-simplebox-text 
+{
+	background-color: #494949 !important;
+	border: 1px solid #666 !important;
+	color: #eee !important;
+}
 
 /* ------------------------- COMMENTS --------------------------- */
 /* Root: <div class="comment-section-renderer-items">...</div>    */
@@ -1366,5 +1403,12 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 /* Footer headers */
 .yt-picker-header h3.yt {
 	color: #fff !important;
+}
+
+/* Upload screen */
+
+/* Font fix */
+.upload-other-options-list .upload-option-text {
+	color: #666 !important;
 }
 
