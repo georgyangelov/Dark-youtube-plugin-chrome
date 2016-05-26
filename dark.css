@@ -1397,6 +1397,11 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	background: transparent !important;
 }
 
+.yt-uix-button .yt-uix-button-size-default .yt-uix-button-default .consent-close
+{
+	border: solid 1px tranparent !important;
+}
+
 /* Bottom footers */
 
 /* background color of of these footers */
