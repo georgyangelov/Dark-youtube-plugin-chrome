@@ -36,7 +36,10 @@
 #pl-header .yt-uix-button-icon-gear, .pl-header-title-icon, /* More Playlist Icons */
 .pl-video-edit-remove:before, .pl-video-edit-remove-liked-video:before, .create-playlist-widget-button .add-new-pl-btn:before, /* More Playlist Icons */
 .yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module, /* New Subscription page style change buttons */
-.yt-uix-button-icon-channel-back /* Channel back button */
+.yt-uix-button-icon-channel-back, /* Channel back button */
+.yt-uix-livereminder-main-button:before, /* Livestream button reminder */
+.progress-bar-progress, /* Upload progress bar */
+#subscriptions-container .filter-button .yt-uix-button-content
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -286,13 +289,19 @@ body,
 	background-image: none !important;
 }
 
+.progress-bar-text,
+.upload-time-remaining
+{
+	color: #fff !important;
+}
 
 
 .yt-uix-button-default,
 .yt-uix-button-default .yt-uix-button-content,
 .yt-uix-button,
 .yt-uix-button .yt-uix-button-content,
-.yt-uix-button .yt-uix-button-content span {
+.yt-uix-button .yt-uix-button-content span 
+{
 	color: #fff !important;
 }
 
@@ -524,12 +533,12 @@ body .yt-uix-button-text[disabled] {
 /* Share */
 .share-email-preview-container
 {
-	background-color: #212121;
+	background-color: #212121 !important;
 }
 
 .share-email label, .share-panel, .share-panel-embed-legal
 {
-	color: #CCC;
+	color: #CCC !important;
 }
 .share-email-preview-container a
 {
@@ -538,12 +547,12 @@ body .yt-uix-button-text[disabled] {
 
 .share-email-note::-webkit-input-placeholder
 {
-	color: #fff;
+	color: #fff !important;
 }
 
 .share-email-recipients::-webkit-input-placeholder
 {
-	color: #fff;
+	color: #fff !important;
 }
 
 /* Masthead Section */
@@ -587,7 +596,7 @@ body .yt-uix-button-text[disabled] {
 	border: 1px solid #666 !important;
 }
 
-input, .r3 .b-P, textarea {
+input:not(.receive-all-updates), .r3 .b-P, textarea {
 	color: #fff !important;
     background-color: #898989 !important;
 	text-shadow: 0 1px 1px #333 !important;
@@ -773,7 +782,7 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	border-bottom: 1px solid #292929 !important;
 }
 
-.guide-item, .guide-header-item
+.guide-item, .guide-header-item, #subscription-manager-container .subscription-title
 {
 	color: white !important;
 }
@@ -1388,6 +1397,11 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	background: transparent !important;
 }
 
+.yt-uix-button .yt-uix-button-size-default .yt-uix-button-default .consent-close
+{
+	border: solid 1px tranparent !important;
+}
+
 /* Bottom footers */
 
 /* background color of of these footers */
@@ -1405,10 +1419,53 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	color: #fff !important;
 }
 
+.yt-dialog-base
+{
+	background: rgba(51, 47, 47, 0.82) !important;
+}
+
+.filter-field-container
+{
+	border: 1px solid #666 !important;
+}
+
+.yt-uix-form-input-text 
+{
+	height: 30px !important;
+}
+
 /* Upload screen */
+
+#start-upload-button-single .yt-uix-button
+{
+	border: 1px solid #1b1b1b !important;
+	background: #1b1b1b !important;
+}
 
 /* Font fix */
 .upload-other-options-list .upload-option-text {
 	color: #666 !important;
+}
+
+/* Border doesn't look good, so we remove it */
+.upload-item 
+{
+	border: 1px solid #292929 !important;
+}
+
+.upload-thumb
+{
+	background: #222 !important;
+	border: 1px solid #292929 !important;
+}
+
+.progress-bar-background
+{
+	border: #292929 !important;
+}
+
+.metadata-editor-container .videosettings-form
+{
+	backgound: #1b1b1b !important;
 }
 
