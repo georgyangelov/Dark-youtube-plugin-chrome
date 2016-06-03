@@ -39,7 +39,8 @@
 .yt-uix-button-icon-channel-back, /* Channel back button */
 .yt-uix-livereminder-main-button:before, /* Livestream button reminder */
 .progress-bar-progress, /* Upload progress bar */
-#subscriptions-container .filter-button .yt-uix-button-content
+#subscriptions-container .filter-button .yt-uix-button-content,
+.yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite /* Gear button on channel select */
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -68,6 +69,7 @@
 	background: #1b1b1b !important;
 }
 
+.yt-masthead-picker-name,
 .video-list-item-link .stat .viewcount,
 .feed-item-owner a,
 .artist-module h1,
@@ -96,6 +98,27 @@
 .appbar-menu
 {
 	background-color: #222 !important;
+}
+
+.yt-masthead-picker-footer
+{
+	background: #1b1b1b !important;
+}
+
+.yt-masthead-multilogin-users
+{
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+}
+
+.yt-masthead-account-picker-option:hover
+{
+	background: rgb(62, 62, 62) !important;
+}
+
+.yt-masthead-account-picker-option
+{
+	background: #222 !important;
 }
 
 .guide-flyout
@@ -906,7 +929,8 @@ body #masthead-expanded-container,
 .yt-lockup2 a,
 #watch7-user-header .yt-user-name,
 #watch7-user-header .yt-user-info a,
-.watch-view-count
+.watch-view-count,
+.yt-masthead-picker-active-account
 {
 	color: #CCC !important;
 }
