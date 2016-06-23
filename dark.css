@@ -58,13 +58,13 @@
 {
 	background: #1b1b1b !important;
 }
-.yt-consent-content 
+.yt-consent-content
 {
 	color: #fff !important;
 }
 
 /* Youtube language alert panel (appears at first launch) */
-.yt-alert-panel 
+.yt-alert-panel
 {
 	background: #1b1b1b !important;
 }
@@ -174,6 +174,11 @@
 	 color: #fff !important;
  }
 
+.watched .video-thumb
+{
+	opacity: .4;
+}
+
 #watch-description-extras h4,
 #watch-description,
 #watch-description-text,
@@ -197,8 +202,7 @@
 }
 #masthead-user-button:hover
 {
-	background-color: #525252 !important;
-	background-image: none !important;
+	background: #525252 none !important;
 }
 
 #playlist-bar-bar-container,
@@ -287,7 +291,7 @@ body,
 }
 .yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ):not(.yt-dialog-close):hover, /* first not fixes YT live emoji category selector, second fixes YT live report button, third cleans up close button */
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover,
-.yt-uix-button-subscribed-branded:hover, .yt-uix-button-subscribe-unbranded:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus /* Sub Button */
+.yt-uix-button-subscribed-branded:hover, .yt-uix-button-subscribe-unbranded:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus, /* Sub Button */
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover
 {
 	background-color: #3d3d3d !important;
@@ -308,8 +312,7 @@ body,
 {
 	text-shadow: none !important;
 	border-color: #292929 !important;
-	background-color: #1f1f1f !important;
-	background-image: none !important;
+	background: #1f1f1f none !important;
 }
 
 .progress-bar-text,
@@ -323,7 +326,7 @@ body,
 .yt-uix-button-default .yt-uix-button-content,
 .yt-uix-button,
 .yt-uix-button .yt-uix-button-content,
-.yt-uix-button .yt-uix-button-content span 
+.yt-uix-button .yt-uix-button-content span
 {
 	color: #fff !important;
 }
@@ -483,15 +486,12 @@ body .yt-uix-button-text[disabled] {
 	-webkit-filter: invert(1);
 }
 
-.metadata-info-title
-
 /* Watch MFU */
 
 #watch-channel-discoverbox {
 	box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
 	-moz-box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
 	-webkit-box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
-	-ms-box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
 }
 
 #watch-channel-discoverbox .video-list-item .title {
@@ -592,12 +592,11 @@ body .yt-uix-button-text[disabled] {
 	box-shadow: 0 5px 5px #222 !important;
 	-moz-box-shadow: 0 5px 5px #222 !important;
 	-webkit-box-shadow: 0 5px 5px #222 !important;
-	-ms-box-shadow: 0 5px 5px #222 !important;
 }
 
 .appbar-guide-toggle
 {
-	border: 0px none transparent !important;
+	border: 0 none transparent !important;
 }
 
 /* Watch Headline Section */
@@ -683,7 +682,7 @@ input::-webkit-input-placeholder {
 a.context-link:hover {
 
 	background-image: -webkit-linear-gradient(top,#333 0,#202020 100%) !important;
-	background-image: linear-gradient(top bottom,#333 0,#202020 100%) !important;
+	background-image: linear-gradient(top,#333 0,#202020 100%) !important;
 }
 
 .context-body {
@@ -828,7 +827,7 @@ body .branded-page-related-channels-item .subscribe-hh-label
 .branded-page-v2-secondary-column-hidden .branded-page-v2-primary-col {
 	/* The original stylesheet has this set to 1px, but I think
 	 * that is a mistake. */
-    border-right: 0px solid #292929;
+    border-right: 0 solid #292929;
 }
 .branded-page-v2-has-solid-bg .branded-page-v2-secondary-col {
     border-left: 1px solid #292929 !important;
@@ -970,7 +969,7 @@ body #masthead-expanded-container,
 	height: 3.6em !important;
 	margin-left: 15px !important;
 	color: #333 !important;
-	border: 3px solid transparent;
+	border: solid transparent;
 	border-width: 3px 0 !important;
 	background: none !important;
 	opacity: 0.5 !important;
@@ -1167,7 +1166,7 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 {
 	background-color: #1b1b1b !important;
 }
-.comment-simplebox-text 
+.comment-simplebox-text
 {
 	background-color: #494949 !important;
 	border: 1px solid #666 !important;
@@ -1395,7 +1394,7 @@ section#alientube
 .yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border
 {
 	background: #1b1b1b !important; /* Same as body background */
-	border-color: #666 !important;	
+	border-color: #666 !important;
 }
 
 .yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal
@@ -1423,7 +1422,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 
 .yt-uix-button .yt-uix-button-size-default .yt-uix-button-default .consent-close
 {
-	border: solid 1px tranparent !important;
+	border: solid 1px transparent !important;
 }
 
 /* Bottom footers */
@@ -1453,7 +1452,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	border: 1px solid #666 !important;
 }
 
-.yt-uix-form-input-text 
+.yt-uix-form-input-text
 {
 	height: 30px !important;
 }
@@ -1472,7 +1471,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 }
 
 /* Border doesn't look good, so we remove it */
-.upload-item 
+.upload-item
 {
 	border: 1px solid #292929 !important;
 }
@@ -1490,6 +1489,5 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 
 .metadata-editor-container .videosettings-form
 {
-	backgound: #1b1b1b !important;
+	background: #1b1b1b !important;
 }
-
