@@ -40,7 +40,9 @@
 .yt-uix-livereminder-main-button:before, /* Livestream button reminder */
 .progress-bar-progress, /* Upload progress bar */
 #subscriptions-container .filter-button .yt-uix-button-content,
-.yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite /* Gear button on channel select */
+.yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite, /* Gear button on channel select */
+.yt-uix-button-icon.yt-uix-button-icon-upload-add.yt-sprite,
+.yt-uix-button-icon.yt-uix-button-icon-upload-cancel.yt-sprite
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -111,6 +113,16 @@
 	border-bottom: 1px solid #808080;
 }
 
+.yt-uix-card-border-arrow.yt-uix-card-border-arrow-vertical
+{
+	border-bottom-color: #929090 !important; /* Seems to match the color of the whole border */
+}
+
+.yt-uix-card-body-arrow.yt-uix-card-body-arrow-vertical
+{
+	border-bottom-color: #1b1b1b !important;
+}
+
 .yt-masthead-account-picker-option:hover
 {
 	background: rgb(62, 62, 62) !important;
@@ -169,15 +181,15 @@
     border-color: #666 !important;
 }
 
- .yt-uix-button-menu .yt-uix-button-menu-item
- {
-	 color: #fff !important;
- }
-
 .watched .video-thumb
 {
 	opacity: .4;
 }
+
+ .yt-uix-button-menu .yt-uix-button-menu-item
+ {
+	 color: #fff !important;
+ }
 
 #watch-description-extras h4,
 #watch-description,
@@ -486,12 +498,15 @@ body .yt-uix-button-text[disabled] {
 	-webkit-filter: invert(1);
 }
 
+.metadata-info-title
+
 /* Watch MFU */
 
 #watch-channel-discoverbox {
 	box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
 	-moz-box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
 	-webkit-box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
+	-ms-box-shadow: inset 0 4px 8px rgba(0,0,0,.05),0 1px 0 #333 !important;
 }
 
 #watch-channel-discoverbox .video-list-item .title {
@@ -592,6 +607,7 @@ body .yt-uix-button-text[disabled] {
 	box-shadow: 0 5px 5px #222 !important;
 	-moz-box-shadow: 0 5px 5px #222 !important;
 	-webkit-box-shadow: 0 5px 5px #222 !important;
+	-ms-box-shadow: 0 5px 5px #222 !important;
 }
 
 .appbar-guide-toggle
@@ -1457,6 +1473,14 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	height: 30px !important;
 }
 
+/* HTML5 screen */
+.html5-compatibility-table li
+{
+	background: #222 !important;
+	box-shadow: 0 1px 1px #666 !important;
+}
+
+
 /* Upload screen */
 
 #start-upload-button-single .yt-uix-button
@@ -1491,3 +1515,39 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 {
 	background: #1b1b1b !important;
 }
+
+.yt-uix-button.yt-uix-button-size-default.save-changes-button.yt-uix-tooltip.yt-uix-button-primary
+{
+	border-color: #666 !important;
+	background: #292929 !important;
+}
+
+.yt-uix-button.yt-uix-button-size-default.save-changes-button.yt-uix-tooltip.yt-uix-button-primary:hover
+{
+	background: #767676 !important;
+}
+
+/* Account settings */
+#creator-sidebar h3
+{
+	color: #ccc !important;
+}
+
+#creator-sidebar .creator-sidebar-section a 
+{
+	color: #fff !important;
+}
+
+.account-container
+{
+	background: #222 !important;
+}
+
+.account-header h1,
+h3.account-section-header,
+.account-info-label,
+.account-info.account-user-info span
+{
+	color: #fff !important;
+}
+
