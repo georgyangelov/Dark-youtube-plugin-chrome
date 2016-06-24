@@ -1533,9 +1533,14 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	color: #ccc !important;
 }
 
-#creator-sidebar .creator-sidebar-section a 
+#creator-sidebar .creator-sidebar-section a
 {
 	color: #fff !important;
+}
+
+#creator-sidebar .creator-sidebar-item:not(.selected) a:hover
+{
+	color: #1b1b1b !important;
 }
 
 .account-container
