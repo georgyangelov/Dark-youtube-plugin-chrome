@@ -41,8 +41,8 @@
 .progress-bar-progress, /* Upload progress bar */
 #subscriptions-container .filter-button .yt-uix-button-content,
 .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite, /* Gear button on channel select */
-.yt-uix-button-icon.yt-uix-button-icon-upload-add.yt-sprite,
-.yt-uix-button-icon.yt-uix-button-icon-upload-cancel.yt-sprite
+.yt-uix-button-icon.yt-uix-button-icon-upload-add.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-upload-cancel.yt-sprite,
+.vm-video-privacy.vm-public.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-unlisted.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-private.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite /* Video privacy icon */
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -1556,3 +1556,71 @@ h3.account-section-header,
 	color: #fff !important;
 }
 
+.comment-renderer-header .comment-renderer-linked-comment
+{
+	color: #fff !important;
+}
+
+.yt-thumb-square
+{
+	background: #1b1b1b !important;
+}
+
+/* Creator studio */
+#creator-sidebar>#creator-sidebar-section-id-dashboard.selected>h3 a
+{
+	background-color: #666 !important;
+}
+
+.dashboard-widget.notification,
+.dashboard-widget .dashboard-widget-content,
+.dashboard-widget .dashboard-widget-config
+{
+	background-color: #222 !important;
+}
+
+#creator-subheader h2
+{
+	color: #f1f1f1 !important;
+}
+
+#non-appbar-vm-video-actions-bar .vm-video-actions-inner
+{
+	border-bottom: 1px solid #292929 !important;
+	background: #222 !important;
+}
+
+.vm-list-view .vm-video-item-content
+{
+	background: #222 !important;
+}
+
+#vm-pagination
+{
+	background: #222 !important;
+}
+
+.vm-list-view .vm-video-title .vm-video-title-content
+{
+	color: #ccc !important;
+}
+
+.vm-list-view .vm-video-title a.vm-video-title-content:hover
+{
+	color: #eee !important;
+}
+
+.vm-list-view .vm-video-side-notification-text a
+{
+	color: #eee !important;
+}
+
+.vm-list-view .vm-video-side-view-count a
+{
+	color: #767676 !important;
+}
+
+#creator-sidebar .creator-sidebar-section:not(.selected) a:hover
+{
+	color: #1b1b1b !important;
+}
