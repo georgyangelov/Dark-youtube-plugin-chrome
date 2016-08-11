@@ -42,7 +42,8 @@
 #subscriptions-container .filter-button .yt-uix-button-content,
 .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite, /* Gear button on channel select */
 .yt-uix-button-icon.yt-uix-button-icon-upload-add.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-upload-cancel.yt-sprite,
-.vm-video-privacy.vm-public.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-unlisted.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-private.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite /* Video privacy icon */
+.vm-video-privacy.vm-public.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-unlisted.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-private.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, /* Video privacy icon */
+.yt-uix-button-icon.yt-uix-button-icon-settings-material.yt-sprite
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -284,6 +285,11 @@ body,
 .yt-uix-button-subscribed-unbranded
 {
 	background-color: #222 !important; /* Making it different from "subscribe" buttons */
+}
+
+.yt-uix-button-subscribed-unbranded:hover
+{
+	background-color: #333 !important;
 }
 
 .yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal
@@ -1185,8 +1191,21 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 .comment-simplebox-text
 {
 	background-color: #494949 !important;
-	border: 1px solid #666 !important;
 	color: #eee !important;
+}
+
+.comment-simplebox-frame
+{
+	border: 1px solid #656565 !important;
+	background-color: #494949 !important;
+}
+
+/* ------------------- FEEDBACK BANNER ------------------------ */
+/* Appears when a comment is deleted                            */
+/* ------------------------------------------------------------ */
+.feedback-banner
+{
+	background: #292929 !important;
 }
 
 /* ------------------------- COMMENTS --------------------------- */
@@ -1449,7 +1468,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 }
 
 /* Country links color */
-.yt-picker-content strong {
+.yt-picker-content a {
 	color: #888 !important;
 }
 
@@ -1468,9 +1487,14 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	border: 1px solid #666 !important;
 }
 
-.yt-uix-form-input-text
+.yt-uix-form-input-text:not(#vm-myvideos-search-box)
 {
 	height: 30px !important;
+}
+
+.advanced-search-footer
+{
+	background: #222222 !important;
 }
 
 /* HTML5 screen */
@@ -1623,4 +1647,20 @@ h3.account-section-header,
 #creator-sidebar .creator-sidebar-section:not(.selected) a:hover
 {
 	color: #1b1b1b !important;
+}
+
+/* Copyright notice */
+.creator-editor-title a,
+.copynotice-claim-details-title,
+.copynotice-header-message
+{
+	color: white !important;
+}
+
+.creator-editor-title a:hover,
+.copynotice-top-section,
+.copynotice-claim-details-table tr:not(:first-child),
+.copynotice-claim-info
+{
+	color: #ddd !important;
 }
