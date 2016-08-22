@@ -1176,20 +1176,21 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
     text-shadow: 0 1px 1px #666 !important;
 }
 #watch-discussion .comment-simplebox-renderer .arrow-outer, /* The speech bubble from the comment box to your profile image */
-#watch-discussion .comment-renderer-replybox .arrow-outer /* Includes to the reply box */
+#watch-discussion .comment-renderer-replybox .arrow-outer, /* Includes to the reply box */
+.comment-simplebox-arrow .arrow-outer
 {
 	border: 6px solid #656565 !important;
 	border-bottom-color: transparent !important;
     border-left-color: transparent !important;
 }
 #watch-discussion .comment-simplebox-renderer .arrow-inner, /* The speech bubble from the comment box to your profile image */
-#watch-discussion .comment-renderer-replybox .arrow-inner /* Includes to the reply box */
+#watch-discussion .comment-renderer-replybox .arrow-inner, /* Includes to the reply box */
+.comment-simplebox-arrow .arrow-inner
 {
 	border: 7px solid #494949 !important;
 	border-bottom-color: transparent !important;
     border-left-color: transparent !important;
 }
-
 /* ----------------- WRITING A COMMENT BOX --------------------- */
 
 #comment-simplebox.comment-simplebox
