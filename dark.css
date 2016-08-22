@@ -831,6 +831,10 @@ body .branded-page-related-channels-item .subscribe-hh-label
 	color: white !important;
 }
 
+.branded-page-v2-subnav-container {
+	border-bottom: 1px solid #292929 !important;
+}
+
 .branded-page-v2-has-solid-bg .branded-page-v2-col-container, .branded-page-v2-primary-col
 {
     border: 1px solid #292929 !important;
@@ -958,6 +962,10 @@ body #masthead-expanded-container,
 
 .yt-lockup .yt-lockup-meta a,.yt-lockup .yt-lockup-description a {
     color: #999 !important;
+}
+
+.item-section li .yt-lockup-tile {
+	border-bottom: 1px solid #292929 !important;
 }
 
 #masthead-expanded .masthead-expanded-menu-header,
