@@ -1673,3 +1673,9 @@ h3.account-section-header,
 {
 	color: #ddd !important;
 }
+
+#yt-masthead-user #sb-button-notify {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
