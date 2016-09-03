@@ -72,6 +72,17 @@
 	background: #1b1b1b !important;
 }
 
+.yt-lockup-title a
+{
+	color: #4183C4 !important;
+	
+}
+
+ .yt-lockup:hover a
+ {
+	color: #68b4ee !important;
+ }
+
 .yt-masthead-picker-name,
 .video-list-item-link .stat .viewcount,
 .feed-item-owner a,
@@ -640,7 +651,7 @@ body .yt-uix-button-text[disabled] {
 	border: 1px solid #666 !important;
 }
 
-input:not(.receive-all-updates), .r3 .b-P, textarea {
+input:not(.receive-all-updates, .yt-uix-form-input-checkbox), .r3 .b-P, textarea {
 	color: #fff !important;
     background-color: #898989 !important;
 	text-shadow: 0 1px 1px #333 !important;
