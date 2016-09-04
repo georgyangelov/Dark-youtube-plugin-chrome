@@ -72,13 +72,17 @@
 	background: #1b1b1b !important;
 }
 
-.yt-lockup-title a
+.yt-lockup-title a,
+.lohp-video-link,
+a.yt-user-name
 {
 	color: #4183C4 !important;
 	
 }
 
- .yt-lockup:hover a
+ .yt-lockup:hover a,
+ .lohp-video-link:hover,
+ a.yt-user-name:hover
  {
 	color: #68b4ee !important;
  }
@@ -669,6 +673,7 @@ input::-webkit-input-placeholder {
 
 #masthead-search-terms input {
     background: none !important;
+	color: #eee !important;
 }
 
 .masthead-search-terms-border {
@@ -1086,7 +1091,7 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 
 .pl-video:hover .pl-video-title-link, .pl-video:hover .pl-video-owner a
 {
-    color: #2793e6 !important;
+    color: #4183C4 !important;
 }
 .pl-video-title-link
 {
@@ -1490,6 +1495,10 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 /* Country links color */
 .yt-picker-content a {
 	color: #888 !important;
+}
+
+.yt-picker-content strong {
+	color: #999 !important;
 }
 
 /* Footer headers */
