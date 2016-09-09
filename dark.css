@@ -1674,8 +1674,61 @@ h3.account-section-header,
 	color: #ddd !important;
 }
 
+/* Button notify */
 #yt-masthead-user #sb-button-notify {
     background: none !important;
     border: none !important;
     box-shadow: none !important;
+}
+
+/* YT upload progress */
+.tabs .tab-header.selected a {
+  color: #fff !important;
+}
+
+.metadata-tab,
+.yt-chip input:not(.receive-all-updates), .r3 .b-P, textarea
+.yt-uix-form-input-container .yt-uix-form-input-textarea,
+.yt-uix-form-input-container .yt-uix-form-input-text {
+  background: #1b1b1b !important;
+}
+
+.sharing-balloon,
+.video-settings-tag-chips-container.yt-uix-form-input-textarea,
+.yt-uix-form-input-fluid .yt-uix-form-input-textarea {
+  border-color: #666 !important;
+}
+
+.sharing-balloon:after {
+  left: -11px;
+  top: 0;
+  z-index: 15;
+  border-right: 11px solid #666 !important;
+}
+
+.yt-chip {
+  border: 1px solid #666 !important;
+  box-shadow: 0 1px 0 #525252 !important;
+}
+
+.yt-chip span {
+  color: #fff !important;
+}
+
+.metadata-container h3 {
+  color: #c7c7c7 !important;
+}
+
+.yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ):not(.yt-dialog-close):not(.sb-notif-off), .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover, .yt-uix-button-subscribed-branded, .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus {
+  background-color: #292929 !important;
+}
+
+.location-map {
+  background-color: #d1d1d1 !important;
+}
+
+.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.map-button-search:hover {
+  background-color: #767676 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
 }
