@@ -349,6 +349,8 @@ body,
 }
 
 .progress-bar-text,
+.progress-bar-text-done,
+.progress-bar-text-upload-queued,
 .upload-time-remaining
 {
 	color: #fff !important;
@@ -1534,7 +1536,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 }
 
 
-/* Upload screen */
+/* Upload screen start button */
 
 #start-upload-button-single .yt-uix-button
 {
@@ -1752,3 +1754,14 @@ h3.account-section-header,
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }
+
+.yt-uix-form-input-text .video-settings-title,
+.basic-info-tab .video-settings-description,
+.basic-info-tab .video-settings-add-tag
+{
+	background: #666 !important;
+    color: #fff !important;
+}
+
+
+
