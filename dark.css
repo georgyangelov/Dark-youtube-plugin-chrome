@@ -1517,7 +1517,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	border: 1px solid #666 !important;
 }
 
-.yt-uix-form-input-text:not(#vm-myvideos-search-box)
+.yt-uix-form-input-text:not(#vm-myvideos-search-box):not(.yt-uix-form-input-text .video-settings-title)
 {
 	height: 30px !important;
 }
@@ -1710,7 +1710,7 @@ h3.account-section-header,
 .metadata-tab,
 .yt-chip input:not(.receive-all-updates), .r3 .b-P, textarea
 .yt-uix-form-input-container .yt-uix-form-input-textarea,
-.yt-uix-form-input-container .yt-uix-form-input-text {
+.yt-uix-form-input-container .yt-uix-form-input-text:not(.video-settings-title) {
   background: #1b1b1b !important;
 }
 
@@ -1754,12 +1754,17 @@ h3.account-section-header,
   -webkit-box-shadow: none !important;
 }
 
-.yt-uix-form-input-text .video-settings-title,
+.basic-info-tab .video-settings-title,
 .basic-info-tab .video-settings-description,
-.basic-info-tab .video-settings-add-tag
+.basic-info-tab .video-settings-add-tag:not(.video-settings-add-tag)
 {
 	background: #666 !important;
     color: #fff !important;
+}
+
+.basic-info-tab .video-settings-add-tag {
+	background: #1b1b1b !important;
+	color: #fff !important;
 }
 
 
