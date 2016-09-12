@@ -1731,3 +1731,8 @@ h3.account-section-header,
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }
+
+/* monetization popup */
+.overlay-content-container .yt-scrollable-text-container {
+    background: #2b2b2b;
+}
