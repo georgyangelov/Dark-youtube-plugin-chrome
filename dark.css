@@ -1496,7 +1496,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	border: 1px solid #666 !important;
 }
 
-.yt-uix-form-input-text:not(#vm-myvideos-search-box)
+.yt-uix-form-input-text:not(#vm-myvideos-search-box):not(#vm-playlists-search-box)
 {
 	height: 30px !important;
 }
