@@ -175,7 +175,8 @@
 	box-shadow: 0 1px 0 #000,inset 0 1px 1px rgba(0,0,0,0.2) !important;
 }
 
-.yt-uix-button-menu
+.yt-uix-button-menu,
+#vm-myvideos-search-box, #vm-playlists-search-box, #vm-tags-search-box
 {
     background-color: #2d2d2d !important;
     color: #fff !important;
@@ -1736,3 +1737,7 @@ h3.account-section-header,
 .overlay-content-container .yt-scrollable-text-container {
     background: #2b2b2b;
 }
+
+#advanced-search-button {
+  border-width: 1px;
+} 
