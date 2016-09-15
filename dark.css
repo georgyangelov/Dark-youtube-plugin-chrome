@@ -1214,13 +1214,14 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 {
 	background-color: #1b1b1b !important;
 }
-.comment-simplebox-text
-{
+.comment-simplebox-text {
 	background-color: #494949 !important;
 	color: #eee !important;
 }
 
-.comment-simplebox-frame
+.comment-simplebox-frame,
+.share-email .share-email-recipients,
+.share-email .share-email-note
 {
 	border: 1px solid #656565 !important;
 	background-color: #494949 !important;
@@ -1708,7 +1709,7 @@ h3.account-section-header,
 }
 
 .metadata-tab,
-.yt-chip input:not(.receive-all-updates), .r3 .b-P, textarea
+.yt-chip input:not(.receive-all-updates),
 .yt-uix-form-input-container .yt-uix-form-input-textarea,
 .yt-uix-form-input-container .yt-uix-form-input-text:not(.video-settings-title) {
   background: #1b1b1b !important;
@@ -1766,6 +1767,3 @@ h3.account-section-header,
 	background: #1b1b1b !important;
 	color: #fff !important;
 }
-
-
-
