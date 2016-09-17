@@ -72,6 +72,21 @@
 	background: #1b1b1b !important;
 }
 
+.yt-lockup-title a,
+.lohp-video-link,
+a.yt-user-name
+{
+	color: #4183C4 !important;
+	
+}
+
+ .yt-lockup:hover a,
+ .lohp-video-link:hover,
+ a.yt-user-name:hover
+ {
+	color: #68b4ee !important;
+ }
+
 .yt-masthead-picker-name,
 .video-list-item-link .stat .viewcount,
 .feed-item-owner a,
@@ -335,6 +350,8 @@ body,
 }
 
 .progress-bar-text,
+.progress-bar-text-done,
+.progress-bar-text-upload-queued,
 .upload-time-remaining
 {
 	color: #fff !important;
@@ -535,7 +552,7 @@ body .yt-uix-button-text[disabled] {
 	background-color: #1b1b1b !important;
 }
 
-.yt-badge:not(.comments .comment-header)
+.yt-badge:not(.comments):not(.comment-header)
 {
 	color: #888 !important;
 	border: 1px solid #444 !important;
@@ -641,7 +658,7 @@ body .yt-uix-button-text[disabled] {
 	border: 1px solid #666 !important;
 }
 
-input:not(.receive-all-updates), .r3 .b-P, textarea {
+input:not(.receive-all-updates):not(.yt-uix-form-input-checkbox), .r3 .b-P, textarea {
 	color: #fff !important;
 	text-shadow: 0 1px 1px #333 !important;
 	border-color: #666 !important;
@@ -658,6 +675,7 @@ input::-webkit-input-placeholder {
 
 #masthead-search-terms input {
     background: none !important;
+	color: #eee !important;
 }
 
 .masthead-search-terms-border {
@@ -1075,7 +1093,7 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 
 .pl-video:hover .pl-video-title-link, .pl-video:hover .pl-video-owner a
 {
-    color: #2793e6 !important;
+    color: #4183C4 !important;
 }
 .pl-video-title-link
 {
@@ -1481,6 +1499,10 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	color: #888 !important;
 }
 
+.yt-picker-content strong {
+	color: #999 !important;
+}
+
 /* Footer headers */
 .yt-picker-header h3.yt {
 	color: #fff !important;
@@ -1496,7 +1518,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 	border: 1px solid #666 !important;
 }
 
-.yt-uix-form-input-text:not(#vm-myvideos-search-box):not(#vm-playlists-search-box)
+.yt-uix-form-input-text:not(#vm-myvideos-search-box):not(.yt-uix-form-input-text):not(.video-settings-title):not(#vm-playlists-search-box)
 {
 	height: 30px !important;
 }
@@ -1514,7 +1536,7 @@ a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item,
 }
 
 
-/* Upload screen */
+/* Upload screen start button */
 
 #start-upload-button-single .yt-uix-button
 {
@@ -1689,7 +1711,7 @@ h3.account-section-header,
 .metadata-tab,
 .yt-chip input:not(.receive-all-updates), .r3 .b-P, textarea
 .yt-uix-form-input-container .yt-uix-form-input-textarea,
-.yt-uix-form-input-container .yt-uix-form-input-text {
+.yt-uix-form-input-container .yt-uix-form-input-text:not(.video-settings-title) {
   background: #1b1b1b !important;
 }
 
@@ -1731,6 +1753,19 @@ h3.account-section-header,
   background-color: #767676 !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
+}
+
+.basic-info-tab .video-settings-title,
+.basic-info-tab .video-settings-description,
+.basic-info-tab .video-settings-add-tag:not(.video-settings-add-tag)
+{
+	background: #666 !important;
+    color: #fff !important;
+}
+
+.basic-info-tab .video-settings-add-tag {
+	background: #1b1b1b !important;
+	color: #fff !important;
 }
 
 /* monetization popup */
