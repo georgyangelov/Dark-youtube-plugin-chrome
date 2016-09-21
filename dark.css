@@ -47,7 +47,11 @@
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
-
+/* slider button */
+.yt-uix-shelfslider .yt-uix-shelfslider-prev, .yt-uix-shelfslider .yt-uix-shelfslider-next
+{
+	background: #444 !important;
+}
 /* Disable filter when activated */
 .like-button-renderer-like-button.yt-uix-button:active:before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before,
 .comments-order-menu .yt-uix-button-arrow, /* Disable filter on comment dropdown */
