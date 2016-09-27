@@ -81,7 +81,7 @@
 a.yt-user-name
 {
 	color: #4183C4 !important;
-	
+
 }
 
  .yt-lockup:hover a,
@@ -1286,6 +1286,24 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	-webkit-filter: grayscale(1) invert(1);
 }
 
+#comment-section-renderer .comment-renderer .sprite-comment-actions:hover:before {
+	opacity: .85 !important;
+}
+
+#comment-section-renderer .comment-renderer .sprite-comment-actions[data-action-on]:before {
+	opacity: 1 !important;
+}
+
+#comment-section-renderer .sprite-like[data-action-on]:before {
+	background-position-x: -98px !important;
+  background-position-y: -53px !important;
+}
+
+#comment-section-renderer .sprite-dislike[data-action-on]:before {
+	background-position-x: -138px !important;
+  background-position-y: -0px !important;
+}
+
 /* View/Hide all XX replies */
 #watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-down, /* root/button */
 #watch-discussion .comment-section-renderer-items .comment-thread-renderer .comment-replies-renderer-expander-up
@@ -1779,4 +1797,4 @@ h3.account-section-header,
 
 #advanced-search-button {
   border-width: 1px;
-} 
+}
