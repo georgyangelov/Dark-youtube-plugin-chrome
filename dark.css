@@ -63,6 +63,12 @@
 	color: #fff !important;
 }
 
+/* "How does this video compare" question */
+.question-shelf-heading h4
+{
+	color: #fff !important;
+}
+
 /* Youtube language alert panel (appears at first launch) */
 .yt-alert-panel
 {
@@ -76,7 +82,7 @@
 .album-row span,
 .artist-module-header h1, .artist-album-module h1,
 .feed-item-actions-line,
-.yt-dialog-fg-content .yt-dialog-title, .yt-uix-overlay-fg-content .yt-dialog-title /* Cannel Sub Popup */
+.yt-dialog-fg-content .yt-dialog-title, .yt-uix-overlay-fg-content .yt-dialog-title /* Channel Sub Popup */
 {
 	color: #CCC !important;
 }
