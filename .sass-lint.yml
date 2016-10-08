@@ -1,0 +1,24 @@
+options:
+  merge-default-rules: false
+
+files:
+  include: 'sass/**/*.scss'
+
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  no-warn: 1
+
+  mixins-before-declarations:
+    - 2
+
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+
+  indentation:
+    - 2
+    -
+      size: 2

@@ -1,0 +1,23 @@
+{
+  "name": "brunch-app",
+  "description": "Makes YouTube go dark-side",
+  "author": "",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "^1.2.0"
+  }
+}
