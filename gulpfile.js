@@ -9,6 +9,7 @@ var gulp     = require('gulp'),
 
     PATHS = {
         content_script: 'src/scripts/content.js',
+        background_scripts: 'src/scripts/background/**/*',
         background_script: 'src/scripts/background.js',
         styles: 'src/styles/**/*.scss',
         static: 'static/',
@@ -50,7 +51,7 @@ gulp.task('scripts:content', function() {
 
 gulp.task('scripts:background', function() {
     return gulp
-        .src(PATHS.background_script)
+        .src([PATHS.background_scripts, PATHS.background_script])
         .pipe(babel(BABEL_CONFIG))
         .pipe(concat('background_script.js', {newLine: "\n"}))
         .pipe(gulp.dest(PATHS.build));
@@ -68,6 +69,7 @@ gulp.task('build', ['clean', 'lint', 'styles', 'scripts', 'extension:prepare']);
 gulp.task('watch', ['build'], function() {
     gulp.watch([
         PATHS.content_script,
+        PATHS.background_scripts,
         PATHS.background_script,
         PATHS.styles
     ], ['build']);

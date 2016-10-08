@@ -1,6 +1,5 @@
 class StyleSwitcher {
     constructor(fileUrl) {
-        console.log(document.querySelector('head'));
         this.head = document.getElementsByTagName('head')[0];
         this.link = document.createElement('link');
 
@@ -40,17 +39,14 @@ class StyleSwitcher {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    var styleURL = chrome.extension.getURL('styles.css'),
-        styleSwitcher = new StyleSwitcher(styleURL);
+const styleURL      = chrome.extension.getURL('styles.css'),
+      styleSwitcher = new StyleSwitcher(styleURL),
+      port          = chrome.runtime.connect({name: 'dark-youtube'});
 
-    chrome.runtime.sendMessage({method: 'isActive', args: {}}, (isActive) => {
-        styleSwitcher.switch(isActive);
-    });
-
-    chrome.runtime.onMessage.addListener((status) => {
-        if (typeof status.active !== 'undefined') {
-            styleSwitcher.switch(status.active);
-        }
-    });
+port.onMessage.addListener((status) => {
+    if (typeof status.active !== 'undefined') {
+        styleSwitcher.switch(status.active);
+    }
 });
+
+port.postMessage({method: 'notifyActiveStatus', args: {}});

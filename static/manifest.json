@@ -10,7 +10,7 @@
     {
       "matches": ["*://www.youtube.com/*"],
       "js": ["content_script.js"],
-      "run_at": "document_start",
+      "run_at": "document_end",
       "all_frames" : true
     }
   ],
