@@ -4,5 +4,7 @@
 ytd-masthead {
   background-color: lighten($background, 5%);
 
-  iron-icon { @include invert; }
+  &.ytd-masthead-1 {
+    iron-icon { @include invert; }
+  }
 }
