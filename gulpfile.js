@@ -1,5 +1,6 @@
 var gulp     = require('gulp'),
     sass     = require('gulp-sass'),
+    babel    = require('gulp-babel'),
     concat   = require('gulp-concat'),
     postcss  = require('gulp-postcss'),
     sassLint = require('gulp-sass-lint'),
@@ -7,9 +8,15 @@ var gulp     = require('gulp'),
     del = require('del'),
 
     PATHS = {
+        content_script: 'src/scripts/content.js',
+        background_script: 'src/scripts/background.js',
         styles: 'src/styles/**/*.scss',
         static: 'static/',
         build: 'build/'
+    },
+
+    BABEL_CONFIG = {
+        presets: ['es2015']
     };
 
 gulp.task('clean', function() {
@@ -33,8 +40,20 @@ gulp.task('styles', function() {
         .pipe(gulp.dest(PATHS.build));
 });
 
-gulp.task('styles:watch', function() {
-    gulp.watch(PATHS.styles, ['build']);
+gulp.task('scripts:content', function() {
+    return gulp
+        .src(PATHS.content_script)
+        .pipe(babel(BABEL_CONFIG))
+        .pipe(concat('content_script.js', {newLine: "\n"}))
+        .pipe(gulp.dest(PATHS.build));
+});
+
+gulp.task('scripts:background', function() {
+    return gulp
+        .src(PATHS.background_script)
+        .pipe(babel(BABEL_CONFIG))
+        .pipe(concat('background_script.js', {newLine: "\n"}))
+        .pipe(gulp.dest(PATHS.build));
 });
 
 gulp.task('extension:prepare', function() {
@@ -43,7 +62,15 @@ gulp.task('extension:prepare', function() {
         .pipe(gulp.dest(PATHS.build));
 });
 
-gulp.task('build', ['clean', 'lint', 'styles', 'extension:prepare']);
-gulp.task('watch', ['build', 'styles:watch']);
+gulp.task('scripts', ['scripts:background', 'scripts:content']);
+
+gulp.task('build', ['clean', 'lint', 'styles', 'scripts', 'extension:prepare']);
+gulp.task('watch', ['build'], function() {
+    gulp.watch([
+        PATHS.content_script,
+        PATHS.background_script,
+        PATHS.styles
+    ], ['build']);
+});
 
 gulp.task('default', ['watch']);
