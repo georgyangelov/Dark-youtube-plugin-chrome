@@ -7,11 +7,13 @@ var gulp     = require('gulp'),
     del = require('del'),
 
     PATHS = {
-        styles: './src/styles/**/*.scss'
+        styles: 'src/styles/**/*.scss',
+        static: 'static/',
+        build: 'build/'
     };
 
 gulp.task('clean', function() {
-    return del(['build']);
+    return del(PATHS.build + '/**/*');
 });
 
 gulp.task('lint', function() {
@@ -28,14 +30,20 @@ gulp.task('styles', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('styles.css', {newLine: "\n"}))
         .pipe(postcss([ require('./add_important.js')() ]))
-        .pipe(gulp.dest('./build/'));
+        .pipe(gulp.dest(PATHS.build));
 });
 
 gulp.task('styles:watch', function() {
-    gulp.watch(PATHS.styles, ['lint', 'styles']);
+    gulp.watch(PATHS.styles, ['build']);
 });
 
-gulp.task('watch', ['clean', 'styles:watch', 'lint', 'styles']);
-gulp.task('build', ['clean', 'lint', 'styles']);
+gulp.task('extension:prepare', function() {
+    return gulp
+        .src(PATHS.static + '**/*', {base: PATHS.static})
+        .pipe(gulp.dest(PATHS.build));
+});
+
+gulp.task('build', ['clean', 'lint', 'styles', 'extension:prepare']);
+gulp.task('watch', ['build', 'styles:watch']);
 
 gulp.task('default', ['watch']);
