@@ -1,11 +1,26 @@
-body {
-  // This will have `!important` appended to it automatically on build.
-  background-color: red;
+@import 'variables';
 
-  // Disables the automatic addition of `!important`. The `unimportant-` prefix is removed
-  // on build.
-  unimportant-color: green;
+body,
+ytd-app {
+  background-color: $background;
+  color: $text-color;
+}
 
-  // This will error because `!important` declarations will be added automatically
-  // fill: blue !important;
+a,
+yt-formatted-string {
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5,
+#title {
+  color: $heading-color;
+}
+
+// Stuff that have white borders
+ytd-compact-autoplay-renderer,
+ytd-video-primary-info-renderer,
+ytd-video-secondary-info-renderer,
+yt-formatted-string,
+ytd-item-section-renderer {
+  border-color: $border-color;
 }

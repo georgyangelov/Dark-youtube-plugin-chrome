@@ -1,0 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
+ytd-watch {
+  iron-icon { @include invert; }
+}

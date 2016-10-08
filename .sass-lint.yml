@@ -10,9 +10,6 @@ rules:
   placeholder-in-extend: 2
   no-warn: 1
 
-  mixins-before-declarations:
-    - 2
-
   hex-notation:
     - 2
     -
