@@ -1301,13 +1301,13 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 }
 
 #comment-section-renderer .sprite-like[data-action-on]:before {
-	background-position-x: -98px !important;
-  background-position-y: -53px !important;
+	background-position-x: -20px !important;
+  background-position-y: -164px !important;
 }
 
 #comment-section-renderer .sprite-dislike[data-action-on]:before {
-	background-position-x: -138px !important;
-  background-position-y: -0px !important;
+	background-position-x: -34px !important;
+  background-position-y: -39px !important;
 }
 
 /* View/Hide all XX replies */
