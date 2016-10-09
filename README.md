@@ -1,4 +1,5 @@
 # Dark YouTube plugin for Chrome
+[![Build Status](https://travis-ci.org/georgyangelov/Dark-youtube-plugin-chrome.svg?branch=v2-build)](https://travis-ci.org/georgyangelov/Dark-youtube-plugin-chrome)
 
 A plugin that changes the Youtube skin to a black one.
 Perfect for watching videos when it's dark.
