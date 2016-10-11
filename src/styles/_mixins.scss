@@ -1,0 +1,11 @@
+@mixin labels {
+  &,
+  yt-formatted-string,
+  a {
+    @content;
+  }
+}
+
+@mixin invert {
+  filter: grayscale(100%) invert(100%);
+}

@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+
+ytd-masthead {
+  background-color: lighten($background, 5%);
+
+  &.ytd-masthead-1 {
+    iron-icon { @include invert; }
+  }
+}
