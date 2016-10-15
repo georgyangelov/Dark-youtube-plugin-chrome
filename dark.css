@@ -1804,3 +1804,10 @@ h3.account-section-header,
 #advanced-search-button {
   border-width: 1px;
 }
+
+/* Trends badge */
+.standalone-collection-badge-renderer-text a {
+	background-color: #1b1b1b !important;
+	border: 1px solid #fff !important;
+	color: #fff !important;
+}
