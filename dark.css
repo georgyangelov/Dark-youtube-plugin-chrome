@@ -43,7 +43,8 @@
 .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite, /* Gear button on channel select */
 .yt-uix-button-icon.yt-uix-button-icon-upload-add.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-upload-cancel.yt-sprite,
 .vm-video-privacy.vm-public.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-unlisted.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-private.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, /* Video privacy icon */
-.yt-uix-button-icon.yt-uix-button-icon-settings-material.yt-sprite
+.yt-uix-button-icon.yt-uix-button-icon-settings-material.yt-sprite,
+.gaming-wordmark-sprite
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -1809,5 +1810,15 @@ h3.account-section-header,
 .standalone-collection-badge-renderer-text a {
 	background-color: #1b1b1b !important;
 	border: 1px solid #fff !important;
+	color: #fff !important;
+}
+
+/* Gaming event popup */
+#gaming-event-promo-overlay {
+	background-color: #1b1b1b !important;
+	outline: 1px solid #555 !important;
+}
+
+#gaming-event-promo-title {
 	color: #fff !important;
 }
