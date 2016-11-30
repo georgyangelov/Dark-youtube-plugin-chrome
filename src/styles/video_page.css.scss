@@ -1,6 +1,53 @@
 @import 'variables';
 @import 'mixins';
 
-ytd-watch {
-  iron-icon { @include invert; }
+ytd {
+  &-watch {
+    iron-icon {
+      &, svg {
+        @include invert;
+      }
+      circle {
+        color: $text-color;
+      }
+    }
+  }
+
+  &-video-meta-block {
+    .ytd-video-meta-block {
+      color: $text-xx-darker-color;
+    }
+  }
+}
+
+.yt-endpoint {
+  &-3 {
+    color: $text-x-darker-color;
+  }
+  &-4 {
+    color: $text-xx-darker-color;
+    padding-left: 5px;
+  }
+}
+
+.paper-button {
+  &-1 {
+    @include invert;
+    yt-formatted-string {
+      color: $text-xxxx-darker-color;
+    }
+  }
+}
+
+.ytd-comment {
+  &-action-buttons-renderer-0 {
+    color: $text-color;
+  }
+  &-renderer-0 {
+    .content-text {
+      &.ytd-comment-renderer {
+        color: $text-x-darker-color;
+      }
+    }
+  }
 }
