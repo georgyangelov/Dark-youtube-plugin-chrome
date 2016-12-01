@@ -31,6 +31,15 @@ ytd {
 }
 
 .paper-button {
+  
+  &-0 {
+    &.ytd-subscribe-button-renderer {
+      yt-formatted-string {
+        color: $text-xxx-darker-color;
+      }
+    }
+  }
+
   &-1 {
     @include invert;
     yt-formatted-string {
@@ -39,6 +48,7 @@ ytd {
   }
 }
 
+/* Comment */
 .ytd-comment {
   &-action-buttons-renderer-0 {
     color: $text-color;
@@ -51,3 +61,44 @@ ytd {
     }
   }
 }
+/* end.Comment */
+
+/* Live page */
+.live-chat-page {
+
+  .live-chat-widget {
+    .comment {
+      background: $background;
+      &-text{
+        color: $text-x-darker-color;
+      }
+    }
+
+    #live-comments-controls {
+      background: $background;
+      border-bottom: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+      border-left: 1px solid $border-color;
+    }
+
+    #comments-scroller {
+      padding-top: 0px;
+      border-bottom: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      border-left: 1px solid $border-color;
+    }
+
+    .live-chat-controls-container {
+      .buttons {
+        .yt-uix-button {
+          @include invert;
+        }
+      }
+    }
+
+    #live-comments-setting-bottom-scroll {
+      @include invert;
+    }
+  }
+}
+/* end.Live page */

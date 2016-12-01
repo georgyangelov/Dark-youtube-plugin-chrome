@@ -16,7 +16,13 @@ ytd-masthead {
 }
 
 ytd-multi-page-menu-section-renderer,
-.pager-item-0 {
+.pager-item-0,
+.ytd-simple-menu-header-renderer-0 {
   background: $background;
   border-color: $background;
+}
+
+/* Notification item */
+.ytd-notification-renderer-0 {
+  border-bottom: 1px solid $border-color;
 }
