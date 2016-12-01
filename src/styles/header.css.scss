@@ -8,3 +8,21 @@ ytd-masthead {
     iron-icon { @include invert; }
   }
 }
+
+.ytd-active {
+  &-account-header-renderer-0 {
+    height: 88px;
+  }
+}
+
+ytd-multi-page-menu-section-renderer,
+.pager-item-0,
+.ytd-simple-menu-header-renderer-0 {
+  background: $background;
+  border-color: $background;
+}
+
+/* Notification item */
+.ytd-notification-renderer-0 {
+  border-bottom: 1px solid $border-color;
+}

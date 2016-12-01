@@ -1,6 +1,104 @@
 @import 'variables';
 @import 'mixins';
 
-ytd-watch {
-  iron-icon { @include invert; }
+ytd {
+  &-watch {
+    iron-icon {
+      &, svg {
+        @include invert;
+      }
+      circle {
+        color: $text-color;
+      }
+    }
+  }
+
+  &-video-meta-block {
+    .ytd-video-meta-block {
+      color: $text-xx-darker-color;
+    }
+  }
 }
+
+.yt-endpoint {
+  &-3 {
+    color: $text-x-darker-color;
+  }
+  &-4 {
+    color: $text-xx-darker-color;
+    padding-left: 5px;
+  }
+}
+
+.paper-button {
+  
+  &-0 {
+    &.ytd-subscribe-button-renderer {
+      yt-formatted-string {
+        color: $text-xxx-darker-color;
+      }
+    }
+  }
+
+  &-1 {
+    @include invert;
+    yt-formatted-string {
+      color: $text-xxxx-darker-color;
+    }
+  }
+}
+
+/* Comment */
+.ytd-comment {
+  &-action-buttons-renderer-0 {
+    color: $text-color;
+  }
+  &-renderer-0 {
+    .content-text {
+      &.ytd-comment-renderer {
+        color: $text-x-darker-color;
+      }
+    }
+  }
+}
+/* end.Comment */
+
+/* Live page */
+.live-chat-page {
+
+  .live-chat-widget {
+    .comment {
+      background: $background;
+      &-text{
+        color: $text-x-darker-color;
+      }
+    }
+
+    #live-comments-controls {
+      background: $background;
+      border-bottom: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+      border-left: 1px solid $border-color;
+    }
+
+    #comments-scroller {
+      padding-top: 0px;
+      border-bottom: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      border-left: 1px solid $border-color;
+    }
+
+    .live-chat-controls-container {
+      .buttons {
+        .yt-uix-button {
+          @include invert;
+        }
+      }
+    }
+
+    #live-comments-setting-bottom-scroll {
+      @include invert;
+    }
+  }
+}
+/* end.Live page */

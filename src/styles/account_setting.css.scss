@@ -1,0 +1,20 @@
+@import 'variables';
+
+.ytd-account-settings{
+  &-0 {
+    .ytd-account-settings {
+      .header {
+        background: $background;
+        color: $text-color;
+      }
+      .container {
+        padding: 0px;
+      }
+    }
+
+    paper-item.ytd-account-settings {
+      background: $background;
+      color: $text-color;
+    }
+  }
+}
