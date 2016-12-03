@@ -1821,3 +1821,12 @@ h3.account-section-header,
 #gaming-event-promo-title {
 	color: #fff !important;
 }
+
+/* Player sub popup */
+.ytp-ce-expanding-overlay-background {
+	background-color: #1b1b1b !important;
+}
+
+a.ytp-ce-link:hover, a.ytp-ce-link:visited {
+	color: #fff !important;
+}
