@@ -1821,6 +1821,22 @@ h3.account-section-header,
 	color: #fff !important;
 }
 
+/* Shared videos */
+.shared-conversation-title {
+	color: #fff !important;
+}
+
+.share-info-pointer {
+	background: #1b1b1b !important;
+}
+/* Notifications rework */
+#yt-masthead-notifications-title {
+	color: #ddd !important;
+}
+#yt-masthead-notifications-content,
+#yt-masthead-notifications-content .item-section>li>.yt-lockup-tile, #yt-masthead-notifications-content .yt-ui-ellipsis {
+	background: #1b1b1b !important;
+}
 /* Player sub popup */
 .ytp-ce-expanding-overlay-background {
 	background-color: #1b1b1b !important;
