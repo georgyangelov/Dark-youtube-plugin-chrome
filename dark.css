@@ -1300,11 +1300,11 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 	opacity: 1 !important;
 }
 
-#comment-section-renderer .sprite-like[data-action-on]:before {
+#comment-section-renderer .sprite-like[aria-checked="true"]:before {
 	background-position-x: -255px !important;
   background-position-y: 0 !important;
 }
-#comment-section-renderer .sprite-dislike[data-action-on]:before {
+#comment-section-renderer .sprite-dislike[aria-checked="true"]:before {
 	background-position-x: -255px !important;
   background-position-y: -36px !important;
 }
