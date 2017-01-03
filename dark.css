@@ -684,7 +684,6 @@ input::-webkit-input-placeholder {
 }
 
 #masthead-search-terms input {
-    background: none !important;
 	color: #eee !important;
 }
 
@@ -1845,3 +1844,7 @@ h3.account-section-header,
 a.ytp-ce-link:hover, a.ytp-ce-link:visited {
 	color: #fff !important;
 }
+
+/* search field for the potential new design */
+.exp-searchbox-redesign #masthead-search {background-color: #353535 !important;}
+.exp-searchbox-redesign #masthead-search-terms input {padding-left:8px !important}
