@@ -887,6 +887,14 @@ body .branded-page-related-channels-item .subscribe-hh-label
     border-left: 1px solid #292929 !important;
 }
 
+#results li .branded-page-box {
+	border: none !important;
+}
+.vertical-shelf .vertical-shelf-expander:before
+{
+	-webkit-filter: invert(1);
+}
+
 .lohp-newspaper-shelf
 {
 	border-bottom: 1px solid #292929 !important;
