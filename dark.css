@@ -44,7 +44,8 @@
 .yt-uix-button-icon.yt-uix-button-icon-upload-add.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-upload-cancel.yt-sprite,
 .vm-video-privacy.vm-public.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-unlisted.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-private.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, /* Video privacy icon */
 .yt-uix-button-icon.yt-uix-button-icon-settings-material.yt-sprite,
-.gaming-wordmark-sprite
+.gaming-wordmark-sprite,
+.exp-comments-refresh .comment-renderer-action-menu .yt-uix-button-action-menu
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -1852,4 +1853,12 @@ h3.account-section-header,
 
 a.ytp-ce-link:hover, a.ytp-ce-link:visited {
 	color: #fff !important;
+}
+
+/* Comments bottom border */
+.exp-comments-refresh .comment-thread-renderer:not(:last-of-type) .comment-replies-renderer {
+	border-bottom: 1px solid #555 !important;
+}
+.exp-comments-refresh .comment-renderer-header a:hover {
+	color: #999 !important;
 }
