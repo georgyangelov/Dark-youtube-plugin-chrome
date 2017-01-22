@@ -563,7 +563,10 @@ body .yt-uix-button-text[disabled] {
 	background-color: #1b1b1b !important;
 }
 
-.yt-badge:not(.comments):not(.comment-header):not(.comment-renderer-verified-badge):not(.comment-author-verified-badge)
+.standalone-collection-badge-renderer-text { /* Youtube Red Featured */
+	color: #888 !important;
+}
+.yt-badge:not(.comments):not(.comment-header):not(.comment-renderer-verified-badge):not(.comment-author-verified-badge):not(.standalone-collection-badge-renderer-icon)
 {
 	color: #888 !important;
 	border: 1px solid #444 !important;
@@ -1814,7 +1817,8 @@ h3.account-section-header,
 }
 
 /* Trends badge */
-.standalone-collection-badge-renderer-text a {
+.standalone-collection-badge-renderer-text a,
+.standalone-collection-badge-renderer-icon {
 	background-color: #1b1b1b !important;
 	border: 1px solid #fff !important;
 	color: #fff !important;
