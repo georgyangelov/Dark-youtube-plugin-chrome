@@ -1866,3 +1866,48 @@ a.ytp-ce-link:hover, a.ytp-ce-link:visited {
 .exp-comments-refresh .comment-renderer-header a:hover {
 	color: #999 !important;
 }
+
+/* Youtube live chat */
+.yt-live-chat-message-input-renderer-0,
+.yt-live-chat-header-renderer-0 {
+	background: #222 !important;
+}
+
+.yt-live-chat-message-input-renderer-0 #author-name.yt-live-chat-message-input-renderer,
+.yt-live-chat-message-input-renderer-0 #count.yt-live-chat-message-input-renderer,
+.yt-live-chat-header-renderer-0,
+.yt-live-chat-icon-toggle-button-renderer-0 paper-icon-button.yt-live-chat-icon-toggle-button-renderer,
+.paper-icon-button-0 iron-icon.paper-icon-button,
+.yt-live-chat-text-message-renderer-0 #author-name.yt-live-chat-text-message-renderer {
+	color: #ccc !important;
+}
+
+.paper-icon-button-1 iron-icon.paper-icon-button {
+    color: #555 !important;
+}
+
+.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer {
+	color: hsl(0, 0%, 55%) !important;
+}
+
+.yt-live-chat-text-message-renderer-0,
+.yt-live-chat-item-list-renderer-1[allow-scroll] #items.yt-live-chat-item-list-renderer,
+.yt-live-chat-item-list-renderer-1 #items.yt-live-chat-item-list-renderer {
+	background: #1b1b1b !important;
+}
+
+.style-scope .ytd-button-renderer .x-scope .paper-icon-button-1 {
+	color: #555 !important;
+}
+.yt-live-chat-text-message-renderer-0 #message.yt-live-chat-text-message-renderer,
+.yt-live-chat-text-input-field-renderer-0 #input.yt-live-chat-text-input-field-renderer {
+	color: #fff !important;
+}
+
+.ytd-button-renderer-1 #button.ytd-button-renderer {
+	color: #999 !important;
+}
+
+.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer {
+	background: linear-gradient(to right, transparent, #333 100%) !important;
+}
