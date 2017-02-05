@@ -45,7 +45,23 @@
 .vm-video-privacy.vm-public.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-unlisted.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, .vm-video-privacy.vm-private.yt-uix-tooltip-reverse.yt-uix-tooltip.yt-sprite, /* Video privacy icon */
 .yt-uix-button-icon.yt-uix-button-icon-settings-material.yt-sprite,
 .gaming-wordmark-sprite,
-.exp-comments-refresh .comment-renderer-action-menu .yt-uix-button-action-menu
+.exp-comments-refresh .comment-renderer-action-menu .yt-uix-button-action-menu,
+#watch7-subscription-container .channel-settings-link:before,
+.creator-heart-big-unhearted,
+.creator-bar-item .yt-uix-button-icon-info,
+.creator-bar-item .yt-uix-button-icon-enhance,
+.creator-bar-item .yt-uix-button-icon-audio,
+.creator-bar-item .yt-uix-button-icon-endscreen,
+.creator-bar-item .yt-uix-button-icon-cards,
+.creator-bar-item .yt-uix-button-icon-captions,
+#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected,
+#creator-sidebar .creator-sidebar-section h3 a>.studio-icon,
+.yt-uix-button-icon.yt-uix-button-icon-add-widget.yt-sprite,
+.dashboard-widget-handle,
+.yt-uix-button-icon-dashboard-widget-config,
+.vm-list-view .vm-video-metric.video-comments .yt-sprite,
+.vm-list-view .vm-video-metric.video-likes-count .yt-sprite,
+.vm-list-view .vm-video-metric.video-dislikes-count .yt-sprite
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -561,6 +577,10 @@ body .yt-uix-button-text[disabled] {
 
 .comment-renderer-verified-badge {
 	background-color: #1b1b1b !important;
+}
+
+.yt-uix-card-body-arrow-horizontal {
+	border-left-color: #1b1b1b !important;
 }
 
 .standalone-collection-badge-renderer-text { /* Youtube Red Featured */
@@ -1719,6 +1739,74 @@ h3.account-section-header,
 	color: #1b1b1b !important;
 }
 
+#watch7-creator-bar {
+	border: 1px solid #555 !important;
+}
+
+.yt-uix-button-panel:hover .creator-bar-item .yt-uix-button-text-dark, .yt-uix-button-panel .creator-bar-item .yt-uix-button-text-dark:hover {
+	border-color: #555 !important;
+	background: #1b1b1b !important;
+}
+
+#dashboard-header h2 a:hover,
+#dashboard-header h2 a,
+#dashboard-header .dashboard-channel-link {
+	color: #fff !important;
+	text-shadow: none !important;
+}
+
+#dashboard-header .dashboard-stat-value,
+#dashboard-header .dashboard-stat-name,
+#dashboard-header .add-widget-button-label {
+	text-shadow: none !important;
+}
+
+.add-widget-menu-content li {
+	border-top: 1px solid #555 !important;
+}
+
+.add-widget-menu-item,
+.analytics-sparkline-card .infos .title {
+	color: #b8b8b8 !important;
+}
+
+.analytics-sparkline-card .infos .total {
+	color: #ccc !important;
+}
+
+.dashboard-widget-videos .video-list-item .video-title a:hover,
+.dashboard-widget-footer .dashboard-widget-view-all-link,
+.dashboard-widget-header:hover h2 a,
+.dashboard-widget-comments .comment-header a,
+.dashboard-widget-comments .selectable-item:hover .vm-link a {
+	color: #ddd !important;
+}
+
+.dashboard-widget-comments .comment-comment {
+	color: #999 !important;
+}
+
+.dashboard-widget:hover .dashboard-widget-display-title {
+	border-right: 1px solid #555 !important;
+}
+
+.dashboard-widget-header:hover {
+	background-color: #292929 !important;
+	border-bottom: 1px solid #ddd;
+}
+
+.dashboard-widget-footer .dashboard-widget-view-all-link:hover {
+	background: #444 !important;
+}
+
+.video-list-item a:hover {
+	background: #292929 !important;
+}
+
+.vm-list-view .vm-video-metrics a:hover {
+	background: #222 !important;
+}
+
 /* Copyright notice */
 .creator-editor-title a,
 .copynotice-claim-details-title,
@@ -1860,7 +1948,8 @@ a.ytp-ce-link:hover, a.ytp-ce-link:visited {
 }
 
 /* Comments bottom border */
-.exp-comments-refresh .comment-thread-renderer:not(:last-of-type) .comment-replies-renderer {
+.exp-comments-refresh .comment-thread-renderer:not(:last-of-type) .comment-replies-renderer,
+.exp-comments-refresh .comment-thread-renderer:last-of-type {
 	border-bottom: 1px solid #555 !important;
 }
 .exp-comments-refresh .comment-renderer-header a:hover {
