@@ -61,7 +61,9 @@
 .yt-uix-button-icon-dashboard-widget-config,
 .vm-list-view .vm-video-metric.video-comments .yt-sprite,
 .vm-list-view .vm-video-metric.video-likes-count .yt-sprite,
-.vm-list-view .vm-video-metric.video-dislikes-count .yt-sprite
+.vm-list-view .vm-video-metric.video-dislikes-count .yt-sprite,
+.creator-editor-nav-tabs li a .yt-sprite,
+.yt-uix-button-default .yt-uix-button-icon
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -354,7 +356,8 @@ body,
 .yt-uix-button-default:not(.live-comments-emoji-type-button):not(.comment-actions-menu-btn ):not(.yt-dialog-close):hover, /* first not fixes YT live emoji category selector, second fixes YT live report button, third cleans up close button */
 .yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover,
 .yt-uix-button-subscribed-branded:hover, .yt-uix-button-subscribe-unbranded:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribe-unbranded[disabled]:focus, /* Sub Button */
-.yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover
+.yt-uix-button-hh-default:hover, .yt-uix-button-subscription:hover, .yt-uix-button-hh-text:hover, .yt-uix-button-panel .yt-uix-button-hh-text:hover,
+.yt-uix-form-input-select-content
 {
 	background-color: #3d3d3d !important;
 }
@@ -862,8 +865,7 @@ body .branded-page-related-channels-item .subscribe-hh-label
 #footer-links-primary a,
 #footer-links-secondary a,
 #footer .pickers a,
-#picker-loading,
-.yt-picker-region-name {
+#picker-loading {
 	color: #fff !important;
 }
 
@@ -1807,6 +1809,48 @@ h3.account-section-header,
 	background: #222 !important;
 }
 
+.creator-editor-nav-tabs li a,
+#player-and-info-pane #video-info dd,
+.metadata-privacy-input,
+.yt-uix-form-input-select,
+.tabs .tab-header a:hover, .tabs .tab-header:hover a,
+.menu-tab:hover, .menu-tab.selected,
+.enhance-effect .property-title,
+.blur-effect-entry .blur-effect-title,
+.audio-ui-featured-tracks-header-title,
+.audio-ui-featured-row td,
+.timedtext-content,
+#video-settings-section,
+.comments .channel-owner .comment-header .user-name {
+	color: #ccc !important;
+}
+
+.audio-ui-featured-row td:hover {
+	color: #555 !important;
+}
+
+.metadata-privacy-input,
+#audio-ui-search-input-field,
+#featured-tracks-header,
+.timedtext-content,
+.multitrack-timeline,
+.comments .channel-owner .comment-header .user-name,
+.tabbed-page .tab.active {
+	background: #1b1b1b !important;
+}
+
+.yt-uix-form-input-select {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0) !important;
+}
+
+#video-settings-section>div a {
+	color: #888 !important;
+}
+
+.timeline-row {
+	background-color: #333 !important;
+}
+
 /* Copyright notice */
 .creator-editor-title a,
 .copynotice-claim-details-title,
@@ -1864,7 +1908,8 @@ h3.account-section-header,
   color: #fff !important;
 }
 
-.metadata-container h3 {
+.metadata-container h3,
+.single-field {
   color: #c7c7c7 !important;
 }
 
@@ -1884,7 +1929,9 @@ h3.account-section-header,
 
 .basic-info-tab .video-settings-title,
 .basic-info-tab .video-settings-description,
-.basic-info-tab .video-settings-add-tag:not(.video-settings-add-tag)
+.basic-info-tab .video-settings-add-tag:not(.video-settings-add-tag),
+.translation-editor-original-input,
+.translation-editor-original-input:hover
 {
 	background: #666 !important;
     color: #fff !important;
@@ -1935,7 +1982,8 @@ h3.account-section-header,
 	color: #ddd !important;
 }
 #yt-masthead-notifications-content,
-#yt-masthead-notifications-content .item-section>li>.yt-lockup-tile, #yt-masthead-notifications-content .yt-ui-ellipsis {
+#yt-masthead-notifications-content .item-section>li>.yt-lockup-tile, #yt-masthead-notifications-content .yt-ui-ellipsis,
+#inline-editor-main {
 	background: #1b1b1b !important;
 }
 /* Player sub popup */
@@ -1999,4 +2047,9 @@ a.ytp-ce-link:hover, a.ytp-ce-link:visited {
 
 .yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer {
 	background: linear-gradient(to right, transparent, #333 100%) !important;
+}
+
+.yt-live-chat-item-list-renderer-1[allow-scroll] #item-scroller.yt-live-chat-item-list-renderer,
+.live-dashboard .player-controls-buttons {
+	background: #1b1b1b !important;
 }
