@@ -48,22 +48,17 @@
 .exp-comments-refresh .comment-renderer-action-menu .yt-uix-button-action-menu,
 #watch7-subscription-container .channel-settings-link:before,
 .creator-heart-big-unhearted,
-.creator-bar-item .yt-uix-button-icon-info,
-.creator-bar-item .yt-uix-button-icon-enhance,
-.creator-bar-item .yt-uix-button-icon-audio,
-.creator-bar-item .yt-uix-button-icon-endscreen,
-.creator-bar-item .yt-uix-button-icon-cards,
-.creator-bar-item .yt-uix-button-icon-captions,
-#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected,
-#creator-sidebar .creator-sidebar-section h3 a>.studio-icon,
+.creator-bar-item .yt-uix-button-icon-info, .creator-bar-item .yt-uix-button-icon-enhance, .creator-bar-item .yt-uix-button-icon-audio, .creator-bar-item .yt-uix-button-icon-endscreen, .creator-bar-item .yt-uix-button-icon-cards, .creator-bar-item .yt-uix-button-icon-captions,
+#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar .creator-sidebar-section h3 a>.studio-icon,
 .yt-uix-button-icon.yt-uix-button-icon-add-widget.yt-sprite,
 .dashboard-widget-handle,
 .yt-uix-button-icon-dashboard-widget-config,
-.vm-list-view .vm-video-metric.video-comments .yt-sprite,
-.vm-list-view .vm-video-metric.video-likes-count .yt-sprite,
-.vm-list-view .vm-video-metric.video-dislikes-count .yt-sprite,
+.vm-list-view .vm-video-metric.video-comments .yt-sprite, .vm-list-view .vm-video-metric.video-likes-count .yt-sprite, .vm-list-view .vm-video-metric.video-dislikes-count .yt-sprite,
 .creator-editor-nav-tabs li a .yt-sprite,
-.yt-uix-button-default .yt-uix-button-icon
+.yt-uix-button-default .yt-uix-button-icon,
+.comments .mod-button .default-state,
+.track.attribution .license-button .track-action-icon, .track .play-pause-button.play-visible .track-action-icon, .track:hover .play-pause-button.play-hover .track-action-icon, .track.expanded .play-pause-button.play-hover .track-action-icon, .track .expand-button .track-action-icon, /* Audio library */
+img.storyboard-icon.video-icon, img.storyboard-icon.audio-icon
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -1683,7 +1678,11 @@ h3.account-section-header,
 }
 
 /* Creator studio */
-#creator-sidebar>#creator-sidebar-section-id-dashboard.selected>h3 a
+#creator-sidebar .creator-sidebar-branding h1 {
+	color: #767676 !important;
+}
+
+#creator-sidebar>#creator-sidebar-section-id-dashboard.selected>h3 a, #creator-sidebar>.creator-sidebar-section.selected>h3 a
 {
 	background-color: #666 !important;
 }
@@ -1809,6 +1808,7 @@ h3.account-section-header,
 	background: #222 !important;
 }
 
+/* Creative studio background + colors */
 .creator-editor-nav-tabs li a,
 #player-and-info-pane #video-info dd,
 .metadata-privacy-input,
@@ -1821,12 +1821,40 @@ h3.account-section-header,
 .audio-ui-featured-row td,
 .timedtext-content,
 #video-settings-section,
-.comments .channel-owner .comment-header .user-name {
+.comments .channel-owner .comment-header .user-name,
+.comments .comment-footer-action,
+.subscribers-table .description-text a,
+#comment-settings .comment-settings-title,
+#comment-settings .comment-settings-label,
+.account-feature-v2-grid-items .account-features-v2-grid-item-title,
+.account-status-community-guidelines-status-v2-title,
+.account-status-copyright-status-v2-title,
+.account-status-v2-user-info .yt-user-name,
+.account-feature-v2-grid-items .account-features-v2-grid-item-status,
+.channel-watermark-uploader-content .upload-guidelines,
+.account-content,
+.yt-uix-clickcard-title, .yt-uix-hovercard-title,
+.settings-panel .channel-language-title,
+#creator-onboarding-container h1, #creator-onboarding-container h2,
+.tabbed-page .tab.active .title,
+.caption-queue p.empty-queue-message, .caption-queue .captions-fan-dialog,
+.audiolibrary-column-title, .audiolibrary-column-artist, .audiolibrary-column-genre-and-mood,
+#main-title,
+.drag-to-begin-message p, .drag-to-begin-audio-message p,
+.caption-queue th, .caption-queue td,
+.caption-queue .contribution-title a:hover,
+.captions-editor-nav-tabs li a,
+.original-event-text, .translated-event-text, .review-event-text {
 	color: #ccc !important;
 }
 
-.audio-ui-featured-row td:hover {
-	color: #555 !important;
+.audiolibrary-column-genre-and-mood a:hover,
+.track:hover .audiolibrary-track-head .audiolibrary-column, .track.loading .audiolibrary-track-head .audiolibrary-column, .track.expanded .audiolibrary-track-head .audiolibrary-column {
+	color: #eee !important;
+}
+
+.creator-onboarding-column {
+	color: #fff !important;
 }
 
 .metadata-privacy-input,
@@ -1835,8 +1863,15 @@ h3.account-section-header,
 .timedtext-content,
 .multitrack-timeline,
 .comments .channel-owner .comment-header .user-name,
-.tabbed-page .tab.active {
+#comment-settings .comment-settings-header,
+.account-feature-v2-grid-items li,
+.audiolibrary-track-body,
+#storyboard {
 	background: #1b1b1b !important;
+}
+
+.audio-ui-featured-row td:hover {
+	color: #555 !important;
 }
 
 .yt-uix-form-input-select {
@@ -1849,6 +1884,59 @@ h3.account-section-header,
 
 .timeline-row {
 	background-color: #333 !important;
+}
+
+.tabbed-page .tab.active,
+.tabbed-page .tab {
+	background-color: #1b1b1b !important;
+	color: #ccc !important;
+}
+
+.video-dds .topline {
+	background-color: #1b1b1b !important;
+	border-bottom: 1px solid #d3d3d3 !important;
+}
+
+.video-dds.open .topline {
+	background-color: #444 !important;
+}
+
+#subscribers-table-list .subscribers-table-item .subscribed-since {
+	color: #fff !important;
+}
+
+#comment-settings .comment-settings-control .yt-uix-form-input-textarea,
+.yt-uix-form-input-fluid .yt-uix-form-input-textarea {
+	background: #1b1b1b !important;
+	color: #fff !important;
+}
+
+#comment-settings label {
+	color: #767676 !important;
+}
+
+.track-list li.track .audiolibrary-track-head,
+.editor-timeline {
+	background: #1b1b1b !important;
+}
+
+.asset-available-footer, .asset-not-available-text,
+.asset-restrictions-header, .asset-monetization-header, .asset-stores-header,
+.asset-restrictions-list div, .asset-monetization-list div, .asset-stores-list div,
+.asset-sound-recording-section, .asset-composition-section, .music-attribution-monetization-section, .music-attribution-no-monetization-section {
+	color: #ccc !important;
+}
+
+.watch-editable:hover {
+	background: #555 !important;
+}
+
+.caption-queue .contribution-title a {
+	color: #767676 !important;
+}
+
+.timed-event-line:hover {
+	color: #999 !important;
 }
 
 /* Copyright notice */
