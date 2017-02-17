@@ -686,6 +686,7 @@ body .yt-uix-button-text[disabled] {
 	border-color: #000 !important;
 }
 
+/* Experimental search box */
 .exp-searchbox-redesign #masthead-search {
 	background-color: #272727 !important;
 }
