@@ -59,7 +59,7 @@
 .comments .mod-button .default-state,
 .track.attribution .license-button .track-action-icon, .track .play-pause-button.play-visible .track-action-icon, .track:hover .play-pause-button.play-hover .track-action-icon, .track.expanded .play-pause-button.play-hover .track-action-icon, .track .expand-button .track-action-icon, /* Audio library */
 img.storyboard-icon.video-icon, img.storyboard-icon.audio-icon,
-+.exp-searchbox-redesign #masthead-search:before
+.exp-searchbox-redesign #masthead-search:before
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
