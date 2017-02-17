@@ -58,8 +58,7 @@
 .yt-uix-button-default .yt-uix-button-icon,
 .comments .mod-button .default-state,
 .track.attribution .license-button .track-action-icon, .track .play-pause-button.play-visible .track-action-icon, .track:hover .play-pause-button.play-hover .track-action-icon, .track.expanded .play-pause-button.play-hover .track-action-icon, .track .expand-button .track-action-icon, /* Audio library */
-img.storyboard-icon.video-icon, img.storyboard-icon.audio-icon,
-.exp-searchbox-redesign #masthead-search:before
+img.storyboard-icon.video-icon, img.storyboard-icon.audio-icon
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -684,17 +683,6 @@ body .yt-uix-button-text[disabled] {
 #masthead-gaia-user-wrapper,
 #masthead-gaia-photo-wrapper {
 	border-color: #000 !important;
-}
-
-.exp-searchbox-redesign #masthead-search {
-	background-color: #272727 !important;
-}
-
-.exp-searchbox-redesign #masthead-search-terms {
-	border: 0 !important;
-	background-color: transparent !important;
-	-webkit-box-shadow: inset 0 0px 0px #333 !important;
-	box-shadow: inset 0 0px 0px #333 !important;
 }
 
 #masthead-search-terms {
