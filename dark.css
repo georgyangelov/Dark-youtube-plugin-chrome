@@ -1,3 +1,4 @@
+@import url(https://gitcdn.xyz/repo/georgyangelov/Dark-youtube-plugin-chrome/master/likes.css); /* Imports likes css */
 /* Inverted and grayscale images */
 #logo,
 #masthead-search .search-btn-component .yt-uix-button-content,
@@ -1340,15 +1341,6 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 
 #comment-section-renderer .comment-renderer .sprite-comment-actions[data-action-on]:before {
 	opacity: 1 !important;
-}
-
-#comment-section-renderer .sprite-like[aria-checked="true"]:before {
-	background-position-x: 0 !important;
-  background-position-y: -80px !important;
-}
-#comment-section-renderer .sprite-dislike[aria-checked="true"]:before {
-	background-position-x: -23px !important;
-  background-position-y: -142px !important;
 }
 
 /* View/Hide all XX replies */
