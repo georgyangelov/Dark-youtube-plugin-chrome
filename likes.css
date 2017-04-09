@@ -1,0 +1,8 @@
+#comment-section-renderer .sprite-like[aria-checked="true"]:before {
+	background-position-x: -206px !important;
+  background-position-y: 0 !important;
+}
+#comment-section-renderer .sprite-dislike[aria-checked="true"]:before {
+	background-position-x: -12px !important;
+  background-position-y: 0 !important;
+}
