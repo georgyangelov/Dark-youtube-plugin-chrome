@@ -2147,3 +2147,14 @@ a.ytp-ce-link:hover, a.ytp-ce-link:visited {
 .live-dashboard .player-controls-buttons {
 	background: #1b1b1b !important;
 }
+
+.purchases-list-view .purchases-list-title,
+.purchases-items-list li.purchases-item,
+.purchases-rental-info li {
+	background: #1b1b1b !important;
+	color: #fff !important;
+}
+
+.purchases-list-view .purchases-video-title .purchases-video-title-content {
+	color: #ddd !important;
+}
