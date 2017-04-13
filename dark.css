@@ -2147,3 +2147,11 @@ a.ytp-ce-link:hover, a.ytp-ce-link:visited {
 .live-dashboard .player-controls-buttons {
 	background: #1b1b1b !important;
 }
+
+.video-extras-sparkbar-likes{
+background: #007f00;
+}
+
+.video-extras-sparkbar-dislikes{
+background: #f00;
+}
