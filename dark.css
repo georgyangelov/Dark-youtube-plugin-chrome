@@ -34,6 +34,7 @@
 .yt-help-icon, /* i button on video stats */
 .options-renderer-question-mark, /* i button in video report menu */
 .c4-editor-plus:before, .playlist-actions .yt-uix-button-has-icon:before, /* Playlist Icons */
+.add-to-widget .addto-search-playlist-section .search-icon,
 #pl-header .yt-uix-button-icon-gear, .pl-header-title-icon, /* More Playlist Icons */
 .pl-video-edit-remove:before, .pl-video-edit-remove-liked-video:before, .create-playlist-widget-button .add-new-pl-btn:before, /* More Playlist Icons */
 .yt-uix-button-icon-view-list, .yt-uix-button-icon-view-module, /* New Subscription page style change buttons */
@@ -616,14 +617,13 @@ body .yt-uix-button-text[disabled] {
 }
 
 /* Report Menu */
-.action-panel-content .yt-uix-form-input-radio-container input /* Shouldn't be needed, but checkboxes look like: http://i.imgur.com/3dz2w1s.png without it */
-{
-	-webkit-appearance: radio;
-}
-
 .options-renderer-message-review
 {
 	color: #CCC !important;
+}
+
+.yt-uix-form-input-textarea {
+	background: #494949 !important;
 }
 
 /* Share */
@@ -1975,8 +1975,9 @@ h3.account-section-header,
 .metadata-tab,
 .yt-chip input:not(.receive-all-updates), .r3 .b-P, textarea
 .yt-uix-form-input-container .yt-uix-form-input-textarea,
-.yt-uix-form-input-container .yt-uix-form-input-text:not(.video-settings-title) {
-  background: #1b1b1b !important;
+.yt-uix-form-input-container .yt-uix-form-input-text:not(.video-settings-title),
+.share-panel-start-at-time {
+  background: #494949 !important;
 }
 
 .sharing-balloon,
