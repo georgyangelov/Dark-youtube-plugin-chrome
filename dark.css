@@ -1,4 +1,3 @@
-@import url(https://gitcdn.xyz/repo/georgyangelov/Dark-youtube-plugin-chrome/master/likes.css); /* Imports likes css */
 /* Inverted and grayscale images */
 #logo,
 #masthead-search .search-btn-component .yt-uix-button-content,
@@ -1327,20 +1326,17 @@ body .yt-uix-button-subscribed-branded.hover-enabled:hover .unsubscribe-hh-label
 {
 	color: #777 !important;
 }
-#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-like, /* Like/Dislike comment buttons */
-#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-dislike
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-like:not([aria-checked="true"]), /* Like/Dislike comment buttons */
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-dislike:not([aria-checked="true"])
 {
 	background-color: transparent !important;
 	box-shadow: none !important;
 	-webkit-filter: grayscale(1) invert(1);
 }
 
-#comment-section-renderer .comment-renderer .sprite-comment-actions:hover:before {
-	opacity: .85 !important;
-}
-
-#comment-section-renderer .comment-renderer .sprite-comment-actions[data-action-on]:before {
-	opacity: 1 !important;
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-like[aria-checked="true"],
+#watch-discussion .comment-section-renderer-items .comment-thread-renderer .sprite-dislike[aria-checked="true"] {
+	background-color: transparent !important;
 }
 
 /* View/Hide all XX replies */
