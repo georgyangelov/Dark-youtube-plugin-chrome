@@ -28,6 +28,7 @@
     "128": "images/black_youtube.png"
   },
   "web_accessible_resources": [
-    "styles.css"
+    "styles.css",
+    "legacy_styles.css"
   ]
 }

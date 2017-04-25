@@ -1,12 +1,12 @@
 class StyleSwitcher {
-    constructor(fileUrl) {
+    constructor() {
         this.head = document.getElementsByTagName('head')[0];
         this.link = document.createElement('link');
 
         this.link.id    = 'dark-youtube-styles';
         this.link.rel   = 'stylesheet';
         this.link.type  = 'text/css';
-        this.link.href  = fileUrl;
+        this.link.href  = this.styleURL();
         this.link.media = 'screen';
 
         this.active = false;
@@ -37,10 +37,17 @@ class StyleSwitcher {
             this.deactivate();
         }
     }
+
+    styleURL() {
+        if (document.querySelector('ytd-app')) {
+            return chrome.extension.getURL('styles.css');
+        } else {
+            return chrome.extension.getURL('legacy_styles.css');
+        }
+    }
 }
 
-const styleURL      = chrome.extension.getURL('styles.css'),
-      styleSwitcher = new StyleSwitcher(styleURL),
+const styleSwitcher = new StyleSwitcher(),
       port          = chrome.runtime.connect({name: 'dark-youtube'});
 
 port.onMessage.addListener((status) => {
