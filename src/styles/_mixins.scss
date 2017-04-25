@@ -1,7 +1,8 @@
 @mixin labels {
   &,
   yt-formatted-string,
-  a {
+  a,
+  .title {
     @content;
   }
 }

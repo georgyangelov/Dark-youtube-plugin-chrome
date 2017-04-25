@@ -1,15 +1,13 @@
-@import 'variables';
-@import 'mixins';
+@import 'common';
 
 #guide-content {
   background-color: lighten($background, 5%);
 
-  @include labels { color: $text-color; }
+  a { color: $text-color; }
 
-  paper-icon-item:hover {
+  a:hover {
+    color: $menu-hover-color;
     background-color: $menu-hover-background;
-
-    @include labels { color: $menu-hover-color; }
   }
 
   #header iron-icon { @include invert; }

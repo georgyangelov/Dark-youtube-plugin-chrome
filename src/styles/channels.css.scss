@@ -1,0 +1,14 @@
+@import 'common';
+
+[page-subtype="channels"] {
+  #tabs-inner-container,
+  #channel-header {
+    background-color: lighten($background, 15%);
+  }
+
+  #channel-title { color: $text-color; }
+
+  .tab-content { color: $text-color; }
+
+  #selectionBar { background-color: $text-color; }
+}
