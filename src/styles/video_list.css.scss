@@ -1,0 +1,9 @@
+@import 'common';
+
+// Video thumbnail metadata
+ytd-video-renderer,
+ytd-grid-video-renderer,
+ytd-grid-playlist-renderer {
+  #metadata-line, #byline a { color: $secondary-text-color; }
+  .badge yt-icon { fill: $secondary-text-color; }
+}

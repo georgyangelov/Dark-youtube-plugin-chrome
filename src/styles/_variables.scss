@@ -1,6 +1,8 @@
 $background: #1c1c1f;
 
+$link-color: lighten(blue, 40%);
 $text-color: darken(white, 10%);
+$secondary-text-color: darken($text-color, 20%);
 $heading-color: darken(white, 5%);
 
 $menu-hover-background: darken(white, 20%);

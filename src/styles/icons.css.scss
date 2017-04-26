@@ -1,5 +1,6 @@
 @import 'common';
 
-iron-icon {
-  color: inherit;
-}
+iron-icon { color: inherit; }
+
+// Left/right buttons (those with circular white background)
+.yt-horizontal-list-renderer yt-icon { fill: $background; }
