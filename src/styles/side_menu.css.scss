@@ -1,0 +1,23 @@
+@import 'common';
+
+#guide-content {
+  background-color: lighten($background, 5%);
+
+  a { color: $text-color; }
+
+  a:hover {
+    color: $menu-hover-color;
+    background-color: $menu-hover-background;
+  }
+
+  #header iron-icon { @include invert; }
+
+  // Makes the icons the same color as the text
+  iron-icon { color: inherit; }
+
+  #header,
+  .ytd-guide-renderer,
+  #footer > * {
+    border-color: $border-color;
+  }
+}

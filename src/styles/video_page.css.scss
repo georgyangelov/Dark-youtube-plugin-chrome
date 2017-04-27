@@ -1,0 +1,12 @@
+@import 'common';
+
+ytd-watch {
+  iron-icon { @include invert; }
+
+  :hover yt-icon { fill: white; }
+
+  // Video description
+  ytd-video-secondary-info-renderer {
+    a { color: $link-color; }
+  }
+}

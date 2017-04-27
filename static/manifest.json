@@ -1,0 +1,34 @@
+{
+  "name": "Dark Skin for Youtube™",
+  "version": "2.0.0",
+  "description": "Makes Youtube go dark-side",
+  "manifest_version": 2,
+  "permissions": [
+    "http://www.youtube.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end",
+      "all_frames" : true
+    }
+  ],
+  "background": {
+    "page": "background_page.html",
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "images/black_youtube_19.png",
+    "default_title": "Toggle the Youtube dark skin"
+  },
+  "icons": {
+    "16": "images/black_youtube_16.png",
+    "48": "images/black_youtube_48.png",
+    "128": "images/black_youtube.png"
+  },
+  "web_accessible_resources": [
+    "styles.css",
+    "legacy_styles.css"
+  ]
+}

@@ -1,0 +1,8 @@
+@import 'common';
+
+ytd-masthead {
+  background-color: lighten($background, 5%);
+
+  #logo-icon { @include invert; }
+  #menu-button yt-icon { fill: $text-color; }
+}
