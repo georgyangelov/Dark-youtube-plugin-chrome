@@ -47,13 +47,19 @@ class StyleSwitcher {
     }
 }
 
-const styleSwitcher = new StyleSwitcher(),
-      port          = chrome.runtime.connect({name: 'dark-youtube'});
+const port = chrome.runtime.connect({name: 'dark-youtube'});
 
-port.onMessage.addListener((status) => {
-    if (typeof status.active !== 'undefined') {
-        styleSwitcher.switch(status.active);
+const interval = setInterval(() => {
+    if (document.querySelector('body > *')) {
+        const styleSwitcher = new StyleSwitcher();
+
+        port.onMessage.addListener((status) => {
+            if (typeof status.active !== 'undefined') {
+                styleSwitcher.switch(status.active);
+            }
+        });
+
+        port.postMessage({method: 'notifyActiveStatus', args: {}});
+        clearInterval(interval);
     }
-});
-
-port.postMessage({method: 'notifyActiveStatus', args: {}});
+}, 30);
