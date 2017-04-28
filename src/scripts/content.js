@@ -51,15 +51,18 @@ const port = chrome.runtime.connect({name: 'dark-youtube'});
 
 const interval = setInterval(() => {
     if (document.querySelector('body > *')) {
-        const styleSwitcher = new StyleSwitcher();
+        try {
+            const styleSwitcher = new StyleSwitcher();
 
-        port.onMessage.addListener((status) => {
-            if (typeof status.active !== 'undefined') {
-                styleSwitcher.switch(status.active);
-            }
-        });
+            port.onMessage.addListener((status) => {
+                if (typeof status.active !== 'undefined') {
+                    styleSwitcher.switch(status.active);
+                }
+            });
 
-        port.postMessage({method: 'notifyActiveStatus', args: {}});
-        clearInterval(interval);
+            port.postMessage({method: 'notifyActiveStatus', args: {}});
+        } finally {
+            clearInterval(interval);
+        }
     }
-}, 30);
+}, 100);
